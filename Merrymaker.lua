@@ -298,7 +298,7 @@ step
     .collect 17202,1
 step
     >>|c99ffff00A Frosty Shake|r Achievement
-    .zone Dalaran >> While in Dalaran, use the |c99ffff99Winter Veil Disguise Kit|r and
+    >> While in Dalaran, use the |c99ffff99Winter Veil Disguise Kit|r and
     +/dance with another |cFF00FF25Player|r disguised as a Snowman
     .use 17712
 step
@@ -320,6 +320,7 @@ step
     >>|c99ffff00'Tis the Season|r Achievement
     >>Equip your 3-piece Winter Clothing set
     .use 21524
+    .use 21525
     .use 34085
     .use 34086
     >>AFTER EQUIPING
