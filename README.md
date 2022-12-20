@@ -4,7 +4,7 @@ The guides in this repo require the [RestedXP][1] addon.
 ## Guides
 A list of guides included in this repo.
 
-### Merrymaker
+### 🎄Merrymaker ☃️
 A step by step guide for completing the WotLK Classic [Merrymaker][2] achievement, which gives the Merrymaker title.
 
 - Faction: Alliance only
