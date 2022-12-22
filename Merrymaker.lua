@@ -26,7 +26,7 @@ step
     .target Wulmort Jinglepocket
 step
     >>Buy Ingredients and Cooking Recipes (if needed) from |cFF00FF25Wulmort Jinglepocket|r
-    .collect 17194,3
+    .collect 17194,7
     .collect 17196,2
     .collect 17202,2
     .zoneskip Ironforge,1
