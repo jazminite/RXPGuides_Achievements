@@ -23,9 +23,13 @@ To report issues with guides in this repo, open a [Github Issue][4].
 ## Development
 Information on creating your own custom RXP guide is available on [restedxp.com][5].
 
+## Support
+If you would like to support me: [patreon.com/jazminite][6].
+
 
 [1]: https://www.restedxp.com/addon
 [2]: https://www.wowhead.com/wotlk/achievement=1692/merrymaker
 [3]: https://github.com/jazminite/RXPGuides_Template/archive/refs/heads/main.zip
 [4]: https://github.com/jazminite/RXPGuides_Template/issues/new/choose
 [5]: https://www.restedxp.com/custom-guides
+[6]: https://www.patreon.com/jazminite
