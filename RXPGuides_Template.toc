@@ -11,4 +11,5 @@
 
 ## Dependencies: RXPGuides
 
+Elder.lua
 Merrymaker.lua
