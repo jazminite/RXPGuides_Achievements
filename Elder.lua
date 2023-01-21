@@ -485,11 +485,11 @@ step
     .target Elder Splitrock
 step
     .zone Dustwallow Marsh >>Teleport to Theramore << Mage
-    .zone Dustwallow Marsh >>Head to Theramore << !Mage
+    .zone Dustwallow Marsh >>Get to Theramore via Mage port or IF -> Menethil -> Boat << !Mage
 step
     .fly Gadgetzan
     .goto Dustwallow Marsh,67.47,51.28
-    .isQuestAvailable 8635
+    .isQuestAvailable 8671
 step
     >>Talk to |cFF00FF25Elder Ragetotem|r near the Valley of the Watchers in Tanaris.
     .accept 8671
@@ -497,11 +497,18 @@ step
     .goto Tanaris,36.2,80.6
     .target Elder Ragetotem
 step
-    >>Talk to |cFF00FF25Elder Thunderhorn|r near Slithering Scar, Un'goro Crater.
+    .zone Un'Goro Crater >>Head to Un'Goro Crater
+    .isQuestAvailable 8681
+step
+    >>Talk to |cFF00FF25Elder Thunderhorn|r near Slithering Scar, Un'Goro Crater.
     .accept 8681
     .turnin 8681
-    .goto Un'goro Crater,50.2,76.2
+    .goto Un'Goro Crater,50.37,76.21
     .target Elder Thunderhorn
+step
+    .fly Cenarion Hold
+    .goto Un'Goro Crater,45.24,5.86
+    .isQuestAvailable 8719
 step
     >>Talk to |cFF00FF25Elder Bladesing|r in Cenarion Hold, Silithus.
     .accept 8719
@@ -515,4 +522,6 @@ step
     .turnin 8654
     .goto Silithus,23.0,11.8
     .target Elder Primestone
+step
+    .zone Dalaran >>Head to Dalaran
 ]])
