@@ -5,7 +5,13 @@ The guides in this repo require the [RestedXP][1] addon.
 A list of guides included in this repo.
 
 ### 🎄Merrymaker ☃️
-A step by step guide for completing the WotLK Classic [Merrymaker][2] achievement, which gives the Merrymaker title.
+A step by step guide for completing the WotLK Classic [Merrymaker][2a] achievement, which gives the Merrymaker title.
+
+- Faction: Alliance only
+- Races: All Alliance races
+
+### 🌙 To Honor One's Elders ⭐
+A step by step guide for completing the WotLK Classic [To Honor One's Elders][2b] achievement, which gives the Elder title.
 
 - Faction: Alliance only
 - Races: All Alliance races
@@ -28,7 +34,8 @@ If you would like to support me: [patreon.com/jazminite][6].
 
 
 [1]: https://www.restedxp.com/addon
-[2]: https://www.wowhead.com/wotlk/achievement=1692/merrymaker
+[2a]: https://www.wowhead.com/wotlk/achievement=1692/merrymaker
+[2b]: https://www.wowhead.com/wotlk/achievement=913/to-honor-ones-elders
 [3]: https://github.com/jazminite/RXPGuides_Template/archive/refs/heads/main.zip
 [4]: https://github.com/jazminite/RXPGuides_Template/issues/new/choose
 [5]: https://www.restedxp.com/custom-guides
