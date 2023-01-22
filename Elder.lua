@@ -133,15 +133,17 @@ step
     .goto Burning Steppes,64.4,23.8
     .target Elder Dawnstrider
 step
-    .zone Searing Gorge >> Go through Blackrock Mountain to Searing Gorge
+    #completewith next
+    .zone Searing Gorge >> Go through Blackrock Mountain to Searing Gorge.
     .isQuestAvailable 8651
 step
-    >>Talk to |cFF00FF25Elder Ironband|r in Blackchar Cave
+    >>Talk to |cFF00FF25Elder Ironband|r in Blackchar Cave, Searing Gorge.
     .accept 8651
     .turnin 8651
     .goto Searing Gorge,21.28,79.11
     .target Elder Ironband
 step
+    #completewith next
     .goto Eastern Kingdoms,47.62,68.88,5 >> Enter Blackrock Spire in Blackrock Mountain.
     .isQuestAvailable 8644
 step
@@ -153,7 +155,8 @@ step
     .turnin 8644
     .target Elder Stonefort
 step
-    .goto Eastern Kingdoms,46.87,67.61,5 >> Exit Blackrock Spire and head to Blackrock Depths.
+    #completewith next
+    .goto Eastern Kingdoms,46.87,67.61,5 >> Head to Blackrock Depths.
     .isQuestAvailable 8619
 step
     >>Talk to |cFF00FF25Elder Morndeep|r at the center of the Ring of Law inside Blackrock Depths.
@@ -161,7 +164,8 @@ step
     .turnin 8619
     .target Elder Morndeep
 step
-    .zone Ironforge >> Head to Ironforge
+    .zone Ironforge >> Teleport to Ironforge << Mage
+    .zone Ironforge >> Head to Ironforge << !Mage
     .isQuestAvailable 8653
 step
     >>Talk to |cFF00FF25Elder Bronzebeard|r in the Mystic Ward
@@ -179,16 +183,18 @@ step
     .zone Ironforge >> Head back to Ironforge
     .isQuestAvailable 8642
 step
+    #completewith next
     .fly Thelsamar
     .goto Ironforge,55.6,47.8
     .isQuestAvailable 8642
 step
-    >>Talk to |cFF00FF25Elder Silvervein|r in Thelsamar
+    >>Talk to |cFF00FF25Elder Silvervein|r in Thelsamar, Loch Modan.
     .accept 8642
     .turnin 8642
     .goto Loch Modan,33.2,46.6
     .target Elder Silvervein
 step
+    #completewith next
     .fly Aerie Peak
     .goto Loch Modan,33.93,50.95
     .isQuestAvailable 8643
@@ -203,6 +209,7 @@ step
     .goto The Hinterlands,11.08,46.14
     .isQuestAvailable 8645
 step
+    #completewith next
     .zone Silverpine Forest >> Head to Silverpine Forest
     .isQuestAvailable 8645
 step
@@ -224,13 +231,14 @@ step
     .goto Tirisfal Glades,61.8,53.8
     .target Elder Graveborn
 step
+    #completewith next
     .zone Western Plaguelands >> Head to Western Plaguelands
     .isQuestAvailable 8722
 step
     >>Talk to |cFF00FF25Elder Moonstrike|r on the Roof of Scholomance.
     .accept 8714
     .turnin 8714
-    .goto Western Plaguelands,50.88,36.52
+    .goto Eastern Kingdoms,50.88,36.52
     .target Elder Moonstrike
 step
     >>Talk to |cFF00FF25Elder Meadowrun|r near Weeping Cavern in Western Plaguelands.
@@ -252,6 +260,7 @@ step
     .goto Eastern Plaguelands,75.71,54.55
     .target Elder Snowcrown
 step
+    #completewith next
     .goto Eastern Plaguelands,43.78,17.44,5 >> Enter Stratholme Undead (Eastwall Gate)
     .isQuestAvailable 8727
 step
@@ -263,7 +272,9 @@ step
     .goto Eastern Plaguelands,43.47,19.38
     .target Elder Farwhisper
 step
-    .zone Darnassus >> Head to Darnassus
+    #completewith next
+    .zone Darnassus >> Teleport to Darnassus << Mage
+    .zone Darnassus >> Head to Darnassus << !Mage
     .isQuestAvailable 8715
 step
     >>Talk to |cFF00FF25Elder Bladeleaf|r in Dolanaar.
@@ -284,6 +295,7 @@ step
     .goto Darnassus,34.65,12.81
     .target Lunar Festival Vendor
 step
+    #completewith next
     .fly Auberdine
     .goto Teldrassil,58.4,94.0
     .isQuestAvailable 8721
@@ -294,6 +306,7 @@ step
     .goto Darkshore,36.81,46.74
     .target Elder Starweave
 step
+    #completewith next
     .fly Everlook
     .goto Darkshore,36.34,45.57
     .isQuestAvailable 8726
@@ -310,6 +323,7 @@ step
     .goto Winterspring,55.6,43.6
     .target Elder Brightspear"
 step
+    #completewith next
     .fly Talonbranch Glade
     .goto Winterspring,62.33,36.62
     .isQuestAvailable 8723
@@ -320,6 +334,7 @@ step
     .goto Felwood,37.74,53.01
     .target Elder Nightwind
 step
+    #completewith next
     .fly Astranaar
     .goto Felwood,51.52,82.22
     .isQuestAvailable 8725
@@ -330,6 +345,7 @@ step
     .goto Ashenvale,35.53,48.92
     .target Elder Riversong
 step
+    #completewith next
     .fly Talrendis Point
     .goto Ashenvale,34.42,47.99
     .isQuestAvailable 8720
