@@ -277,11 +277,13 @@ step
     .zone Darnassus >> Head to Darnassus << !Mage
     .isQuestAvailable 8715
 step
-    >>Talk to |cFF00FF25Elder Bladeleaf|r in Dolanaar.
+    >>Talk to |cFF00FF25Elder Bladeleaf|r in Dolanaar, Teldrassil.
     .accept 8715
     .turnin 8715
     .goto Teldrassil,57.32,60.79
     .target Elder Bladeleaf
+step << Mage
+    .zone Darnassus >> Teleport to Darnassus
 step
     >>|c99ffff00Achievement - Elders of the Alliance|r
     >>Talk to |cFF00FF25Elder Bladeswift|r at the Cenarion Enclave in Darnassus.
@@ -294,6 +296,7 @@ step
     .collect 21574,20
     .goto Darnassus,34.65,12.81
     .target Lunar Festival Vendor
+    .isQuestAvailable 8868
 step
     #completewith next
     .fly Auberdine
@@ -321,7 +324,7 @@ step
     .accept 8726
     .turnin 8726
     .goto Winterspring,55.6,43.6
-    .target Elder Brightspear"
+    .target Elder Brightspear
 step
     #completewith next
     .fly Talonbranch Glade
