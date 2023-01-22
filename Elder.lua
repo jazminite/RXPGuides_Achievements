@@ -6,6 +6,7 @@ RXPGuides.RegisterGuide([[
 #group Achievements
 
 step
+    #completewith next
     .zone Stormwind City >> Head to Stormwind
 step
     >>Talk to the |cFF00FF25Lunar Festival Harbinger|r in the Mystic Ward
@@ -402,7 +403,7 @@ step
     >>If you see Omen's corspe, stand in it to get Elune's Blessing.
     .unitscan Omen
 step
-    >>ATTENTION - OMEN IS A LEVEL 80 RAID BOSS - YOU NEED A GROUP TO KILL HIM!
+    >>WARNING - OMEN IS A LEVEL 80 RAID BOSS - YOU NEED A GROUP TO KILL HIM!
     >>If you don't see Omen's corpse, fire the |c99ff009920 Rocket Clusters|r into the launcher to summon Omen.
     .use 21574
     .complete 8868,1
@@ -523,5 +524,243 @@ step
     .goto Silithus,23.0,11.8
     .target Elder Primestone
 step
-    .zone Dalaran >>Head to Dalaran
+    .zone Dalaran >>Teleport to Dalaran << Mage
+    .zone Dalaran >>Head to Dalaran << !Mage
+step
+    .fly Valiance Landing Camp
+    .goto Dalaran,71.93,45.75
+    .isQuestAvailable 13026
+step
+    >>Talk to |cFF00FF25Elder Bluewolf|r in front of the entrance to VOA.
+    .accept 13026
+    .turnin 13026
+    .goto Wintergrasp,49.0,13.9
+    .target Elder Bluewolf
+step
+    >>Talk to |cFF00FF25Elder Wanikaya|r at Rainspeaker Rapids, Sholazar Basin.
+    .accept 13024
+    .turnin 13024
+    .goto Sholazar Basin,63.83,49.02
+    .target Elder Wanikaya
+step
+    >>Talk to |cFF00FF25Elder Sandrene|r at Lakeside Landing, Sholazar Basin.
+    .accept 13018
+    .turnin 13018
+    .goto Sholazar Basin,49.8,63.7
+    .target Elder Sandrene
+step
+    .fly Transitus Shield
+    .goto Sholazar Basin,50.10,61.39
+    .isQuestAvailable 13016
+step
+    >>Talk to |cFF00FF25Elder Northal|r at Transitus Shield, Borean Tundra.
+    .accept 13016
+    .turnin 13016
+    .goto Borean Tundra,33.79,34.35
+    .target Elder Northal
+step
+    .goto Borean Tundra,27.5,26,5 >> Enter the Nexus dungeon in Borean Tundra.
+    .isQuestAvailable 13021
+step
+    >>Talk to |cFF00FF25Elder Igasho|r inside The Nexus.
+    >>He is near the Singing Grove (see the dungeon map).
+    .accept 13021
+    .turnin 13021
+    .target Elder Igasho
+step
+    .zone Borean Tundra >>Exit The Nexus
+    .zoneskip 4265
+step
+    >>Talk to |cFF00FF25Elder Pamuya|r at Warsong Hold, Borean Tundra.
+    .accept 13029
+    .turnin 13029
+    .goto Borean Tundra,42.95,49.56
+    .target Elder Pamuya
+step
+    >>Talk to |cFF00FF25Elder Arp|r at D.E.H.T.A, Borean Tundra.
+    .accept 13033
+    .turnin 13033
+    .goto Borean Tundra,57.39,43.73
+    .target Elder Arp
+step
+    >>Talk to |cFF00FF25Elder Sardis|r Valiance Keep
+    .accept 13012
+    .turnin 13012
+    .goto Borean Tundra,59.05,65.62
+    .target Elder Sardis
+step
+    .fly Stars' Rest
+    .goto Borean Tundra,58.95,68.29
+    .isQuestAvailable 13014
+step
+    >>Talk to |cFF00FF25Elder Morthie|r Stars' Rest, Dragonblight.
+    .accept 13014
+    .turnin 13014
+    .goto Dragonblight,29.76,55.92
+    .target Elder Morthie
+step
+    >>Talk to |cFF00FF25Elder Skywarden|r at Agmar's Hammer, Dragonblight.
+    .accept 13031
+    .turnin 13031
+    .goto Dragonblight,35.10,48.34
+    .target Elder Skywarden
+step
+    #completewith next
+    .goto Dragonblight,25.96,50.9,5 >> Enter the Azjol-Nerub dungeon in Dragonblight.
+    .isQuestAvailable 13022
+step
+    >>|c99ffff00WARNING - YOU MUST KILL THE FIRST BOSS TO OPEN THE GATE!|r SKIP THIS STEP AND COME BACK WITH A GROUP (IF NEEDED).
+    >>Talk to |cFF00FF25Elder Nurgen|r inside Azjol-Nerub.
+    .accept 13022
+    .turnin 13022
+    .target Elder Nurgen
+step
+    #completewith next
+    .zone Dragonblight >>Exit Azjol-Nerub
+    .zoneskip 4277
+step
+    >>Talk to |cFF00FF25Elder Thoim|r at Moa'ki Harbor, Dragonblight.
+    .accept 13019
+    .turnin 13019
+    .goto Dragonblight,48.77,78.17
+    .target Elder Thoim
+step
+    .zone Dalaran >>Teleport to Dalaran << Mage
+    .zone Dalaran >>Head to Dalaran << !Mage
+step
+    .fly K3
+    .goto Dalaran,71.93,45.75
+    .isQuestAvailable 13028
+step
+    >>Talk to |cFF00FF25Elder Graymane|r in K3, The Storm Peaks.
+    .accept 13028
+    .turnin 13028
+    .goto The Storm Peaks,41.15,84.75
+    .target Elder Graymane
+step
+    .fly Frosthold
+    .goto The Storm Peaks,40.73,84.55
+    .isQuestAvailable 13015
+step
+    >>Talk to |cFF00FF25Elder Fargal|r in Frosthold, The Storm Peaks.
+    .accept 13015
+    .turnin 13015
+    .goto The Storm Peaks,28.9,73.7
+    .target Elder Fargal
+step
+    .fly Bouldercrag's Refuge
+    .goto The Storm Peaks,29.51,74.34
+    .isQuestAvailable 13020
+step
+    >>Talk to |cFF00FF25Elder Stonebeard|r inside Bouldercrag's Refuge, The Storm Peaks.
+    .accept 13020
+    .turnin 13020
+    .goto The Storm Peaks,31.27,37.63
+    .target Elder Stonebeard
+step
+    #completewith next
+    .goto The Storm Peaks,39.59,26.9,5 >> Enter the Halls of Stone dungeon in The Storm Peaks.
+    .isQuestAvailable 13066
+step
+    >>Talk to |cFF00FF25Elder Yurauk|r inside the Halls of Stone.
+    >>He is in the Crystalline Quarry (see the dungeon map).
+    >>Stealth classes can stealth/invis past mobs.
+    >>|c99ffff00SKIP AND RETURN WITH A GROUP (IF NEEDED)|r
+    .accept 13066
+    .turnin 13066
+    .target Elder Yurauk
+step
+    .zone The Storm Peaks >>Exit Halls of Stone
+    .zoneskip 4264
+step
+    >>Talk to |cFF00FF25Elder Muraco|r at Camp Tunka'lo, The Storm Peaks.
+    .accept 13032
+    .turnin 13032
+    .goto The Storm Peaks,64.60,51.31
+    .target Elder Muraco
+step
+    #completewith next
+    .goto Zul'Drak,76.18,21.04,5 >> Enter the Gundrak dungeon in Zul'Drak.
+    .isQuestAvailable 13065
+step
+    >>Talk to |cFF00FF25Elder Ohanzee|r inside Gundrak.
+    >>He is after the 2nd boss north of the Tomb of the Ancients (see the dungeon map).
+    >>Stealth classes can stealth/invis past mobs.
+    >>|c99ffff00SKIP AND RETURN WITH A GROUP (IF NEEDED)|r
+    .accept 13065
+    .turnin 13065
+    .target Elder Ohanzee
+step
+    .zone Zul'Drak >>Exit Gundrak
+    .zoneskip 4416
+step
+    >>Talk to |cFF00FF25Elder Tauros|r at Zim'Torga, Zul'Drak.
+    .accept 13027
+    .turnin 13027
+    .goto Zul'Drak,58.91,56.01
+    .target Elder Tauros
+step
+    .fly Westfall Brigade
+    .goto Zul'Drak,60.03,56.72
+    .isQuestAvailable 13013
+step
+    >>Talk to |cFF00FF25Elder Beldak|r at Westfall Brigade, Grizzly Hills.
+    .accept 13013
+    .turnin 13013
+    .goto Grizzly Hills,60.53,27.64
+    .target Elder Beldak
+step
+    >>Talk to |cFF00FF25Elder Lunaro|r in the Ruins of Tethys, Grizzly Hills.
+    .accept 13025
+    .turnin 13025
+    .goto Grizzly Hills,80.5,37.1
+    .target Elder Lunaro
+step
+    >>|c99ffff00Achievement - Elders of Northrend|r
+    >>Talk to |cFF00FF25Elder Whurain|r in Camp Oneqwah, Grizzly Hills.
+    .accept 13030
+    .turnin 13030
+    .goto Grizzly Hills,64.16,47.00
+    .target Elder Whurain
+step
+    #completewith next
+    .goto Zul'Drak,28.52,86.94,5 >> Enter the Drak'Tharon Keep dungeon.
+    .isQuestAvailable 13023
+step
+    >>Talk to |cFF00FF25Elder Kilias|r inside Drak'Tharon Keep.
+    >>He is before King Dred in the Raptor Pens (see the dungeon map).
+    >>Stealth classes can stealth/invis past mobs.
+    .accept 13023
+    .turnin 13023
+    .target Elder Kilias
+step
+    #completewith next
+    .goto Howling Fjord,57.29,46.77,5 >> Enter the Utgarde Keep dungeon.
+    .isQuestAvailable 13017
+step
+    >>Talk to |cFF00FF25Elder Jarten|r inside Utgarde Keep.
+    .accept 13017
+    .turnin 13017
+    .target Elder Jarten
+step
+    #completewith next
+    .goto Howling Fjord,57.2,46.6,5 >> Enter the Utgarde Pinnacle dungeon.
+    .isQuestAvailable 13067
+step
+    >>Talk to |cFF00FF25Elder Chogan'gada|r inside Utgarde Pinnacle.
+    .accept 13067
+    .turnin 13067
+    .target Elder Chogan'gada
+step
+    >>|c99ffff00Achievement - Elders of the Dungeons|r
+    >>Finish any dungeon Elders you missed.
+    .accept 13021 >> The Nexus
+    .accept 13022 >> Azjol-Nerub
+    .accept 13066 >> Halls of Stone
+    .accept 13065 >> Gundrak
+    .accept 13023 >> Drak'Tharon Keep
+    .accept 13017 >> Utgarde Keep
+    .accept 13067 >> Utgarde Pinnacle
+step
+    >>CONGRATULATIONS!!! You should now have the Achievement |c99ffff00To Honor One's Elders|r.
 ]])
