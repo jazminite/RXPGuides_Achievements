@@ -569,7 +569,6 @@ step
     .target Elder Igasho
 step
     .zone Borean Tundra >>Exit The Nexus
-    .zoneskip 4265
 step
     >>Talk to |cFF00FF25Elder Pamuya|r at Warsong Hold, Borean Tundra.
     .accept 13029
@@ -617,7 +616,6 @@ step
 step
     #completewith next
     .zone Dragonblight >>Exit Azjol-Nerub
-    .zoneskip 4277
 step
     >>Talk to |cFF00FF25Elder Thoim|r at Moa'ki Harbor, Dragonblight.
     .accept 13019
@@ -671,7 +669,6 @@ step
     .target Elder Yurauk
 step
     .zone The Storm Peaks >>Exit Halls of Stone
-    .zoneskip 4264
 step
     >>Talk to |cFF00FF25Elder Muraco|r at Camp Tunka'lo, The Storm Peaks.
     .accept 13032
@@ -692,7 +689,6 @@ step
     .target Elder Ohanzee
 step
     .zone Zul'Drak >>Exit Gundrak
-    .zoneskip 4416
 step
     >>Talk to |cFF00FF25Elder Tauros|r at Zim'Torga, Zul'Drak.
     .accept 13027
@@ -739,6 +735,7 @@ step
     .isQuestAvailable 13017
 step
     >>Talk to |cFF00FF25Elder Jarten|r inside Utgarde Keep.
+    >>He is next to Njorn Stair (see the dungeon map).
     .accept 13017
     .turnin 13017
     .target Elder Jarten
@@ -748,6 +745,7 @@ step
     .isQuestAvailable 13067
 step
     >>Talk to |cFF00FF25Elder Chogan'gada|r inside Utgarde Pinnacle.
+    >>He is under the staircase after the 3rd boss (Skadi).
     .accept 13067
     .turnin 13067
     .target Elder Chogan'gada
