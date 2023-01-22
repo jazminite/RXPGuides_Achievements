@@ -9,7 +9,7 @@ step
     #completewith next
     .zone Stormwind City >> Head to Stormwind
 step
-    >>Talk to the |cFF00FF25Lunar Festival Harbinger|r in the Mystic Ward
+    >>Talk to the |cFF00FF25Lunar Festival Harbinger|r in The Park.
     .accept 8867
     .goto Stormwind City,37.7,65.56
     .target Lunar Festival Harbinger
@@ -18,7 +18,7 @@ step
     .collect 21576,10
     .collect 21557,8
     .collect 21747,10
-    .goto Stormwind City,29.6,14.6
+    .goto Stormwind City,37.39,64.19
     .target Lunar Festival Vendor
 step
     #completewith next
@@ -45,47 +45,53 @@ step
     .goto Stormwind City,36.2,66.2
     .target Elder Hammershout
 step
-    >>Talk to |cFF00FF25Elder Stormbrow|r near Goldshire
+    >>Talk to |cFF00FF25Elder Stormbrow|r near Goldshire.
     .accept 8649
     .turnin 8649
     .goto Elwynn Forest,39.8,63.6
     .target Elder Stormbrow
 step
+    #completewith next
     .fly Sentinel Hill
     .goto Stormwind City,71.0,72.5
     .isQuestAvailable 8675
 step
-    >>Talk to |cFF00FF25Elder Skychaser|r at the top of the Sentinel Hill tower
+    >>Talk to |cFF00FF25Elder Skychaser|r at the top of the Sentinel Hill tower.
     .accept 8675
     .turnin 8675
     .goto Westfall,56.6,47.2
     .target Elder Skychaser
 step
+    #completewith next
     .fly Rebel Camp
     .goto Westfall,56.55,52.64
     .isQuestAvailable 8716
 step
-    >>Talk to |cFF00FF25Elder Starglade|r outside the ZG entrance
+    >>Talk to |cFF00FF25Elder Starglade|r outside the ZG entrance.
     .accept 8716
     .turnin 8716
     .goto Stranglethorn Vale,53.13,18.43
     .target Elder Starglade
 step
+    #completewith next
     .fly Booty Bay
     .goto Stranglethorn Vale,38.23,4.05
     .isQuestAvailable 8674
 step
-    >>Talk to |cFF00FF25Elder Winterhoof|r in Booty Bay (on the roof near the Horde FP)
+    >>Talk to |cFF00FF25Elder Winterhoof|r in Booty Bay (on the roof near the Horde FP).
     .accept 8674
     .turnin 8674
     .goto Stranglethorn Vale,26.49,76.53
     .target Elder Winterhoof
 step
-    .fly Nethergarde Keep
-    .goto Stranglethorn Vale,27.53,77.79
+    #completewith next
+    >> Teleport to Stormwind << Mage
+    .zone Blasted Lands >> Use the portal to the Blasted Lands << Mage
+    .fly Nethergarde Keep << !Mage
+    .goto Stranglethorn Vale,27.53,77.79 << !Mage
     .isQuestAvailable 8647
 step
-    >>Talk to |cFF00FF25Elder Bellowrage|r in the Crater near Dark Portal
+    >>Talk to |cFF00FF25Elder Bellowrage|r in the Crater near Dark Portal.
     .accept 8647
     .turnin 8647
     .goto Blasted Lands,57.8,54.8
@@ -94,6 +100,7 @@ step
     .goto Eastern Kingdoms,54.00,79.59,5 >> Enter the Temple of Atal'Hakkar in the Swamp of Sorrows.
     .isQuestAvailable 8713
 step
+    #completewith next
     .goto Eastern Kingdoms,54.41,78.64,5 >> Enter the Sunken Temple dungeon.
     .isQuestAvailable 8713
 step
@@ -105,20 +112,22 @@ step
     .turnin 8713
     .target Elder Starsong
 step
-    .zone Stormwind City >> Head to Stormwind
+    .zone Stormwind City >> Teleport to Stormwind << Mage
+    .zone Stormwind City >> Travel to Stormwind << !Mage
     .isQuestAvailable 8636
 step
+    #completewith next
     .fly Morgan's Vigil
     .goto Stormwind City,71.0,72.5
     .isQuestAvailable 8636
 step
-    >>Talk to |cFF00FF25Elder Rumblerock|r near Dreadmaul Rock
+    >>Talk to |cFF00FF25Elder Rumblerock|r near Dreadmaul Rock, Burning Steppes.
     .accept 8636
     .turnin 8636
     .goto Burning Steppes,82.2,46.6
     .target Elder Rumblerock
 step
-    >>Talk to |cFF00FF25Elder Dawnstrider|r on the Bridge to Flame Crest
+    >>Talk to |cFF00FF25Elder Dawnstrider|r near Flame Crest, Burning Steppes.
     .accept 8683
     .turnin 8683
     .goto Burning Steppes,64.4,23.8
