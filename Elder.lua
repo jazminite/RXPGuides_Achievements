@@ -359,7 +359,8 @@ step
     .goto Azshara,72.6,85.0
     .target Elder Skygleam
 step
-    .goto Azshara,10.32,78.38,5 >> Head towards Durotar
+    #completewith next
+    .goto Azshara,10.32,78.38,15 >> Head towards Durotar
     .isQuestAvailable 8670
 step
     >>Talk to |cFF00FF25Elder Darkhorn|r in the Valley of Wisdom, Orgrimmar.
@@ -374,6 +375,7 @@ step
     .goto Durotar,53.2,43.6
     .target Elder Runetotem
 step
+    #completewith next
     .zone The Barrens >> Head to The Barrens
     .isQuestAvailable 8686
 step
@@ -395,6 +397,7 @@ step
     .goto The Barrens,45.12,57.89
     .target Elder High Mountain
 step
+    #completewith next
     .zone Mulgore >> Head to Mulgore
     .isQuestAvailable 8673
 step
@@ -404,7 +407,8 @@ step
     .goto Mulgore,48.37,53.45
     .target Elder Bloodhoof
 step
-    .goto Thunder Bluff,54.86,26.43,5 >> Go up the Thunder Bluff Elevator here.
+    #completewith next
+    .goto Thunder Bluff,54.86,26.43,5 >> Go up the Thunder Bluff Elevator.
     .isQuestAvailable 8678
 step
     >>|c99ffff00Achievement - Elders of the Horde|r
@@ -414,6 +418,7 @@ step
     .goto Thunder Bluff,73.0,23.8
     .target Elder Ezra Wheathoof
 step
+    #completewith next
     >>Stand in the empty spotlight.
     +Use your |c99ff0099Lunar Festival Invitation|r to port to Moonglade.
     .use 21711
@@ -426,8 +431,9 @@ step
     .goto Moonglade,53.6,35.4
     .target Valadar Starsong
 step
+    #completewith next
     >>|c99ffff00Achievement - Elune's Blessing|r
-    .goto Moonglade,63.71,62.39,1 >>Travel to the Southeast side of Moonglade.
+    .goto Moonglade,63.71,62.39,5 >>Travel to the Southeast side of Moonglade.
     >>If you see Omen's corspe, stand in it to get Elune's Blessing.
     .unitscan Omen
 step
@@ -454,6 +460,7 @@ step << !Mage
 step << !Mage
     .zone Dustwallow Marsh >>Take the boat to Theramore
 step
+    #completewith next
     .fly Gadgetzan
     .goto Dustwallow Marsh,67.47,51.28
 step
@@ -463,6 +470,7 @@ step
     .goto Tanaris,51.45,27.86
     .target Elder Dreamseer
 step
+    #completewith next
     .goto Tanaris,38.73,19.99,5 >> Enter the Zul'Farrak dungeon.
     .isQuestAvailable 8676
 step
@@ -472,7 +480,8 @@ step
     .turnin 8676
     .target Elder Wildmane
 step
-    .zone Thousand Needles >> Exit Zul'Farrak and head to Thousand Needles.
+    #completewith next
+    .zone Thousand Needles >> Head to Thousand Needles.
     .isQuestAvailable 8682
 step
     >>Talk to |cFF00FF25Elder Morningdew|r near the Mirage Raceway in Thousand Needles.
@@ -499,6 +508,7 @@ step
     .goto Kalimdor,43.4,67.69
     .target Elder Mistwalker
 step
+    #completewith next
     .zone Desolace >>Head to Desolace
     .isQuestAvailable 8635
 step
@@ -516,6 +526,7 @@ step
     .zone Dustwallow Marsh >>Teleport to Theramore << Mage
     .zone Dustwallow Marsh >>Get to Theramore via Mage port or IF -> Menethil -> Boat << !Mage
 step
+    #completewith next
     .fly Gadgetzan
     .goto Dustwallow Marsh,67.47,51.28
     .isQuestAvailable 8671
@@ -526,6 +537,7 @@ step
     .goto Tanaris,36.2,80.6
     .target Elder Ragetotem
 step
+    #completewith next
     .zone Un'Goro Crater >>Head to Un'Goro Crater
     .isQuestAvailable 8681
 step
@@ -535,9 +547,10 @@ step
     .goto Un'Goro Crater,50.37,76.21
     .target Elder Thunderhorn
 step
+    #completewith next
     .fly Cenarion Hold
     .goto Un'Goro Crater,45.24,5.86
-    .isQuestAvailable 8719
+    .isQuestAvailable 8654
 step
     >>Talk to |cFF00FF25Elder Bladesing|r in Cenarion Hold, Silithus.
     .accept 8719
@@ -555,11 +568,12 @@ step
     .zone Dalaran >>Teleport to Dalaran << Mage
     .zone Dalaran >>Head to Dalaran << !Mage
 step
+    #completewith next
     .fly Valiance Landing Camp
     .goto Dalaran,71.93,45.75
     .isQuestAvailable 13026
 step
-    >>Talk to |cFF00FF25Elder Bluewolf|r in front of the entrance to VOA.
+    >>Talk to |cFF00FF25Elder Bluewolf|r near the entrance to VOA.
     .accept 13026
     .turnin 13026
     .goto Wintergrasp,49.0,13.9
@@ -577,6 +591,7 @@ step
     .goto Sholazar Basin,49.8,63.7
     .target Elder Sandrene
 step
+    #completewith next
     .fly Transitus Shield
     .goto Sholazar Basin,50.10,61.39
     .isQuestAvailable 13016
@@ -587,6 +602,7 @@ step
     .goto Borean Tundra,33.79,34.35
     .target Elder Northal
 step
+    #completewith next
     .goto Borean Tundra,27.5,26,5 >> Enter the Nexus dungeon in Borean Tundra.
     .isQuestAvailable 13021
 step
@@ -596,6 +612,7 @@ step
     .turnin 13021
     .target Elder Igasho
 step
+    #completewith next
     .zone Borean Tundra >>Exit The Nexus
 step
     >>Talk to |cFF00FF25Elder Pamuya|r at Warsong Hold, Borean Tundra.
