@@ -633,6 +633,7 @@ step
     .goto Borean Tundra,59.05,65.62
     .target Elder Sardis
 step
+    #completewith next
     .fly Stars' Rest
     .goto Borean Tundra,58.95,68.29
     .isQuestAvailable 13014
@@ -671,6 +672,7 @@ step
     .zone Dalaran >>Teleport to Dalaran << Mage
     .zone Dalaran >>Head to Dalaran << !Mage
 step
+    #completewith next
     .fly K3
     .goto Dalaran,71.93,45.75
     .isQuestAvailable 13028
@@ -681,6 +683,7 @@ step
     .goto The Storm Peaks,41.15,84.75
     .target Elder Graymane
 step
+    #completewith next
     .fly Frosthold
     .goto The Storm Peaks,40.73,84.55
     .isQuestAvailable 13015
@@ -691,6 +694,7 @@ step
     .goto The Storm Peaks,28.9,73.7
     .target Elder Fargal
 step
+    #completewith next
     .fly Bouldercrag's Refuge
     .goto The Storm Peaks,29.51,74.34
     .isQuestAvailable 13020
@@ -733,7 +737,8 @@ step
     .turnin 13065
     .target Elder Ohanzee
 step
-    .zone Zul'Drak >>Exit Gundrak
+    #completewith next
+    .zone Zul'Drak >>Exit Gundrak or head to Zul'Drak
 step
     >>Talk to |cFF00FF25Elder Tauros|r at Zim'Torga, Zul'Drak.
     .accept 13027
@@ -741,6 +746,7 @@ step
     .goto Zul'Drak,58.91,56.01
     .target Elder Tauros
 step
+    #completewith next
     .fly Westfall Brigade
     .goto Zul'Drak,60.03,56.72
     .isQuestAvailable 13013
