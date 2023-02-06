@@ -7,9 +7,10 @@
 ## Title: RXPGuides by Jazminite
 ## Notes: Achievements
 ## Author: Jazminite
-## Version: 1.0
+## Version: 1.2
 
 ## Dependencies: RXPGuides
 
 Elder.lua
+Lovefool.lua
 Merrymaker.lua
