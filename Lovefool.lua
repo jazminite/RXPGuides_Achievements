@@ -103,7 +103,7 @@ step
     .zone Dalaran >>Head to Dalaran << !Mage
 step
     .isOnQuest 24666
-    >>In Crystalsong Forest, use the |c99ffff99Crown Cologne Sprayer|r to destroy the Chemical Wagon and kill |cFFFF5722Crown Sprayers|r.
+    >>In Crystalsong Forest, use the |c99ffff99Snagglebolt's Khorium Bomb|r to destroy the Chemical Wagon and kill |cFFFF5722Crown Sprayers|r.
     .complete 24666,1
     .complete 24666,2
     .use 50130
