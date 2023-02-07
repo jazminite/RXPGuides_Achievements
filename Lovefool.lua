@@ -97,6 +97,7 @@ step
     >>Return to the |cFF00FF25Public Relations Agent|r outside the bank.
     .dailyturnin 24629,24635,24636 >>Turn in A Perfect Puff of Perfume |c99ffff99OR|r A Cloudlet of Classy Cologne |c99ffff99OR|r Bobon Blitz
     .goto Stormwind City,62.47,75.36
+    .target Public Relations Agent
 step
     .isOnQuest 24666
     .zone Dalaran >>Teleport to Dalaran << Mage
@@ -110,18 +111,117 @@ step
     .target Crown Sprayer
     .goto Crystalsong Forest,48.92,47.39
 step
+    >>|c99ffff00Achievement - Charming|r
+    >>Kill ANY |cFF00FF25Green+|r level mob for |c99ffff99Lovely Charms|r. Turn 10 |c99ffff99Lovely Charms|r into 1 |c99ffff99Lovely Charm Bracelet|r.
+    >>Suggested mob: |cFFFF5722Converted Heroes|r in Icecrown.
+    .collect 49916,12
+    .use 49655
+    .loop 20, Icecrown,40.9,46.6,48.3,50.2,48.1,57.7,40.9,58.6,39.0,58.6,38.6,50.6,40.9,46.6
+    .mob Converted Hero
+step
+    #completewith next
+    .zone The Exodar >> Teleport to The Exodar << Mage
+    .zone The Exodar >> Travel to The Exodar << !Mage
+step
+    >>Talk to |cFF00FF25Kwee Q. Peddlefeet|r outside the city.
+    .skipgossip
+    .accept 24611 >> A Gift for the Prophet
+    .goto The Exodar,73.74,56.99
+    .target Kwee Q. Peddlefeet
+step
+    >>Talk to |cFF00FF25Prophet Velen|r inside The Exodar.
+    .turnin 24611 >> A Gift for the Prophet
+    .goto The Exodar,32.79,54.51
+    .target Prophet Velen
+step
+    #completewith next
+    .zone Darnassus >> Teleport to Darnassus << Mage
+    .zone Darnassus >> Travel to Darnassus << !Mage
+step
+    >>Talk to |cFF00FF25Kwee Q. Peddlefeet|r near the bank.
+    .skipgossip
+    .accept 24610 >> A Gift for the High Priestess of Elune
+    .goto Darnassus,42.51,51.93
+    .target Kwee Q. Peddlefeet
+step
+    >>Talk to |cFF00FF25Tyrande Whisperwind|r inside The Temple of the Moon.
+    .turnin 24610 >> A Gift for the High Priestess of Elune
+    .goto Darnassus,39.0,81.2
+    .target Tyrande Whisperwind
+step
+    #completewith next
+    .zone Ironforge >> Teleport to Ironforge << Mage
+    .zone Ironforge >> Travel to Ironforge << !Mage
+step
+    >>Buy Alcohol from the Barmaid.
+    .collect 2594,5
+    .goto Ironforge,18.72,51.77
+    .target Gwenna Firebrew
+step
+    >>Buy items from the |cFF00FF25Lovely Merchant|r outside the bank.
+    .collect 49856,1
+    .collect 21813,1
+    .collect 22218,1
+    .collect 34258,10
+    .goto Ironforge,33.86,66.27
+    .target Lovely Merchant
+step
+    >>|c99ffff00Achievement - Be Mine!|r
+    >>Use the |c99ffff99Bag of Heart Candies|r until you receive the 8 different Heart Candies. Buy additional |c99ffff99Bags of Heart Candies|r as needed.
+    .collect 21822,1 >>You're Mine!
+    .collect 21823,1 >>Hot Lips.
+    .collect 21821,1 >>I'm all yours!
+    .collect 21817,1 >>I LOVE YOU
+    .collect 21819,1 >>All yours.
+    .collect 21820,1 >>You're the best!
+    .collect 21818,1 >>I'll follow you all around Azeroth.
+    .collect 21816,1 >>Be Mine!
+    +Eat the 8 different Heart Candies
+step
+    >>|c99ffff00Achievement - The Rocket's Pink Glare|r
+    +10 Love Rockets fired within 20 seconds.
+    .use 34258
+step
+    >>Talk to |cFF00FF25Kwee Q. Peddlefeet|r near the bank.
+    .skipgossip
+    .accept 24609 >> A Gift for the Lord of Ironforge
+    .goto Ironforge,33.52,65.67
+    .target Kwee Q. Peddlefeet
+step
+    >>Talk to |cFF00FF25King Magni Bronzebeard|r at The High Seat.
+    .turnin 24609 >> A Gift for the Lord of Ironforge
+    .goto Ironforge,39.2,56.06
+    .target King Magni Bronzebeard
+step
+    >>|c99ffff00Achievement - Flirt with Diaster|r
+    >>Go to The Great Forge area of Ironforge and locate |cFF00FF25Sraaz the Pie Vendor|r. He is a green haired gnome that pats around the circle.
+    >>Use the |c99ffff99"VICTORY" perfume|r on yourself.
+    >>Drink the |c99ffff99Alcohol|r until you are completely smashed.
+    >>Throw a |c99ffff99Handful of Rose Petals|r on Sraaz and /kiss him.
+    +Flirt with Diaster
+    .use 49856
+    .use 2594
+    .use 22218
+    .emote KISS,9099
+    .target Sraaz
+step
+    .zone Stormwind City >> Teleport to Stormwind << Mage
+    .zone Stormwind City >> Travel to Stormwind << !Mage
+    .isOnQuest 24597
+step
+    >>|c99ffff00Achievement - Nation of Adoration|r
+    >>Talk to |cFF00FF25King Varian Wrynn|r in the Stormwind Keep.
+    .turnin 24597 >> A Gift for the King of Stormwind
+    .goto Stormwind City,79.8,38.6
+    .target King Varian Wrynn
+step
     >>|c99ffff00Achievement - Dangerous Love|r
     >>Return to |cFF00FF25Inspector Snip Snagglebolt|r outside the Stormwind bank.
     .dailyturnin 24663,24666 >> Crushing the Crown
     .goto Stormwind City,61.61,75.25
     .target Inspector Snip Snagglebolt
 step
-    >>|c99ffff00Achievement - The Rocket's Pink Glare|r
-    >>Talk to the |cFF00FF25Lovely Merchant|r outside the bank.
-    >>Buy 10 |c99ffff99Love Rockets|r and fire them off within 20 seconds.
-    .collect 34258,10
-    +10 Love Rockets fired
-    .use 34258
-    .goto Stormwind City,62.46,75.18
-    .target Lovely Merchant
+    #sticky
+    +Obtain more |c99ffff99Love Tokens|r.
+    >>You can turn in a |c99ffff99Lovely Charm Bracelet|r for 1 |c99ffff99Love Token|r or wait for the daily quest reset to receive 5 |c99ffff99Love Tokens|r per |c99ffff99Lovely Charm Bracelet|r.
 ]])
