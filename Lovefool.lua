@@ -80,17 +80,17 @@ step
     .target Public Relations Agent
 step
     .isOnQuest 24629
-    >>Spray other |cFF00FF25Players or NPCs|r with the |c99ffff99Crown Perfume Sprayer|r without the debuff.
+    >>Spray other |cFF00FF25Players or NPCs|r with the |c99ffff99Crown Perfume Sprayer|r without the heart-shaped debuff.
     .use 49668
     .complete 24629,1
 step
     .isOnQuest 2463
-    >>Spray other |cFF00FF25Players or NPCs|r with the |c99ffff99Crown Cologne Sprayer|r without the debuff.
+    >>Spray other |cFF00FF25Players or NPCs|r with the |c99ffff99Crown Cologne Sprayer|r without the heart-shaped debuff.
     .use 49669
     .complete 24635,1
 step
     .isOnQuest 24636
-    >>Use the |c99ffff99Crown Chocolate Sampler|r on other |cFF00FF25Players or NPCs|r without the debuff.
+    >>Use the |c99ffff99Crown Chocolate Sampler|r on other |cFF00FF25Players or NPCs|r without the heart-shaped debuff.
     .use 49670
     .complete 24636,1
 step
@@ -221,9 +221,93 @@ step
     .goto Stormwind City,61.61,75.25
     .target Inspector Snip Snagglebolt
 step
-    #sticky
     +Obtain more |c99ffff99Love Tokens|r.
     >>You can turn in a |c99ffff99Lovely Charm Bracelet|r for 1 |c99ffff99Love Token|r or wait for the daily quest reset to receive 5 |c99ffff99Love Tokens|r per |c99ffff99Lovely Charm Bracelet|r.
+step
+    >>Buy items from the |cFF00FF25Lovely Merchant|r outside the Stormwind bank.
+    .collect 22200,10
+    .collect 22218,11
+    .goto Stormwind City,62.45,75.18
+    .target Lovely Merchant
+step
+    >>|c99ffff00Achievement - Shafted|r
+    >>Shoot other |cFF00FF25Players|r with the |c99ffff99Silver Shafted Arrows|r without the heart-shaped debuff.
+    +Shoot 10 players
+    .use 22200
+step
+    >>|c99ffff00Achievement - Fistful of Love|r
+    >>Use the |c99ffff99Handful of Rose Petals|r on the Alliance Race/Class combos below:
+    +Gnome Warlock
+    +Night Elf Priest
+    +Dwarf Hunter
+    +Draenei Paladin
+    +Human Death Knight
+    .use 22218
+step
+    >>Buy items from the |cFF00FF25Lovely Merchant|r outside the Stormwind bank.
+    .collect 49909,1
+    .collect 34480,1
+    .goto Stormwind City,62.45,75.18
+    .target Lovely Merchant
+step
+    >>Open the |c99ffff99Box of Chocolates|r to receive 4 different Chocolates. Buy additional |c99ffff99Box of Chocolates|r as needed.
+    .collect 22238,1
+    .collect 22239,1
+    .collect 22236,1
+    .collect 22237,1
+    .use 49909
+step
+    #completewith next
+    .zone Dalaran >>Teleport to Dalaran << Mage
+    .zone Dalaran >>Head to Dalaran << !Mage
+step
+    >>|c99ffff00Achievement - Lonely?|r
+    >>Use the |c99ffff99Romantic Picnic Basket|r and have someone sit with you.
+    >>When you have the |c99ff0099Heart Shaped buff|r above your head, eat the |c99ffff99Buttermilk Delight|r.
+    .use 34480
+    .use 22236
+    +Lonely? Achievement
+step
+    >>|c99ffff00Achievement - Sweet Tooth|r
+    >>Eat the 3 remaining chocolates.
+    .use 22238
+    .use 22239
+    .use 22237
+    +Sweet Tooth Achievement
+step
+    >>|c99ffff00Achievement - Fistful of Love|r
+    >>Queue for Wintergrasp or any BG
+    >>Use the |c99ffff99Handful of Rose Petals|r on the Horde Race/Class combos below:
+    +Blood Elf Mage
+    +Orc Death Knight
+    +Orc Shaman
+    +Tauren Druid
+    +Troll Rogue
+    +Undead Warrior
+    .use 22218
+step
+    >>|c99ffff00Achievement - My Love is Like a Red, Red Rose|r
+    >> Travel to Howling Fjord
+    .goto Howling Fjord,57.29,46.77,5 >> Enter the Utgarde Keep
+    >>Kill the 1st boss |cFFFF5722Prince Keleseth|r.
+    .collect 22206,1
+    >>|c99ffff99OR|r
+    .collect 44731,1
+step
+    >>Obtain more |c99ffff99Love Tokens|r.
+    >>You can turn in a |c99ffff99Lovely Charm Bracelet|r for 1 |c99ffff99Love Token|r or wait for the daily quest reset to receive 5 |c99ffff99Love Tokens|r per |c99ffff99Lovely Charm Bracelet|r.
+    .collect 49927,50
+step
+    >>|c99ffff00Achievement - I Pitied The Fool|r
+    >>Use the |c99ffff99Love Fool|r in the various locations below. You can team up with other players.
+    +Arathi Basin Blacksmith
+    +Battle Ring of Gurubashi Arena
+    +Naxxramus
+    +The Culling of Stratholme
+    +Wintergrasp
+    .use 22261
+    .target Love Fool
+    .emote PITY,16111
 step
     #sticky
     +|c99ffff00REPEAT DAILY QUESTS|r
@@ -246,17 +330,17 @@ step
     .target Public Relations Agent
 step
     .isOnQuest 24629
-    >>Spray other |cFF00FF25Players or NPCs|r with the |c99ffff99Crown Perfume Sprayer|r without the debuff.
+    >>Spray other |cFF00FF25Players or NPCs|r with the |c99ffff99Crown Perfume Sprayer|r without the heart-shaped debuff.
     .use 49668
     .complete 24629,1
 step
     .isOnQuest 2463
-    >>Spray other |cFF00FF25Players or NPCs|r with the |c99ffff99Crown Cologne Sprayer|r without the debuff.
+    >>Spray other |cFF00FF25Players or NPCs|r with the |c99ffff99Crown Cologne Sprayer|r without the heart-shaped debuff.
     .use 49669
     .complete 24635,1
 step
     .isOnQuest 24636
-    >>Use the |c99ffff99Crown Chocolate Sampler|r on other |cFF00FF25Players or NPCs|r without the debuff.
+    >>Use the |c99ffff99Crown Chocolate Sampler|r on other |cFF00FF25Players or NPCs|r without the heart-shaped debuff.
     .use 49670
     .complete 24636,1
 step
@@ -276,6 +360,14 @@ step
     .use 50130
     .target Crown Sprayer
     .goto Crystalsong Forest,48.92,47.39
+step
+    .isOnQuest 24666
+    >>Kill ANY |cFF00FF25Green+|r level mob for |c99ffff99Lovely Charms|r. Turn 10 |c99ffff99Lovely Charms|r into 1 |c99ffff99Lovely Charm Bracelet|r.
+    >>Suggested mob: |cFFFF5722Converted Heroes|r in Icecrown.
+    .collect 49916,4
+    .use 49655
+    .loop 20, Icecrown,40.9,46.6,48.3,50.2,48.1,57.7,40.9,58.6,39.0,58.6,38.6,50.6,40.9,46.6
+    .mob Converted Hero
 step
     #completewith next
     .zone The Exodar >> Teleport to The Exodar << Mage
