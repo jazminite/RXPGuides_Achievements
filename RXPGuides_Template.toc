@@ -13,4 +13,5 @@
 
 Elder.lua
 Lovefool.lua
+Lovefooldailies.lua
 Merrymaker.lua
