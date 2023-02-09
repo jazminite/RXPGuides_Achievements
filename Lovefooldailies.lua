@@ -18,16 +18,16 @@ step
     .goto Stormwind City,61.61,75.25
     .target Inspector Snip Snagglebolt
 step
+    >>Talk to the |cFF00FF25Public Relations Agent|r outside the bank. He has 1 out of 3 daily quests.
+    .daily 24629,24635,24636 >>Accept A Perfect Puff of Perfume |c99ffff99OR|r A Cloudlet of Classy Cologne |c99ffff99OR|r Bobon Blitz
+    .goto Stormwind City,62.47,75.36
+    .target Public Relations Agent
+step
     >>Talk to |cFF00FF25Kwee Q. Peddlefeet|r outside the bank.
     .skipgossip
     .accept 24597 >> A Gift for the King of Stormwind
     .goto Stormwind City,62.34,74.94
     .target Kwee Q. Peddlefeet
-step
-    >>Talk to the |cFF00FF25Public Relations Agent|r outside the bank. He has 1 out of 3 daily quests.
-    .daily 24629,24635,24636 >>Accept A Perfect Puff of Perfume |c99ffff99OR|r A Cloudlet of Classy Cologne |c99ffff99OR|r Bobon Blitz
-    .goto Stormwind City,62.47,75.36
-    .target Public Relations Agent
 step
     .isOnQuest 24629
     >>Spray other |cFF00FF25Players or NPCs|r with the |c99ffff99Crown Perfume Sprayer|r without the heart-shaped debuff.
