@@ -44,6 +44,12 @@ step
     .use 49670
     .complete 24636,1
 step
+    .itemcount 49916,1
+    >>Talk to |cFF00FF25King Varian Wrynn|r in the Stormwind Keep.
+    .turnin 24597 >> A Gift for the King of Stormwind
+    .goto Stormwind City,79.8,38.6
+    .target King Varian Wrynn
+step
     >>Return to the |cFF00FF25Public Relations Agent|r outside the bank.
     .dailyturnin 24629,24635,24636 >>Turn in A Perfect Puff of Perfume |c99ffff99OR|r A Cloudlet of Classy Cologne |c99ffff99OR|r Bobon Blitz
     .goto Stormwind City,62.47,75.36
@@ -99,6 +105,20 @@ step
     .goto Darnassus,39.0,81.2
     .target Tyrande Whisperwind
 step
+    .zone Stormwind City >> Teleport to Stormwind << Mage
+    .zone Stormwind City >> Travel to Stormwind << !Mage
+    .isOnQuest 24597,24663,24666
+step
+    >>Talk to |cFF00FF25King Varian Wrynn|r in the Stormwind Keep.
+    .turnin 24597 >> A Gift for the King of Stormwind
+    .goto Stormwind City,79.8,38.6
+    .target King Varian Wrynn
+step
+    >>Return to |cFF00FF25Inspector Snip Snagglebolt|r outside the Stormwind bank.
+    .dailyturnin 24663,24666 >> Crushing the Crown
+    .goto Stormwind City,61.61,75.25
+    .target Inspector Snip Snagglebolt
+step
     #completewith next
     .zone Ironforge >> Teleport to Ironforge << Mage
     .zone Ironforge >> Travel to Ironforge << !Mage
@@ -113,20 +133,6 @@ step
     .turnin 24609 >> A Gift for the Lord of Ironforge
     .goto Ironforge,39.2,56.06
     .target King Magni Bronzebeard
-step
-    .zone Stormwind City >> Teleport to Stormwind << Mage
-    .zone Stormwind City >> Travel to Stormwind << !Mage
-    .isOnQuest 24597
-step
-    >>Talk to |cFF00FF25King Varian Wrynn|r in the Stormwind Keep.
-    .turnin 24597 >> A Gift for the King of Stormwind
-    .goto Stormwind City,79.8,38.6
-    .target King Varian Wrynn
-step
-    >>Return to |cFF00FF25Inspector Snip Snagglebolt|r outside the Stormwind bank.
-    .dailyturnin 24663,24666 >> Crushing the Crown
-    .goto Stormwind City,61.61,75.25
-    .target Inspector Snip Snagglebolt
 step
     >>|c99ffff00DAILY QUESTS COMPLETE!!!|r
 ]])
