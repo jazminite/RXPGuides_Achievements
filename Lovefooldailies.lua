@@ -67,13 +67,13 @@ step
     .target Crown Sprayer
     .goto Crystalsong Forest,48.92,47.39
 step
-    .isOnQuest 24666
     >>Kill ANY |cFF00FF25Green+|r level mob for |c99ffff99Lovely Charms|r. Turn 10 |c99ffff99Lovely Charms|r into 1 |c99ffff99Lovely Charm Bracelet|r.
     >>Suggested mob: |cFFFF5722Converted Heroes|r in Icecrown.
     .collect 49916,4
     .use 49655
     .loop 20, Icecrown,40.9,46.6,48.3,50.2,48.1,57.7,40.9,58.6,39.0,58.6,38.6,50.6,40.9,46.6
     .mob Converted Hero
+    .isQuestAvailable 24597,24611,24610,24609
 step
     #completewith next
     .zone The Exodar >> Teleport to The Exodar << Mage
