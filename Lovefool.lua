@@ -114,7 +114,7 @@ step
     >>|c99ffff00Achievement - Charming|r
     >>Kill ANY |cFF00FF25Green+|r level mob for |c99ffff99Lovely Charms|r. Turn 10 |c99ffff99Lovely Charms|r into 1 |c99ffff99Lovely Charm Bracelet|r.
     >>Suggested mob: |cFFFF5722Converted Heroes|r in Icecrown.
-    .collect 49916,12
+    .achievement 260,1
     .use 49655
     .loop 20, Icecrown,40.9,46.6,48.3,50.2,48.1,57.7,40.9,58.6,39.0,58.6,38.6,50.6,40.9,46.6
     .mob Converted Hero
@@ -168,18 +168,18 @@ step
 step
     >>|c99ffff00Achievement - Be Mine!|r
     >>Use the |c99ffff99Bag of Heart Candies|r until you receive the 8 different Heart Candies. Buy additional |c99ffff99Bags of Heart Candies|r as needed.
-    .collect 21822,1 >>You're Mine!
-    .collect 21823,1 >>Hot Lips.
-    .collect 21821,1 >>I'm all yours!
-    .collect 21817,1 >>I LOVE YOU
-    .collect 21819,1 >>All yours.
-    .collect 21820,1 >>You're the best!
-    .collect 21818,1 >>I'll follow you all around Azeroth.
-    .collect 21816,1 >>Be Mine!
-    +Eat the 8 different Heart Candies
+    >>Eat the 8 different Heart Candies
+    .achievement 1701,1
+    .achievement 1701,2
+    .achievement 1701,3
+    .achievement 1701,4
+    .achievement 1701,5
+    .achievement 1701,6
+    .achievement 1701,7
+    .achievement 1701,8
 step
     >>|c99ffff00Achievement - The Rocket's Pink Glare|r
-    +10 Love Rockets fired within 20 seconds.
+    .achievement 1696,1
     .use 34258
 step
     >>Talk to |cFF00FF25Kwee Q. Peddlefeet|r near the Ironforge bank.
@@ -198,7 +198,8 @@ step
     >>Use the |c99ffff99"VICTORY" perfume|r on yourself.
     >>Drink the |c99ffff99Alcohol|r until you are completely smashed.
     >>Throw a |c99ffff99Handful of Rose Petals|r on Sraaz and |c99ffff99/kiss|r him.
-    +Flirt with Diaster
+    .achievement 1279,1
+    .achievement 1279,2
     .use 49856
     .use 2594
     .use 22218
@@ -212,12 +213,14 @@ step
     >>|c99ffff00Achievement - Nation of Adoration|r
     >>Talk to |cFF00FF25King Varian Wrynn|r in the Stormwind Keep.
     .turnin 24597 >> A Gift for the King of Stormwind
+    .achievement 1697,1
     .goto Stormwind City,79.8,38.6
     .target King Varian Wrynn
 step
     >>|c99ffff00Achievement - Dangerous Love|r
     >>Return to |cFF00FF25Inspector Snip Snagglebolt|r outside the Stormwind bank.
     .dailyturnin 24663,24666 >> Crushing the Crown
+    .achievement 1695,1
     .goto Stormwind City,61.61,75.25
     .target Inspector Snip Snagglebolt
 step
@@ -233,16 +236,16 @@ step
 step
     >>|c99ffff00Achievement - Shafted|r
     >>Shoot other |cFF00FF25Players|r with the |c99ffff99Silver Shafted Arrows|r without the heart-shaped debuff.
-    +Shoot 10 players
+    .achievement 1188,1
     .use 22200
 step
     >>|c99ffff00Achievement - Fistful of Love|r
     >>Use the |c99ffff99Handful of Rose Petals|r on the Alliance Race/Class combos below:
-    +Gnome Warlock
-    +Night Elf Priest
-    +Dwarf Hunter
-    +Draenei Paladin
-    +Human Death Knight
+    .achievement 1699,2
+    .achievement 1699,3
+    .achievement 1699,4
+    .achievement 1699,6
+    .achievement 1699,10
     .use 22218
 step
     >>Buy items from the |cFF00FF25Lovely Merchant|r outside the Stormwind bank.
@@ -267,33 +270,35 @@ step
     >>When you have the |c99ff0099Heart Shaped buff|r above your head, eat the |c99ffff99Buttermilk Delight|r.
     .use 34480
     .use 22236
-    +Lonely? Achievement
+    .achievement 1291,1
 step
     >>|c99ffff00Achievement - Sweet Tooth|r
     >>Eat the 3 remaining chocolates.
     .use 22238
     .use 22239
     .use 22237
-    +Sweet Tooth Achievement
+    .achievement 1702,1
+    .achievement 1702,2
+    .achievement 1702,4
 step
     >>|c99ffff00Achievement - Fistful of Love|r
     >>Queue for Wintergrasp or any BG
     >>Use the |c99ffff99Handful of Rose Petals|r on the Horde Race/Class combos below:
-    +Blood Elf Mage
-    +Orc Death Knight
-    +Orc Shaman
-    +Tauren Druid
-    +Troll Rogue
-    +Undead Warrior
+    .achievement 1699,1
+    .achievement 1699,5
+    .achievement 1699,7
+    .achievement 1699,8
+    .achievement 1699,9
+    .achievement 1699,11
     .use 22218
 step
-    >>|c99ffff00Achievement - My Love is Like a Red, Red Rose|r
+    #completewith next
     >> Travel to Howling Fjord
     .goto Howling Fjord,57.29,46.77,5 >> Enter the Utgarde Keep
-    >>Kill the 1st boss |cFFFF5722Prince Keleseth|r.
-    .collect 22206,1
-    >>|c99ffff99OR|r
-    .collect 44731,1
+step
+    >>|c99ffff00Achievement - My Love is Like a Red, Red Rose|r
+    >>Kill the 1st boss |cFFFF5722Prince Keleseth|r for a Bouquet of Red or Ebon Roses.
+    .achievement 1703,1
 step
     >>Obtain more |c99ffff99Love Tokens|r.
     >>You can turn in a |c99ffff99Lovely Charm Bracelet|r for 1 |c99ffff99Love Token|r or wait for the daily quest reset to receive 5 |c99ffff99Love Tokens|r per |c99ffff99Lovely Charm Bracelet|r.
@@ -308,11 +313,10 @@ step
     >>|c99ffff00Achievement - I Pitied The Fool|r
     >>Use the |c99ffff99Love Fool|r in ALL the locations below and |c99ffff99/pity|r them.
     >>You are allowed to team up with other players.
-    +Arathi Basin Blacksmith
-    +Battle Ring of Gurubashi Arena
-    +Naxxramus
-    +The Culling of Stratholme
-    +Wintergrasp
+    .achievement 1704,1
+    .achievement 1704,2
+    .achievement 1704,3
+    .achievement 1704,4
     .use 22261
     .target Love Fool
     .emote PITY,16111
