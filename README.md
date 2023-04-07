@@ -1,4 +1,4 @@
-# Custom Guides for RestedXP
+# RestedXP Achievement Guides
 The guides in this repo require the [RestedXP][1] addon. RestedXP's base addon is FREE to download.
 
 ## Installation
