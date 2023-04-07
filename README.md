@@ -6,7 +6,7 @@ The guides in this repo require the [RestedXP][1] addon. RestedXP's base addon i
     ```
     C:\Program Files (x86)\World of Warcraft\_classic_\Interface\AddOns
     ```
-2. Rename the folder to `RXPGuides_Template`.
+2. Rename the folder to `RXPGuides_Achievements`.
 
 ## Guides
 A list of step by step guides included in this repo. All guides are:
