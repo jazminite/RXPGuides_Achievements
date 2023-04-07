@@ -39,7 +39,7 @@ If you would like to support me:
 [2a]: https://www.wowhead.com/wotlk/achievement=1692/merrymaker
 [2b]: https://www.wowhead.com/wotlk/achievement=913/to-honor-ones-elders
 [2c]: https://www.wowhead.com/wotlk/achievement=1707/fool-for-love
-[3]: https://github.com/jazminite/RXPGuides_Template/archive/refs/heads/main.zip
-[4]: https://github.com/jazminite/RXPGuides_Template/issues/new/choose
+[3]: https://github.com/jazminite/RXPGuides_Achievements/archive/refs/heads/main.zip
+[4]: https://github.com/jazminite/RXPGuides_Achievements/issues/new/choose
 [5]: https://www.restedxp.com/custom-guides
 [6]: https://www.patreon.com/jazminite
