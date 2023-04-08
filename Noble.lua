@@ -101,11 +101,14 @@ step
 step
     #completewith next
     .zone Dustwallow Marsh >>Teleport to Theramore << Mage
-    .zone Dustwallow Marsh >> Travel to Theramore << !Mage
-step
+    .zone Dalaran >> Travel to Dalaran << !Mage
+step << Mage
     #completewith next
     .fly Gadgetzan
     .goto Dustwallow Marsh,67.47,51.28
+step << !Mage
+    #completewith next
+    .goto Dalaran,25.58,51.10,5 >>Take the portal to Caverns of Time
 step
     >>|cFFFCDC00Achievement - Desert Rose|r
     >>Use the |cFF00BCD4Spring Robes|r to plant a flower anywhere in Tanaris.
@@ -128,6 +131,9 @@ step
     >>Use the |cFF00BCD4Spring Robes|r to plant a flower anywhere in Silithus.
     .achievement 2436,1
     .use 44800
+step
+    #completewith next
+    .home >>|cFFFCDC00[OPTIONAL]|r Set your hearthstone in Cenarion Hold if you plan to complete |cFFFCDC00Hard Boiled|r solo.
 step
     #completewith next
     .fly Nijel's Point >> Fly to Nijel's Point, Desolace
@@ -162,7 +168,7 @@ step
 step
     #completewith next
     .goto Un'Goro Crater,34.36,47.96,5 >>Travel to the Golakka Hot Springs in Un'Goro Crater
-    >>|cFFFCDC00Note|r: To get to Un'Goro without flying, use the Caverns of Time portal in Dalaran.
+    >>|cFFFCDC00Note|r: To get to Un'Goro without flying, use the Caverns of Time portal in Dalaran or your hearthstone if you set it to Cenarion Hold previously.
 step
     >>|cFFFCDC00Achievement - Hard Boiled|r
     >>While a bunny, stand still and wait until you lay an egg.
