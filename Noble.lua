@@ -86,6 +86,19 @@ step
     .goto Teldrassil,56.03,58.70
     .target Noblegarden Vendor
 step
+    .zoneskip Azuremyst Isle
+    .zoneskip Dun Morogh
+    .zoneskip Elwynn Forest
+    .zoneskip Teldrassil
+    >>Buy items you don't have from the |cFF00FF25Noblegarden vendor|r.
+    >>|cFFFCDC00Note|r: You may need to farm more chocolates if you were unlucky.
+    .collect 44818,1
+    .collect 44800,1
+    .collect 45073,1
+    .collect 44794,1
+    .collect 6833,1
+    .collect 6835,1
+step
     #completewith next
     .zone Stormwind City >> Teleport to Stormwind << Mage
     .zone Stormwind City >> Travel to Stormwind << !Mage
