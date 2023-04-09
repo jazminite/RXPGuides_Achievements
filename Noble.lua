@@ -33,12 +33,6 @@ step
     .use 44802
     .use 45072
     .collect 44791,105
-    >>|cFFFCDC00Note|r: The following items can be found in eggs or bought for chocolates.
-    .collect 44800,1
-    .collect 45073,1
-    .collect 44794,1
-    .collect 6833,1
-    .collect 6835,1
 step
     >>|cFFFCDC00Achievement - Chocoholic|r
     .use 44791
@@ -46,6 +40,7 @@ step
 step
     .zoneskip Azuremyst Isle,1
     >>Buy items you don't have from the |cFF00FF25Noblegarden vendor|r.
+    >>|cFFFCDC00Note|r: You may need to farm more chocolates if you were unlucky.
     .collect 44818,1
     .collect 44800,1
     .collect 45073,1
@@ -57,6 +52,7 @@ step
 step
     .zoneskip Dun Morogh,1
     >>Buy items you don't have from the |cFF00FF25Noblegarden vendor|r.
+    >>|cFFFCDC00Note|r: You may need to farm more chocolates if you were unlucky.
     .collect 44818,1
     .collect 44800,1
     .collect 45073,1
@@ -68,6 +64,7 @@ step
 step
     .zoneskip Elwynn Forest,1
     >>Buy items you don't have from the |cFF00FF25Noblegarden vendor|r.
+    >>|cFFFCDC00Note|r: You may need to farm more chocolates if you were unlucky.
     .collect 44818,1
     .collect 44800,1
     .collect 45073,1
@@ -79,6 +76,7 @@ step
 step
     .zoneskip Teldrassil,1
     >>Buy items you don't have from the |cFF00FF25Noblegarden vendor|r.
+    >>|cFFFCDC00Note|r: You may need to farm more chocolates if you were unlucky.
     .collect 44818,1
     .collect 44800,1
     .collect 45073,1
