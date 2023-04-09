@@ -16,6 +16,10 @@ step
     >>|cFFFCDC00Note|r: You are only accepting this quest to get the |T237287:0|t|cFF00BCD4Egg Basket|r.
     .target Noblegarden Vendor
 step
+    >>Talk to the |cFF00FF25Spring Collector|r in Azuremyst Isle, Dun Morogh, Elwynn Forest, or Teldrassil.
+    .accept 13480
+    .target Spring Collector
+step
     >>|cFFFCDC00Achievement - I Found One!|r
     >>Find a |cFF00BCD4Brightly Colored Egg|r.
     >>Use the |T237287:0|t|cFF00BCD4Egg Basket|r for a move speed bonus.
@@ -27,6 +31,7 @@ step
     >>Collect and open |cFF00BCD4Brightly Colored Eggs|r for items and chocolates.
     >>Use the |T237287:0|t|cFF00BCD4Egg Basket|r for a move speed bonus.
     .use 44802
+    .use 45072
     .collect 44791,105
     >>|cFFFCDC00Note|r: The following items can be found in eggs or bought for chocolates.
     .collect 44800,1
@@ -47,7 +52,7 @@ step
     .collect 44794,1
     .collect 6833,1
     .collect 6835,1
-    .goto Azuremyst Isle,49.0,51.2
+    .goto Azuremyst Isle,49.0,51.23
     .target Noblegarden Vendor
 step
     .zoneskip Dun Morogh,1
@@ -58,7 +63,7 @@ step
     .collect 44794,1
     .collect 6833,1
     .collect 6835,1
-    .goto Dun Morogh,46.73,52.70
+    .goto Dun Morogh,46.97,52.49
     .target Noblegarden Vendor
 step
     .zoneskip Elwynn Forest,1
@@ -69,7 +74,7 @@ step
     .collect 44794,1
     .collect 6833,1
     .collect 6835,1
-    .goto Elwynn Forest,43.0,65.2
+    .goto Elwynn Forest,43.01,65.27
     .target Noblegarden Vendor
 step
     .zoneskip Teldrassil,1
@@ -80,7 +85,7 @@ step
     .collect 44794,1
     .collect 6833,1
     .collect 6835,1
-    .goto Teldrassil,56.01,58.50
+    .goto Teldrassil,56.03,58.70
     .target Noblegarden Vendor
 step
     #completewith next
