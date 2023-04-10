@@ -2,7 +2,11 @@
 
 ## Versions
 
-## 1.4
+## 1.4.1-beta
+- Break out steps for Spring Fling
+- Combine Hard Boiled steps
+
+## 1.4.0-beta
 - Add Guide for Noble Gardener
 - Add CHANGELOG.md
 
