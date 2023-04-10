@@ -2,7 +2,7 @@ RXPGuides.RegisterGuide([[
 #wotlk
 << Alliance
 #name Noble Gardener
-#version 1
+#version 2
 #group Achievements
 
 --|cFFFCDC00Achievement|r
