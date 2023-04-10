@@ -109,11 +109,44 @@ step
     .achievement 2421,1
 step
     >>|cFFFCDC00Achievement - Spring Fling|r
-    >>Find other players in each city with a |cFF00FF25Spring Rabbit|r pet. Wait until your rabbit gets a heart buff.
+    >>Head to Goldshire
+    >>|T134010:0|tSummon your |cFF00FF25Spring Rabbit|r pet.
+    >>Find another player with a |cFF00FF25Spring Rabbit|r. Wait until your rabbit gets a heart buff.
     .achievement 2419,3 >>Goldshire, Elwynn Forest
+    .goto Elwynn Forest,43.01,65.27
+step
+    #completewith next
+    .zone Ironforge >>Teleport to Ironforge << Mage
+    .zone Ironforge >> Travel to Ironforge << !Mage
+step
+    >>|cFFFCDC00Achievement - Spring Fling|r
+    >>Head to Dun Morogh
+    >>|T134010:0|tSummon your |cFF00FF25Spring Rabbit|r pet.
+    >>Find another player with a |cFF00FF25Spring Rabbit|r. Wait until your rabbit gets a heart buff.
     .achievement 2419,2 >>Kharanos, Dun Morogh
-    .achievement 2419,1 >>Azure Watch, Azuremyst Isle
+    .goto Dun Morogh,46.97,52.49
+step
+    #completewith next
+    .zone Darnassus >>Teleport to Darnassus << Mage
+    .zone Darnassus >> Travel to Darnassus << !Mage
+step
+    >>|cFFFCDC00Achievement - Spring Fling|r
+    >>Head to Dolanaar
+    >>|T134010:0|tSummon your |cFF00FF25Spring Rabbit|r pet.
+    >>Find another player with a |cFF00FF25Spring Rabbit|r. Wait until your rabbit gets a heart buff.
     .achievement 2419,4 >>Dolanaar, Teldrassil
+    .goto Teldrassil,56.03,58.70
+step
+    #completewith next
+    .zone Exodar >>Teleport to Exodar << Mage
+    .zone Exodar >> Travel to Exodar << !Mage
+step
+    >>|cFFFCDC00Achievement - Spring Fling|r
+    >>Head to Azure Watch
+    >>|T134010:0|tSummon your |cFF00FF25Spring Rabbit|r pet.
+    >>Find another player with a |cFF00FF25Spring Rabbit|r. Wait until your rabbit gets a heart buff.
+    .achievement 2419,1 >>Azure Watch, Azuremyst Isle
+    .goto Azuremyst Isle,49.0,51.23
 step
     #completewith next
     .zone Dustwallow Marsh >>Teleport to Theramore << Mage
@@ -169,7 +202,7 @@ step
     .goto Ironforge,55.6,47.8
 step
     #completewith next
-    .goto Badlands,49.39,7.99,5 >>Travel to Badlands
+    .goto Badlands,49.39,7.99,5 >>Travel to the Badlands
 step
     >>|cFFFCDC00Achievement - Desert Rose|r
     >>Use the |cFF00BCD4Spring Robes|r to plant a flower anywhere in the Badlands.
@@ -182,13 +215,12 @@ step
     >>Have a friend use a |cFF00BCD4Blossoming Branch|r on you.
     >>|cFFFCDC00Note|r: Mounting, flying, or taking damage will cancel the buff.
 step
-    #completewith next
-    .goto Un'Goro Crater,34.36,47.96,5 >>Travel to the Golakka Hot Springs in Un'Goro Crater
-    >>|cFFFCDC00Note|r: To get to Un'Goro without flying, use the Caverns of Time portal in Dalaran or your hearthstone if you set it to Cenarion Hold previously.
-step
     >>|cFFFCDC00Achievement - Hard Boiled|r
+    >>Travel to the Golakka Hot Springs in Un'Goro Crater.
     >>While a bunny, stand still and wait until you lay an egg.
     .achievement 2416,1
+    .goto Un'Goro Crater,34.36,47.96
+    >>|cFFFCDC00Note|r: To get to Un'Goro without flying, use the Caverns of Time portal in Dalaran or your hearthstone if you set it to Cenarion Hold previously.
 step
     #completewith next
     .zone Dalaran >>Teleport to Dalaran << Mage
