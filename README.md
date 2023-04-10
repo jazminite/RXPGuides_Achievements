@@ -2,11 +2,7 @@
 The guides in this repo require the [RestedXP][1] addon. RestedXP's base addon is FREE to download.
 
 ## Installation
-1. Download the [repo's zip file][3] and extract the entire folder to:
-    ```
-    C:\Program Files (x86)\World of Warcraft\_classic_\Interface\AddOns
-    ```
-2. Rename the folder to `RXPGuides_Achievements`.
+1. Download the latest release on [Curseforge][3].
 
 ## Guides
 A list of step by step guides included in this repo. All guides are:
@@ -43,7 +39,7 @@ If you would like to support me:
 [2b]: https://www.wowhead.com/wotlk/achievement=913/to-honor-ones-elders
 [2c]: https://www.wowhead.com/wotlk/achievement=1707/fool-for-love
 [2d]: https://www.wowhead.com/wotlk/achievement=2797/noble-gardener
-[3]: https://github.com/jazminite/RXPGuides_Achievements/archive/refs/heads/main.zip
+[3]: https://www.curseforge.com/wow/addons/rxp-achievement-guides/files/all
 [4]: https://github.com/jazminite/RXPGuides_Achievements/issues/new/choose
 [5]: https://www.restedxp.com/custom-guides
 [6]: https://www.patreon.com/jazminite
