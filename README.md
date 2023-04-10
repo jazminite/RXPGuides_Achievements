@@ -2,7 +2,7 @@
 The guides in this repo require the [RestedXP][1] addon. RestedXP's base addon is FREE to download.
 
 ## Installation
-1. Download the latest release on [Curseforge][3].
+Download the latest release on [Curseforge][3].
 
 ## Guides
 A list of step by step guides included in this repo. All guides are:
