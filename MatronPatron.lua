@@ -26,7 +26,7 @@ step
     >>Use the |cFF00BCD4Human Orphan Whistle|r.
     >>Talk to the |cFF00FF25Human Orphan|r.
     .turnin 1468
-    .accept 1687
+    .accept 1687 >>Accept Spooky Lighthouse
     .accept 1558
     .accept 1479
     .use 18598
@@ -50,7 +50,7 @@ step
     .use 18598
 step
     >>Talk to the |cFF00FF25Human Orphan|r.
-    .turnin 1687
+    .turnin 1687 >>Turn in Spooky Lighthouse
     .use 18598
 step << Mage
     #completewith next
