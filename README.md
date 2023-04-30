@@ -22,6 +22,9 @@ A guide for completing the WotLK Classic [Fool For Love][2c] achievement, which 
 ### 🐣 Noble Gardener 🐣
 A guide for completing the WotLK Classic [Noble Gardener][2d] achievement, which gives the "Noble" title.
 
+### 👧 For The Children 👦
+A guide for completing the WotLK Classic [For The Children][2e] achievement, which gives the "Matron" or "Patron" title.
+
 ## Issues
 To report issues with guides in this repo, open a [Github Issue][4].
 
@@ -39,6 +42,7 @@ If you would like to support me:
 [2b]: https://www.wowhead.com/wotlk/achievement=913/to-honor-ones-elders
 [2c]: https://www.wowhead.com/wotlk/achievement=1707/fool-for-love
 [2d]: https://www.wowhead.com/wotlk/achievement=2797/noble-gardener
+[2e]: https://www.wowhead.com/wotlk/achievement=1793/for-the-children
 [3]: https://www.curseforge.com/wow/addons/rxp-achievement-guides/files/all
 [4]: https://github.com/jazminite/RXPGuides_Achievements/issues/new/choose
 [5]: https://www.restedxp.com/custom-guides

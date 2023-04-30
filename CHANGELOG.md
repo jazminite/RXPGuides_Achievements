@@ -2,6 +2,9 @@
 
 ## Versions
 
+## 1.5.0
+- Add Guide "For The Children"
+
 ## 1.4.1-beta
 - Break out steps for Spring Fling
 - Combine Hard Boiled steps
