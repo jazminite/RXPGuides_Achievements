@@ -6,7 +6,6 @@ RXPGuides.RegisterGuide([[
 #group Achievements
 
 --|cFFFCDC00Achievement|r
---|cFF00FF25Buff|r
 --|cFF00FF25Friendly|r
 --|cFF00BCD4Item|r
 
@@ -97,16 +96,13 @@ step
 step
     >>Talk to the |cFF00FF25Human Orphan|r.
     .turnin 558
+    .turnin 4822
+    .accept 171
     .use 18598
 step
     >>|cFFFCDC00Achievement - Home Alone|r
     .hs >>Hearth to Dalaran with the |cFF00FF25Human Orphan|r out.
     .achievement 1791,1
-step
-    >>Talk to the |cFF00FF25Human Orphan|r.
-    .turnin 4822
-    .accept 171
-    .use 18598
 step
     #completewith next
     >>Buy items from |cFF00FF25Aimee|r in Dalaran.
@@ -160,7 +156,7 @@ step
 step
     >>|cFFFCDC00Achievement - Aw, Isn't It Cute?|r
     >>Talk to |cFF00FF25Orphan Matron Nightingale|r in Cathedral Square.
-    >>Choose one of pets as a quest reward for the achievement.
+    >>Choose the |cFF00BCD4Piglet's Collar|r, |cFF00BCD4Rat Cage|r, or |cFF00BCD4Turtle Box|r as a quest reward for the achievement.
     .turnin 171
     .achievement 1792,1
     .goto Stormwind City,56.33,54.09
