@@ -2,7 +2,7 @@ RXPGuides.RegisterGuide([[
 #wotlk
 << Alliance
 #name For The Children
-#version 1
+#version 2
 #group Achievements
 
 --|cFFFCDC00Achievement|r
@@ -163,4 +163,5 @@ step
     .target Orphan Matron Nightingale
 step
     >>CONGRATULATIONS!!! You should now have the Achievement |cFFFCDC00For the Children|r.
+    >>See |cFFFCDC00Pets > Children's Week|r to collect more pets.
 ]])

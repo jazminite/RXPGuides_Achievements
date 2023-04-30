@@ -7,7 +7,7 @@
 ## Title: RestedXP Achievement Guides
 ## Notes: Achievements
 ## Author: Jazminite
-## Version: 1.5
+## Version: 1.6
 
 ## Dependencies: RXPGuides
 
@@ -17,3 +17,5 @@ Lovefooldailies.lua
 MatronPatron.lua
 Merrymaker.lua
 Noble.lua
+
+Pets/ChildrensWeek.lua
