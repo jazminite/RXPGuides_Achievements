@@ -4,6 +4,7 @@ RXPGuides.RegisterGuide([[
 #name Fool For Love Dailies
 #version 1
 #group Achievements
+#subgroup Love is in the Air
 
 step
     #sticky

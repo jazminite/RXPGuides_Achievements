@@ -2,6 +2,12 @@
 
 ## Versions
 
+## 2.0.0
+- Re-arrange files and menus
+- Add Guide for Children's Week pets
+- Small updates to "For The Children" guide
+- README updates
+
 ## 1.5.0
 - Add Guide "For The Children"
 

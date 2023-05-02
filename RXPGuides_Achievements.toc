@@ -7,13 +7,16 @@
 ## Title: RestedXP Achievement Guides
 ## Notes: Achievements
 ## Author: Jazminite
-## Version: 1.5
+## Version: 2.0
 
 ## Dependencies: RXPGuides
 
-Elder.lua
-Lovefool.lua
-Lovefooldailies.lua
-MatronPatron.lua
-Merrymaker.lua
-Noble.lua
+Achievements/Elder.lua
+Achievements/Merrymaker.lua
+Achievements/Noble.lua
+
+Achievements/Childrens-Week/MatronPatron.lua
+Achievements/Childrens-Week/Pets.lua
+
+Achievements/Love-is-in-the-Air/Lovefool.lua
+Achievements/Love-is-in-the-Air/Lovefooldailies.lua
