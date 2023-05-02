@@ -4,12 +4,14 @@ RXPGuides.RegisterGuide([[
 #name For The Children
 #version 2
 #group Achievements
+#subgroup Children's Week
 
 --|cFFFCDC00Achievement|r
 --|cFF00FF25Friendly|r
 --|cFF00BCD4Item|r
 
 step
+    #completewith next
     .home >>Set your hearthstone to Dalaran.
     .goto Dalaran,50.12,39.72
 step
@@ -30,13 +32,15 @@ step
     .accept 1479
     .use 18598
 step
+    .itemcount 18598,1
     >>Buy items from the AH or cook if you have the recipe.
     .collect 33924,1
     .collect 43490,1
 step
+    .itemcount 18598,1
     >>Buy icecream from |cFF00FF25Emmithue Smails|r in Stormwind.
     .collect 7228,2
-    .goto Stormwind City,61.72,75.80
+    .goto Stormwind City,61.38,74.95
     .target Emmithue Smails
 step
     #completewith next
@@ -129,10 +133,13 @@ step
     .use 33924
     .use 43490
     .use 7228
+    .use 42434
+    .use 18598
 step
     >>|cFFFCDC00Achievement - Daily Chores|r
     .achievement 1789,1
     >>|cFFFCDC00Note|r: ANY daily quest works for this achievement (cooking, fishing, JC, Argent Tournament, etc).
+    .use 18598
 step
     #completewith next
     >> Travel to Howling Fjord
@@ -163,5 +170,5 @@ step
     .target Orphan Matron Nightingale
 step
     >>CONGRATULATIONS!!! You should now have the Achievement |cFFFCDC00For the Children|r.
-    >>See |cFFFCDC00Pets > Children's Week|r to collect more pets.
+    >>See |cFFFCDC00Achievements > Children's Week > Pets|r to collect more pets.
 ]])

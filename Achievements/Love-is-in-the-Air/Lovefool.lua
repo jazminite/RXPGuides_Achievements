@@ -4,6 +4,7 @@ RXPGuides.RegisterGuide([[
 #name Fool For Love
 #version 1
 #group Achievements
+#subgroup Love is in the Air
 
 step
     #completewith next
