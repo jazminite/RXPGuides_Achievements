@@ -138,8 +138,8 @@ step
     .goto Teldrassil,56.03,58.70
 step
     #completewith next
-    .zone Exodar >>Teleport to Exodar << Mage
-    .zone Exodar >> Travel to Exodar << !Mage
+    .zone The Exodar >>Teleport to Exodar << Mage
+    .zone The Exodar >> Travel to Exodar << !Mage
 step
     >>|cFFFCDC00Achievement - Spring Fling|r
     >>Head to Azure Watch
