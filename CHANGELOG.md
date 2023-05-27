@@ -2,6 +2,9 @@
 
 ## Versions
 
+## 2.0.1
+- Fix Noble Gardener Lua error
+
 ## 2.0.0
 - Re-arrange files and menus
 - Add Guide for Children's Week pets
