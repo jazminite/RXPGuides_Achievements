@@ -2,6 +2,9 @@
 
 ## Versions
 
+## 2.1.0
+- Add Guide "The Flame Warden"
+
 ## 2.0.1
 - Fix Noble Gardener Lua error
 
