@@ -743,3 +743,35 @@ step
 step
     >>CONGRATULATIONS!!! You should now have the Achievement |cFFFCDC00The Flame Warden|r.
 ]])
+
+RXPGuides.RegisterGuide([[
+#wotlk
+<< Horde
+#name The Flame Keeper
+#version 1
+#group Achievements
+
+step
+    >>There is NOT a complete guide for the Horde.
+    +I recommend using this:
+    .link https://wago.io/PdXyBEV6J >> Weak Aura by cloudbells
+step
+    >>|cFFFCDC00Achievement - The Fires of Azeroth|r
+    .achievement 1036,1
+    .achievement 1036,2
+    .achievement 1036,3
+    >>|cFFFCDC00Achievement - Desecration of the Alliance|r
+    .achievement 1037,1
+    .achievement 1037,2
+    .achievement 1037,3
+step
+    >>|cFFFCDC00Achievement - The Flame Keeper|r
+    .achievement 1039,1
+    .achievement 1039,2
+    .achievement 1039,3
+    .achievement 1039,4
+    .achievement 1039,5
+    .achievement 1039,6
+step
+    >>CONGRATULATIONS!!! You should now have the Achievement |cFFFCDC00The Flame Keeper|r.
+]])
