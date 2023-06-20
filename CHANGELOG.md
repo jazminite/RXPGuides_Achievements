@@ -2,6 +2,10 @@
 
 ## Versions
 
+## 2.1.0
+- Add guide "The Flame Warden" for the Alliance
+- Add a short guide for the Horde achievement "The Flame Keeper"
+
 ## 2.0.1
 - Fix Noble Gardener Lua error
 
