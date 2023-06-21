@@ -2,6 +2,10 @@
 
 ## Versions
 
+## 2.1.1
+- Add daily Midsummer quests
+- Move goto steps above achievements so the arrow isn't hidden if the achievement is already complete
+
 ## 2.1.0
 - Add guide "The Flame Warden" for the Alliance
 - Add a short guide for the Horde achievement "The Flame Keeper"
