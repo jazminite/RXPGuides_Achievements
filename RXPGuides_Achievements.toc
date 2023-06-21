@@ -7,7 +7,7 @@
 ## Title: RestedXP Achievement Guides
 ## Notes: Achievements
 ## Author: Jazminite
-## Version: 2.1
+## Version: 2.1.1
 
 ## Dependencies: RXPGuides
 
