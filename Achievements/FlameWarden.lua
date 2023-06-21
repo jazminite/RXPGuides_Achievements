@@ -401,6 +401,7 @@ step
 step
     #completewith next
     .fly Forest Song >>Fly to Forest Song, Ashenvale
+    >>|cFFFCDC00Note|r: If you don't have this flight path, fly to Azshara.
     .goto Winterspring,62.33,36.65
 step
     >>Click the |cFF00BCD4Horde Bonfire|r near Splintertree Post.
