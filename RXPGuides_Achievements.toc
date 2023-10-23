@@ -7,7 +7,7 @@
 ## Title: RestedXP Achievement Guides
 ## Notes: Achievements
 ## Author: Jazminite
-## Version: 2.1.1
+## Version: 2.2
 
 ## Dependencies: RXPGuides
 
@@ -21,3 +21,5 @@ Achievements/Childrens-Week/Pets.lua
 
 Achievements/Love-is-in-the-Air/Lovefool.lua
 Achievements/Love-is-in-the-Air/Lovefooldailies.lua
+
+Achievements/Hallows-End/Hallowed.lua
