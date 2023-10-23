@@ -14,6 +14,7 @@ The guides in this addon are intended for WotLK Classic only.
 | Noblegarden        | [Noble Gardener][3c]        | the Noble        | Alliance |
 | Children's Week    | [For The Children][3d]      | Matron or Patron | Alliance |
 | Midsummer          | [The Flame Warden][3e]      | Flame Warden     | Alliance |
+| Hallow's End       | [Hallowed Be Thy Name][3f]  | the Hallowed     | Alliance |
 | Winter Veil        | [Merrymaker][3i]            | Merrymaker       | Alliance |
 
 ## Issues
@@ -36,6 +37,7 @@ If you would like to support me:
 [3c]: https://www.wowhead.com/wotlk/achievement=2797/noble-gardener
 [3d]: https://www.wowhead.com/wotlk/achievement=1793/for-the-children
 [3e]: https://www.wowhead.com/wotlk/achievement=1038/the-flame-warden
+[3f]: https://www.wowhead.com/wotlk/achievement=1656/hallowed-be-thy-name
 [3i]: https://www.wowhead.com/wotlk/achievement=1692/merrymaker
 [4]: https://github.com/jazminite/RXPGuides_Achievements/issues/new/choose
 [5]: https://www.restedxp.com/custom-guides

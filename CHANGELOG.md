@@ -2,6 +2,9 @@
 
 ## Versions
 
+## 2.2
+- Add guide Hallowed Be Thy Name
+
 ## 2.1.1
 - Add daily Midsummer quests
 - Move goto steps above achievements so the arrow isn't hidden if the achievement is already complete
