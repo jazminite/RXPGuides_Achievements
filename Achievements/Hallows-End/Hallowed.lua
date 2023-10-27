@@ -97,7 +97,7 @@ step
     .achievement 966,7
 step << Mage
     #completewith next
-    .zone Ironforge >>Teleport to Ironforge << Mage
+    .zone Ironforge >>Teleport to Ironforge
 step << !Mage
     #completewith next
     .fly Ironforge
@@ -158,7 +158,7 @@ step
     .accept 8373
     .goto Hillsbrad Foothills,50.03,57.4
     .target Sergeant Hartman
-    .achievement 1657,10
+    .achievement 1656,10
 step
     .isOnQuest 8373
     >>Use the |c99ffff99Stink Bomb Cleaner|r on any stink bomb.
