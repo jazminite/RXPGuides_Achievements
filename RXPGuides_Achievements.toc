@@ -7,7 +7,7 @@
 ## Title: RestedXP Achievement Guides
 ## Notes: Achievements
 ## Author: Jazminite
-## Version: 2.2.1
+## Version: 2.3.0
 
 ## Dependencies: RXPGuides
 
@@ -15,6 +15,7 @@ Achievements/Elder.lua
 Achievements/FlameWarden.lua
 Achievements/Merrymaker.lua
 Achievements/Noble.lua
+Achievements/Pilgrim.lua
 
 Achievements/Childrens-Week/MatronPatron.lua
 Achievements/Childrens-Week/Pets.lua

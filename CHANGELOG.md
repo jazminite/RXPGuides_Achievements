@@ -2,6 +2,9 @@
 
 ## Versions
 
+## 2.3.0
+- Add Pilgrim guide
+
 ## 2.2.1
 - Add guide for Northrend Candy Buckets
 - Minor fixes to Hallowed Be Thy Name
