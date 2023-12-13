@@ -2,6 +2,9 @@
 
 ## Versions
 
+## 2.4.0
+- Update Merrymaker guide with `.achievement` steps
+
 ## 2.3.0
 - Add Pilgrim guide
 
