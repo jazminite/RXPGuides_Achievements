@@ -2,6 +2,10 @@
 
 ## Versions
 
+## 2.4.1
+- Add Horde Merrymaker guide
+- Improvements to Alliance Merrymaker guide
+
 ## 2.4.0
 - Update Merrymaker guide with `.achievement` steps
 
