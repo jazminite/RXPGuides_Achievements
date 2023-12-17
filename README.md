@@ -7,16 +7,16 @@ Download the latest release on [Curseforge][2].
 ## Guides
 The guides in this addon are intended for WotLK Classic only.
 
-| Holiday            | Achievement                 | Title            | Faction  |
-|--------------------|-----------------------------|------------------|----------|
-| Lunar Festival     | [To Honor One's Elders][3a] | Elder            | Alliance |
-| Love is in the Air | [Fool For Love][3b]         | the Love Fool    | Alliance |
-| Noblegarden        | [Noble Gardener][3c]        | the Noble        | Alliance |
-| Children's Week    | [For The Children][3d]      | Matron or Patron | Alliance |
-| Midsummer          | [The Flame Warden][3e]      | Flame Warden     | Alliance |
-| Hallow's End       | [Hallowed Be Thy Name][3f]  | the Hallowed     | Alliance |
-| Pilgrim's Bounty   | [Pilgrim][3h]               | the Pilgrim      | Alliance |
-| Winter Veil        | [Merrymaker][3i]            | Merrymaker       | Alliance |
+| Holiday            | Achievement                 | Title            | Faction          |
+|--------------------|-----------------------------|------------------|------------------|
+| Lunar Festival     | [To Honor One's Elders][3a] | Elder            | Alliance         |
+| Love is in the Air | [Fool For Love][3b]         | the Love Fool    | Alliance         |
+| Noblegarden        | [Noble Gardener][3c]        | the Noble        | Alliance         |
+| Children's Week    | [For The Children][3d]      | Matron or Patron | Alliance         |
+| Midsummer          | [The Flame Warden][3e]      | Flame Warden     | Alliance         |
+| Hallow's End       | [Hallowed Be Thy Name][3f]  | the Hallowed     | Alliance         |
+| Pilgrim's Bounty   | [Pilgrim][3h]               | the Pilgrim      | Alliance         |
+| Winter Veil        | [Merrymaker][3i]            | Merrymaker       | Alliance + Horde |
 
 ## Issues
 To report issues with these guides, open a [Github Issue][4].
