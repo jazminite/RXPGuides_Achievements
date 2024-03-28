@@ -1,6 +1,8 @@
 # Changelog
 
 ## Versions
+## 2.5.0
+- Add Operation: Gnomeregan guide
 
 ## 2.4.1
 - Add Horde Merrymaker guide

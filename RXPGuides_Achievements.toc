@@ -7,10 +7,11 @@
 ## Title: RestedXP Achievement Guides
 ## Notes: Achievements
 ## Author: Jazminite
-## Version: 2.4.1
+## Version: 2.5.0
 
 ## Dependencies: RXPGuides
 
+Achievements/Cata-Events.lua
 Achievements/Elder.lua
 Achievements/FlameWarden.lua
 Achievements/Merrymaker.lua
