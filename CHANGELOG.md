@@ -1,6 +1,10 @@
 # Changelog
 
 ## Versions
+## 3.0.0
+- Archive all Wrath Guides
+- Restructure files for Cataclysm
+
 ## 2.5.0
 - Add Operation: Gnomeregan guide
 
