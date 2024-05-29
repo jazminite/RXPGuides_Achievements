@@ -15,27 +15,42 @@ step
     .goto Tol Barad Peninsula,72.97,60.9
     .target Sergeant Gray
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Gray|r at Baradin Base Camp
-    .daily 27973 >>Watch Out For Splinters!
-    .daily 27978 >>Ghostbuster
+    .daily 28275,27987,27978,27991,27975,27973 >>Accept the Daily Quests
+    -- 28275 Bombs Away!
+    -- 27987 Cannonball!
+    -- 27978 Ghostbuster
+    -- 27991 Taking the Overlook Back
+    -- 27975 WANTED: Foreman Wellson
+    -- 27973 Watch Out For Splinters!
 step
     .goto Tol Barad Peninsula,73.34,59.14
     .target Commander Marcus Johnson
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Marcus Johnson|r at Baradin Base Camp
-    .daily 28059 >>Claiming The Keep
-    .daily 28130 >>Not The Friendliest Town
+    .daily 28059,28063,28130,28137 >>Accept the Daily Quests
+    -- 28059 Claiming The Keep
+    -- 28063 Leave No Weapon Behind
+    -- 28130 Not The Friendliest Town
+    -- 28137 Teach A Man To Fish.... Or Steal
 step
     .goto Tol Barad Peninsula,74.74,59.57
     .target Lieutenant Farnsworth
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Farnsworth|r at Baradin Base Camp
-    .daily 27992 >>Magnets, How Do They Work?
-    .daily 27949 >>The Forgotten
-    .daily 28046 >>Finish The Job
+    .daily 28046,27967,27992,27966,27949 >>Accept the Daily Quests
+    -- 28046 Finish The Job
+    -- 27967 First Lieutenant Connor
+    -- 27992 Magnets, How Do They Work?
+    -- 27966 Salvaging the Remains
+    -- 27949 The Forgotten
 step
     .goto Tol Barad Peninsula,73.69,57.66
     .target Camp Coordinator Brack
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Camp Coordinator Brack|r at Baradin Base Camp
-    .daily 27948 >>A Sticky Task
-    .daily 27970 >>Captain P. Harris
+    .daily 27948,27972,27970,27971,28050 >>Accept the Daily Quests
+    -- 27948 A Sticky Task
+    -- 27972 Boosting Morale
+    -- 27970 Captain P. Harris
+    -- 27971 Rattling Their Cages
+    -- 28050 Shark Tank
 step
     .isOnQuest 27978
     .goto Tol Barad Peninsula,78.81,51.59
@@ -44,6 +59,11 @@ step
     .mob Overlook Spirit
     .mob Overlook Spectre
     .mob Ghastly Worker
+step
+    .isOnQuest 28137
+    .goto Tol Barad Peninsula,68.2,22.4
+    >>Loot the |cRXP_LOOT_Rustberg Seabass|r from the string stands at the docks near Rustberg Village
+    .complete 28137,1 >>Teach A Man To Fish.... Or Steal
 step
     .isOnQuest 28130
     .goto Tol Barad Peninsula,67.3,30.6
@@ -97,17 +117,34 @@ step
     .complete 27970,1 >>Captain P. Harris
     .mob Captain P. Harris
 step
+    .isOnQuest 27972
+    .goto Tol Barad Peninsula,50.3,17.2
+    >>Loot the |cRXP_LOOT_Barrels of Southsea Rum|r from the shipwrecks on the Cape of Lost Hope
+    .complete 27972,1 >>Boosting Morale
+step
     .isQuestComplete 27948
     .goto Tol Barad Peninsula,73.69,57.66
     .target Camp Coordinator Brack
     >>Return to |cRXP_FRIENDLY_Camp Coordinator Brack|r at Baradin Base Camp
     .dailyturnin 27948 >>A Sticky Task
 step
+    .isQuestComplete 27972
+    .goto Tol Barad Peninsula,73.69,57.66
+    .target Camp Coordinator Brack
+    >>Return to |cRXP_FRIENDLY_Camp Coordinator Brack|r at Baradin Base Camp
+    .dailyturnin 27972 >>Boosting Morale
+step
     .isQuestComplete 27970
     .goto Tol Barad Peninsula,73.69,57.66
     .target Camp Coordinator Brack
     >>Return to |cRXP_FRIENDLY_Camp Coordinator Brack|r at Baradin Base Camp
     .dailyturnin 27970 >>Captain P. Harris
+step
+    .isQuestComplete 28137
+    .goto Tol Barad Peninsula,73.69,57.66
+    .target Camp Coordinator Brack
+    >>Return to |cRXP_FRIENDLY_Camp Coordinator Brack|r at Baradin Base Camp
+    .dailyturnin 28137 >>Teach A Man To Fish.... Or Steal
 step
     .isQuestComplete 28059
     .goto Tol Barad Peninsula,73.34,59.14
