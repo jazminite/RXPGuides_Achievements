@@ -111,6 +111,12 @@ step
     .complete 28059,1 >>Claiming The Keep
     .mob Keep Lord Farson
 step
+    .isOnQuest 27971
+    .goto Tol Barad Peninsula,45.1,26.3
+    >>Kill |cRXP_ENEMY_Shipwrecked Sailors|r at the Cape of Lost Hope
+    .complete 27971,1 >>Rattling Their Cages
+    .mob Shipwrecked Sailor
+step
     .isOnQuest 27970
     .goto Tol Barad Peninsula,47.4,8
     >>Kill |cRXP_ENEMY_Captain P. Harris|r at the Cape of Lost Hope
@@ -121,6 +127,18 @@ step
     .goto Tol Barad Peninsula,50.3,17.2
     >>Loot the |cRXP_LOOT_Barrels of Southsea Rum|r from the shipwrecks on the Cape of Lost Hope
     .complete 27972,1 >>Boosting Morale
+step
+    .isQuestComplete 28059
+    .goto Tol Barad Peninsula,73.34,59.14
+    .target Commander Marcus Johnson
+    >>Return to |cRXP_FRIENDLY_Commander Marcus Johnson|r at Baradin Base Camp
+    .dailyturnin 28059 >>Claiming The Keep
+step
+    .isQuestComplete 28130
+    .goto Tol Barad Peninsula,73.34,59.14
+    .target Commander Marcus Johnson
+    >>Return to |cRXP_FRIENDLY_Commander Marcus Johnson|r at Baradin Base Camp
+    .dailyturnin 28130 >>Not The Friendliest Town
 step
     .isQuestComplete 27948
     .goto Tol Barad Peninsula,73.69,57.66
@@ -146,17 +164,11 @@ step
     >>Return to |cRXP_FRIENDLY_Camp Coordinator Brack|r at Baradin Base Camp
     .dailyturnin 28137 >>Teach A Man To Fish.... Or Steal
 step
-    .isQuestComplete 28059
-    .goto Tol Barad Peninsula,73.34,59.14
-    .target Commander Marcus Johnson
-    >>Return to |cRXP_FRIENDLY_Commander Marcus Johnson|r at Baradin Base Camp
-    .dailyturnin 28059 >>Claiming The Keep
-step
-    .isQuestComplete 28130
-    .goto Tol Barad Peninsula,73.34,59.14
-    .target Commander Marcus Johnson
-    >>Return to |cRXP_FRIENDLY_Commander Marcus Johnson|r at Baradin Base Camp
-    .dailyturnin 28130 >>Not The Friendliest Town
+    .isQuestComplete 27971
+    .goto Tol Barad Peninsula,73.69,57.66
+    .target Camp Coordinator Brack
+    >>Return to |cRXP_FRIENDLY_Camp Coordinator Brack|r at Baradin Base Camp
+    .dailyturnin 27971 >>Rattling Their Cages
 step
     .isQuestComplete 27949
     .goto Tol Barad Peninsula,74.74,59.57
