@@ -108,6 +108,12 @@ step
     .complete 28059,1 >>Claiming The Keep
     .mob Keep Lord Farson
 step
+    .isOnQuest 28275
+    .goto Tol Barad Peninsula,36.1,26.9
+    >>Enter a Wellson Cannon and Destroy |cRXP_ENEMY_Ghastly Supply Boats|r at the Wellson Shipyard docks
+    .complete 28275,1 >>Bombs Away!
+    .target Wellson Cannon
+step
     .isOnQuest 27973
     .goto Tol Barad Peninsula,26.6,42.2
     >>Kill |cRXP_ENEMY_Ghosts|r at Wellson Shipyard for |cRXP_LOOT_Shipyard Lumber|r or Loot it from the ground
@@ -138,6 +144,12 @@ step
     >>Click |cRXP_FRIENDLY_Forgotten Soldier's Tombstones|r at Forgotten Hill
     .complete 27949,1 >>The Forgotten
     .target Forgotten Soldier's Tombstone
+step
+    .isOnQuest 27967
+    .goto Tol Barad Peninsula,36.07,79.12
+    >>Kill |cRXP_ENEMY_First Lieutenant Connor|r at Forgotten Hill
+    .complete 27967,1 >>First Lieutenant Connor
+    .mob First Lieutenant Connor
 step
     .isQuestComplete 28059
     .goto Tol Barad Peninsula,73.34,59.14
@@ -205,6 +217,12 @@ step
     >>Return to |cRXP_FRIENDLY_Lieutenant Farnsworth|r at Baradin Base Camp
     .dailyturnin 27992 >>Magnets, How Do They Work?
 step
+    .isQuestComplete 27967
+    .goto Tol Barad Peninsula,74.74,59.57
+    .target Lieutenant Farnsworth
+    >>Return to |cRXP_FRIENDLY_Lieutenant Farnsworth|r at Baradin Base Camp
+    .dailyturnin 27967 >>First Lieutenant Connor
+step
     .isQuestComplete 27973
     .goto Tol Barad Peninsula,72.97,60.9
     .target Sergeant Gray
@@ -216,6 +234,12 @@ step
     .target Sergeant Gray
     >>Return to |cRXP_FRIENDLY_Sergeant Gray|r at Baradin Base Camp
     .dailyturnin 27978 >>Ghostbuster
+step
+    .isQuestComplete 28275
+    .goto Tol Barad Peninsula,72.97,60.9
+    .target Sergeant Gray
+    >>Return to |cRXP_FRIENDLY_Sergeant Gray|r at Baradin Base Camp
+    .dailyturnin 28275 >>Bombs Away!
 step
 	+You have finished the Daily Tol Barad Quests for today!
 ]])
