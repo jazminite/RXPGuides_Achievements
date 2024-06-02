@@ -60,6 +60,11 @@ step
     .mob Overlook Spectre
     .mob Ghastly Worker
 step
+    .isOnQuest 27987
+    .goto Tol Barad Peninsula,80.8,42.1
+    >>Loot |cRXP_LOOT_Stacks of Cannonballs|r from the ground in Largo's Overlook
+    .complete 27987,1 >>Cannonball!
+step
     .isOnQuest 28137
     .goto Tol Barad Peninsula,68.2,22.4
     >>Loot the |cRXP_LOOT_Rustberg Seabass|r from the string stands at the docks near Rustberg Village
@@ -73,6 +78,42 @@ step
     .mob Apprehensive Villager
     .mob Rustberg Bandit
     .mob Rustberg Fisherman
+step
+    .isOnQuest 28050
+    .goto Tol Barad Peninsula,49.54,16.64
+    >>Kill |cRXP_ENEMY_Tank|r the shark swimming in the Cape of Lost Hope
+    .complete 28050,1 >>Shark Tank
+    .mob Tank
+step
+    .isOnQuest 27970
+    .goto Tol Barad Peninsula,47.4,8
+    >>Kill |cRXP_ENEMY_Captain P. Harris|r at the Cape of Lost Hope
+    .complete 27970,1 >>Captain P. Harris
+    .mob Captain P. Harris
+step
+    .isOnQuest 27972
+    .goto Tol Barad Peninsula,50.3,17.2
+    >>Loot the |cRXP_LOOT_Barrels of Southsea Rum|r from the shipwrecks on the Cape of Lost Hope
+    .complete 27972,1 >>Boosting Morale
+step
+    .isOnQuest 27971
+    .goto Tol Barad Peninsula,45.1,26.3
+    >>Kill |cRXP_ENEMY_Shipwrecked Sailors|r at the Cape of Lost Hope
+    .complete 27971,1 >>Rattling Their Cages
+    .mob Shipwrecked Sailor
+step
+    .isOnQuest 28059
+    .goto Tol Barad Peninsula,36.1,26.9
+    >>Kill |cRXP_ENEMY_Keep Lord Farson|r upstairs at Farson Hold
+    .complete 28059,1 >>Claiming The Keep
+    .mob Keep Lord Farson
+step
+    .isOnQuest 27973
+    .goto Tol Barad Peninsula,26.6,42.2
+    >>Kill |cRXP_ENEMY_Ghosts|r at Wellson Shipyard for |cRXP_LOOT_Shipyard Lumber|r or Loot it from the ground
+    .complete 27973,1 >>Watch Out For Splinters!
+    .mob Accursed Shipbuilder
+    .mob Accursed Longshoreman
 step
     .isOnQuest 27948
     .goto Tol Barad Peninsula,56.6,52.5
@@ -97,36 +138,6 @@ step
     >>Click |cRXP_FRIENDLY_Forgotten Soldier's Tombstones|r at Forgotten Hill
     .complete 27949,1 >>The Forgotten
     .target Forgotten Soldier's Tombstone
-step
-    .isOnQuest 27973
-    .goto Tol Barad Peninsula,26.6,42.2
-    >>Kill |cRXP_ENEMY_Ghosts|r at Wellson Shipyard for |cRXP_LOOT_Shipyard Lumber|r or Loot it from the ground
-    .complete 27973,1 >>Watch Out For Splinters!
-    .mob Accursed Shipbuilder
-    .mob Accursed Longshoreman
-step
-    .isOnQuest 28059
-    .goto Tol Barad Peninsula,36.1,26.9
-    >>Kill |cRXP_ENEMY_Keep Lord Farson|r upstairs at Farson Hold
-    .complete 28059,1 >>Claiming The Keep
-    .mob Keep Lord Farson
-step
-    .isOnQuest 27971
-    .goto Tol Barad Peninsula,45.1,26.3
-    >>Kill |cRXP_ENEMY_Shipwrecked Sailors|r at the Cape of Lost Hope
-    .complete 27971,1 >>Rattling Their Cages
-    .mob Shipwrecked Sailor
-step
-    .isOnQuest 27970
-    .goto Tol Barad Peninsula,47.4,8
-    >>Kill |cRXP_ENEMY_Captain P. Harris|r at the Cape of Lost Hope
-    .complete 27970,1 >>Captain P. Harris
-    .mob Captain P. Harris
-step
-    .isOnQuest 27972
-    .goto Tol Barad Peninsula,50.3,17.2
-    >>Loot the |cRXP_LOOT_Barrels of Southsea Rum|r from the shipwrecks on the Cape of Lost Hope
-    .complete 27972,1 >>Boosting Morale
 step
     .isQuestComplete 28059
     .goto Tol Barad Peninsula,73.34,59.14
@@ -169,6 +180,12 @@ step
     .target Camp Coordinator Brack
     >>Return to |cRXP_FRIENDLY_Camp Coordinator Brack|r at Baradin Base Camp
     .dailyturnin 27971 >>Rattling Their Cages
+step
+    .isQuestComplete 28050
+    .goto Tol Barad Peninsula,73.69,57.66
+    .target Camp Coordinator Brack
+    >>Return to |cRXP_FRIENDLY_Camp Coordinator Brack|r at Baradin Base Camp
+    .dailyturnin 28050 >>Shark Tank
 step
     .isQuestComplete 27949
     .goto Tol Barad Peninsula,74.74,59.57
