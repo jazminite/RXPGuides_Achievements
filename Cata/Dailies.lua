@@ -60,6 +60,12 @@ step
     .mob Overlook Spectre
     .mob Ghastly Worker
 step
+    .isOnQuest 27991
+    .goto Tol Barad Peninsula,78.6,42.8
+    >>Kill |cRXP_ENEMY_Commander Largo|r at Largo's Outlook
+    .complete 27991,1 >>Taking the Overlook Back
+    .mob Commander Largo
+step
     .isOnQuest 27987
     .goto Tol Barad Peninsula,80.8,42.1
     >>Loot |cRXP_LOOT_Stacks of Cannonballs|r from the ground in Largo's Overlook
@@ -102,11 +108,23 @@ step
     .complete 27971,1 >>Rattling Their Cages
     .mob Shipwrecked Sailor
 step
+    .isOnQuest 28063
+    .goto Tol Barad Peninsula,38.6,30.1
+    >>Loot the |cRXP_LOOT_Rusty Rifles|r from the Racks of Rifles around Farson Hold
+    >>Rifles also drop from |cRXP_ENEMY_Crazed Guards|r
+    .complete 28063,1 >>Leave No Weapon Behind
+step
     .isOnQuest 28059
     .goto Tol Barad Peninsula,36.1,26.9
     >>Kill |cRXP_ENEMY_Keep Lord Farson|r upstairs at Farson Hold
     .complete 28059,1 >>Claiming The Keep
     .mob Keep Lord Farson
+step
+    .isOnQuest 27975
+    .goto Tol Barad Peninsula,29.4,44.4
+    >>Kill |cRXP_ENEMY_Foreman Wellson|r at the Wellson Shipyard
+    .complete 27975,1 >>WANTED: Foreman Wellson
+    .mob Foreman Wellson
 step
     .isOnQuest 28275
     .goto Tol Barad Peninsula,36.1,26.9
@@ -175,6 +193,12 @@ step
     >>Return to |cRXP_FRIENDLY_Commander Marcus Johnson|r at Baradin Base Camp
     .dailyturnin 28137 >>Teach A Man To Fish.... Or Steal
 step
+    .isQuestComplete 28063
+    .goto Tol Barad Peninsula,73.34,59.14
+    .target Commander Marcus Johnson
+    >>Return to |cRXP_FRIENDLY_Commander Marcus Johnson|r at Baradin Base Camp
+    .dailyturnin 28063 >>Leave No Weapon Behind
+step
     .isQuestComplete 27944
     .goto Tol Barad Peninsula,73.69,57.66
     .target Camp Coordinator Brack
@@ -235,6 +259,21 @@ step
     >>Return to |cRXP_FRIENDLY_Lieutenant Farnsworth|r at Baradin Base Camp
     .dailyturnin 27967 >>First Lieutenant Connor
 step
+    .isQuestComplete 27966
+    .goto Tol Barad Peninsula,74.74,59.57
+    .target Lieutenant Farnsworth
+    >>Return to |cRXP_FRIENDLY_Lieutenant Farnsworth|r at Baradin Base Camp
+    .dailyturnin 27966 >>Salvaging the Remains
+step
+    .isOnQuest 27966
+    .goto Tol Barad Peninsula,35.0,76.2
+    >>Kill |cRXP_ENEMY_Ghouls|r at Forgotten Hill for |cRXP_LOOT_Cursed Femur bones|r
+    .complete 27966,1 >>Salvaging the Remains
+    .mob Hungry Ghoul
+    .mob Forgotten Ghoul
+    .mob Wandering Soul
+    .mob Skeletal Beastmaster
+step
     .isQuestComplete 27973
     .goto Tol Barad Peninsula,72.97,60.9
     .target Sergeant Gray
@@ -258,6 +297,18 @@ step
     .target Sergeant Gray
     >>Return to |cRXP_FRIENDLY_Sergeant Gray|r at Baradin Base Camp
     .dailyturnin 27987 >>Cannonball!
+step
+    .isQuestComplete 27991
+    .goto Tol Barad Peninsula,72.97,60.9
+    .target Sergeant Gray
+    >>Return to |cRXP_FRIENDLY_Sergeant Gray|r at Baradin Base Camp
+    .dailyturnin 27991 >>Taking the Overlook Back
+step
+    .isQuestComplete 27975
+    .goto Tol Barad Peninsula,72.97,60.9
+    .target Sergeant Gray
+    >>Return to |cRXP_FRIENDLY_Sergeant Gray|r at Baradin Base Camp
+    .dailyturnin 27975 >>WANTED: Foreman Wellson
 step
 	+You have finished the Daily Tol Barad Quests for today!
 ]])
