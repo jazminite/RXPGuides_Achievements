@@ -121,12 +121,6 @@ step
     .mob Accursed Shipbuilder
     .mob Accursed Longshoreman
 step
-    .isOnQuest 27948
-    .goto Tol Barad Peninsula,56.6,52.5
-    >>Kill |cRXP_ENEMY_Spiders|r in The Darkwood for |cRXP_LOOT_Sticky Silk Glads|r
-    .complete 27948,1 >>A Sticky Task
-    .mob Darkwood Broodmother
-step
     .isOnQuest 28046
     .goto Tol Barad Peninsula,44.82,59.32
     >>Kill |cRXP_ENEMY_Restless Infantry|r at the Restless Front
@@ -151,6 +145,18 @@ step
     .complete 27967,1 >>First Lieutenant Connor
     .mob First Lieutenant Connor
 step
+    .isOnQuest 27944
+    .goto Tol Barad Peninsula,56.9,52.8
+    >>Kill |cRXP_ENEMY_Darkwood Lurkers|r in the Darkwood
+    .complete 27944,1 >>Thinning the Brood
+    .mob Darkwood Lurker
+step
+    .isOnQuest 27948
+    .goto Tol Barad Peninsula,56.6,52.5
+    >>Kill |cRXP_ENEMY_Spiders|r in The Darkwood for |cRXP_LOOT_Sticky Silk Glads|r
+    .complete 27948,1 >>A Sticky Task
+    .mob Darkwood Broodmother
+step
     .isQuestComplete 28059
     .goto Tol Barad Peninsula,73.34,59.14
     .target Commander Marcus Johnson
@@ -162,6 +168,18 @@ step
     .target Commander Marcus Johnson
     >>Return to |cRXP_FRIENDLY_Commander Marcus Johnson|r at Baradin Base Camp
     .dailyturnin 28130 >>Not The Friendliest Town
+step
+    .isQuestComplete 28137
+    .goto Tol Barad Peninsula,73.34,59.14
+    .target Commander Marcus Johnson
+    >>Return to |cRXP_FRIENDLY_Commander Marcus Johnson|r at Baradin Base Camp
+    .dailyturnin 28137 >>Teach A Man To Fish.... Or Steal
+step
+    .isQuestComplete 27944
+    .goto Tol Barad Peninsula,73.69,57.66
+    .target Camp Coordinator Brack
+    >>Return to |cRXP_FRIENDLY_Camp Coordinator Brack|r at Baradin Base Camp
+    .dailyturnin 27944 >>Thinning the Brood
 step
     .isQuestComplete 27948
     .goto Tol Barad Peninsula,73.69,57.66
@@ -180,12 +198,6 @@ step
     .target Camp Coordinator Brack
     >>Return to |cRXP_FRIENDLY_Camp Coordinator Brack|r at Baradin Base Camp
     .dailyturnin 27970 >>Captain P. Harris
-step
-    .isQuestComplete 28137
-    .goto Tol Barad Peninsula,73.69,57.66
-    .target Camp Coordinator Brack
-    >>Return to |cRXP_FRIENDLY_Camp Coordinator Brack|r at Baradin Base Camp
-    .dailyturnin 28137 >>Teach A Man To Fish.... Or Steal
 step
     .isQuestComplete 27971
     .goto Tol Barad Peninsula,73.69,57.66
@@ -240,6 +252,12 @@ step
     .target Sergeant Gray
     >>Return to |cRXP_FRIENDLY_Sergeant Gray|r at Baradin Base Camp
     .dailyturnin 28275 >>Bombs Away!
+step
+    .isQuestComplete 27987
+    .goto Tol Barad Peninsula,72.97,60.9
+    .target Sergeant Gray
+    >>Return to |cRXP_FRIENDLY_Sergeant Gray|r at Baradin Base Camp
+    .dailyturnin 27987 >>Cannonball!
 step
 	+You have finished the Daily Tol Barad Quests for today!
 ]])
