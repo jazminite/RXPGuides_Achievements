@@ -1,6 +1,11 @@
 # Changelog
 
 ## Versions
+## 3.0.0
+- Archive all Wrath Guides
+- Restructure files for Cataclysm
+- Daily Quest Guide for Alliance Tol Barad (v1)
+
 ## 2.5.0
 - Add Operation: Gnomeregan guide
 
