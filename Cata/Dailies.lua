@@ -1,6 +1,17 @@
 RXPGuides.RegisterGuide([[
-<< Alliance
+<< Horde
 #version 1
+#group Achievement Dailies
+#cata
+#name Tol Barad
+
+step
+    +Horde Guide is not available yet.
+]])
+
+RXPGuides.RegisterGuide([[
+<< Alliance
+#version 2
 #group Achievement Dailies
 #cata
 #name Tol Barad
@@ -157,6 +168,15 @@ step
     .complete 27949,1 >>The Forgotten
     .target Forgotten Soldier's Tombstone
 step
+    .isOnQuest 27966
+    .goto Tol Barad Peninsula,35.0,76.2
+    >>Kill |cRXP_ENEMY_Ghouls|r at Forgotten Hill for |cRXP_LOOT_Cursed Femur bones|r
+    .complete 27966,1 >>Salvaging the Remains
+    .mob Hungry Ghoul
+    .mob Forgotten Ghoul
+    .mob Wandering Soul
+    .mob Skeletal Beastmaster
+step
     .isOnQuest 27967
     .goto Tol Barad Peninsula,36.07,79.12
     >>Kill |cRXP_ENEMY_First Lieutenant Connor|r at Forgotten Hill
@@ -264,15 +284,6 @@ step
     .target Lieutenant Farnsworth
     >>Return to |cRXP_FRIENDLY_Lieutenant Farnsworth|r at Baradin Base Camp
     .dailyturnin 27966 >>Salvaging the Remains
-step
-    .isOnQuest 27966
-    .goto Tol Barad Peninsula,35.0,76.2
-    >>Kill |cRXP_ENEMY_Ghouls|r at Forgotten Hill for |cRXP_LOOT_Cursed Femur bones|r
-    .complete 27966,1 >>Salvaging the Remains
-    .mob Hungry Ghoul
-    .mob Forgotten Ghoul
-    .mob Wandering Soul
-    .mob Skeletal Beastmaster
 step
     .isQuestComplete 27973
     .goto Tol Barad Peninsula,72.97,60.9
