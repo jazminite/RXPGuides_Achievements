@@ -1,6 +1,13 @@
 # Changelog
 
 ## Versions
+## 3.0.1
+Dailies - Alliance Tol Barad (v2)
+- Fix placement of Salvaging the Remains quest
+
+Dailies - Horde Tol Barad (v1)
+- Add placeholder so players know Horde guide isn't available.
+
 ## 3.0.0
 - Archive all Wrath Guides
 - Restructure files for Cataclysm
