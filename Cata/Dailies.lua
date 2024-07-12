@@ -1,15 +1,4 @@
 RXPGuides.RegisterGuide([[
-<< Horde
-#version 1
-#group Achievement Dailies
-#cata
-#name Tol Barad
-
-step
-    +Horde Guide is not available yet.
-]])
-
-RXPGuides.RegisterGuide([[
 << Alliance
 #version 2
 #group Achievement Dailies
@@ -322,4 +311,15 @@ step
     .dailyturnin 27975 >>WANTED: Foreman Wellson
 step
 	+You have finished the Daily Tol Barad Quests for today!
+]])
+
+RXPGuides.RegisterGuide([[
+<< Horde
+#version 1
+#group Achievement Dailies
+#cata
+#name Tol Barad
+
+step
+    +The Horde Guide is not available yet.
 ]])
