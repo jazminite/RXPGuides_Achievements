@@ -1,6 +1,10 @@
 # Changelog
 
 ## Versions
+## 3.1.0
+Dailies - Horde Tol Barad (v2)
+- Add initial guide
+
 ## 3.0.1
 Dailies - Alliance Tol Barad (v2)
 - Fix placement of Salvaging the Remains quest
