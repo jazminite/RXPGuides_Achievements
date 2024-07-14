@@ -7,7 +7,7 @@ Download the latest release on [Curseforge][2].
 ## Guides
 The guides in this addon are intended for **Cataclysm Classic** only.
 ### Dailies
-- Tol Barad - Alliance
+- Tol Barad - Alliance + Horde
 
 ## Issues
 To report issues with these guides, open a [Github Issue][4].
