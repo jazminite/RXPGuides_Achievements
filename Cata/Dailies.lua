@@ -309,6 +309,89 @@ RXPGuides.RegisterGuide([[
     .target Sergeant Gray
     >>Return to |cRXP_FRIENDLY_Sergeant Gray|r at Baradin Base Camp
     .dailyturnin 27975 >>WANTED: Foreman Wellson
+  
+  -- CROSS THE BRIDGE --
+  step
+    .goto Tol Barad,53.21,46.15
+    .target 2nd Lieutenant Wansworth
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_2nd Lieutenant Wansworth|r at Baradin Hold
+    .daily 28186 >>Accept Cursed Shackles
+    .daily 28165 >>Accept D-Block
+    .daily 28185 >>Accept Svarnos
+  step
+    .goto Tol Barad,53.68,47.1
+    .target Marshal Fallows
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marshal Fallows|r at Baradin Hold
+    .daily 28232 >>Accept Food From Below
+    .daily 28188 >>Accept Prison Revolt
+    .daily 28223 >>Accept The Warden
+  step
+    .goto Tol Barad,54.40,46.37
+    .target Sergeant Parker
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Parker|r at Baradin Hold
+    .daily 28122 >>Accept A Huge Problem
+    .daily 28162 >>Accept Swamp Bait
+    .daily 28163 >>Accept The Leftovers
+  step
+    .goto Tol Barad,54.40,46.37
+    .target Sergeant Parker
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Parker|r at Baradin Hold
+    .daily 28122 >>Accept A Huge Problem
+    .daily 28162 >>Accept Swamp Bait
+    .daily 28163 >>Accept The Leftovers
+  step
+    .isOnQuest 28117
+    .goto Tol Barad,60.7,51.3
+    >>Kill |cRXP_ENEMY_Ghosts|r East of Baradin Hold
+    .complete 28117,1 >>Clearing the Depths
+    .mob Ghastly Convict
+  step
+    .isOnQuest 28120
+    .goto Tol Barad,58.4,49.6
+    >>Loot the |cRXP_LOOT_Dusty Prison Journals|r from the ground East of Baradin Hold
+    .complete 28120,1 >>Learning From The Past
+  step
+    .isOnQuest 28118
+    .goto Tol Barad,57.6,54.6
+    >>Kill |cRXP_ENEMY_Archmage Galus|r East of Baradin Hold for the |cRXP_LOOT_Archmage Galus' Staff|r
+    .complete 28118,1 >>The Imprisoned Archmage
+    .mob Archmage Galus
+  step
+    .isOnQuest 28232
+    .goto Tol Barad,40.7,77.5
+    >>Kill |cRXP_ENEMY_Imprisoned Workers|r at The Hole for |cRXP_LOOT_Cellblock Rations|r or Loot them from the ground
+    .complete 28232,1 >>Food From Below
+    .mob Imprisoned Worker
+  step
+    .isOnQuest 28188
+    .goto Tol Barad,40.7,77.5
+    >>Kill |cRXP_ENEMY_Prisoners|r at The Hole
+    .complete 28188,1 >>Prison Revolt
+    .mob Prisoner of War
+  step
+    .isOnQuest 28223
+    .goto Tol Barad,37.4,72.6
+    >>Kill |cRXP_ENEMY_Warden Silva|r at The Hole for the |cRXP_LOOT_Warden's Keys|r
+    .complete 28223,1 >>The Warden
+    .mob Warden Silva
+  step
+    .isQuestComplete 28232
+    .goto Tol Barad,53.68,47.1
+    .target Marshal Fallows
+    >>Return to |cRXP_FRIENDLY_Marshal Fallows|r at Baradin Hold
+    .dailyturnin 28232 >>Food From Below
+  step
+    .isQuestComplete 28188
+    .goto Tol Barad,53.68,47.1
+    .target Marshal Fallows
+    >>Return to |cRXP_FRIENDLY_Marshal Fallows|r at Baradin Hold
+    .dailyturnin 28188 >>Prison Revolt
+  step
+    .isQuestComplete 28223
+    .goto Tol Barad,53.68,47.1
+    .target Marshal Fallows
+    >>Return to |cRXP_FRIENDLY_Marshal Fallows|r at Baradin Hold
+    .dailyturnin 28223 >>The Warden
 
   step
     +You have finished the Daily Tol Barad Quests for today!
