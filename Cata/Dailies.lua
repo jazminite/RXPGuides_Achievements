@@ -465,23 +465,41 @@ RXPGuides.RegisterGuide([[
     .mob Problim
     >>|cRXP_WARN_NOTE|r: He patrols around the zone
   step
+    .isQuestComplete 28186
+    .goto Tol Barad,53.21,46.15
+    .target 2nd Lieutenant Wansworth
+    >>Return to |cRXP_FRIENDLY_2nd Lieutenant Wansworth|r at Baradin Hold
+    .dailyturnin 28186 >>Turn in Cursed Shackles
+  step
+    .isQuestComplete 28165
+    .goto Tol Barad,53.21,46.15
+    .target 2nd Lieutenant Wansworth
+    >>Return to |cRXP_FRIENDLY_2nd Lieutenant Wansworth|r at Baradin Hold
+    .dailyturnin 28165 >>Turn in D-Block
+  step
+    .isQuestComplete 28185
+    .goto Tol Barad,53.21,46.15
+    .target 2nd Lieutenant Wansworth
+    >>Return to |cRXP_FRIENDLY_2nd Lieutenant Wansworth|r at Baradin Hold
+    .dailyturnin 28185 >>Turn in Svarnos
+  step
     .isQuestComplete 28232
     .goto Tol Barad,53.68,47.1
     .target Marshal Fallows
     >>Return to |cRXP_FRIENDLY_Marshal Fallows|r at Baradin Hold
-    .dailyturnin 28232 >>Food From Below
+    .dailyturnin 28232 >>Turn in Food From Below
   step
     .isQuestComplete 28188
     .goto Tol Barad,53.68,47.1
     .target Marshal Fallows
     >>Return to |cRXP_FRIENDLY_Marshal Fallows|r at Baradin Hold
-    .dailyturnin 28188 >>Prison Revolt
+    .dailyturnin 28188 >>Turn in Prison Revolt
   step
     .isQuestComplete 28223
     .goto Tol Barad,53.68,47.1
     .target Marshal Fallows
     >>Return to |cRXP_FRIENDLY_Marshal Fallows|r at Baradin Hold
-    .dailyturnin 28223 >>The Warden
+    .dailyturnin 28223 >>Turn in The Warden
   step
     .isQuestComplete 28117
     .goto Tol Barad,54.28,45.77
@@ -500,24 +518,6 @@ RXPGuides.RegisterGuide([[
     .target Commander Stevens
     >>Return to |cRXP_FRIENDLY_Commander Stevens|r at Baradin Hold
     .dailyturnin 28118 >>Turn in The Imprisoned Archmage
-  step
-    .isQuestComplete 28186
-    .goto Tol Barad,53.21,46.15
-    .target 2nd Lieutenant Wansworth
-    >>Return to |cRXP_FRIENDLY_2nd Lieutenant Wansworth|r at Baradin Hold
-    .dailyturnin 28186 >>Turn in Cursed Shackles
-  step
-    .isQuestComplete 28165
-    .goto Tol Barad,53.21,46.15
-    .target 2nd Lieutenant Wansworth
-    >>Return to |cRXP_FRIENDLY_2nd Lieutenant Wansworth|r at Baradin Hold
-    .dailyturnin 28165 >>Turn in D-Block
-  step
-    .isQuestComplete 28185
-    .goto Tol Barad,53.21,46.15
-    .target 2nd Lieutenant Wansworth
-    >>Return to |cRXP_FRIENDLY_2nd Lieutenant Wansworth|r at Baradin Hold
-    .dailyturnin 28185 >>Turn in Svarnos
   step
     .isQuestComplete 28122
     .goto Tol Barad,54.40,46.37
