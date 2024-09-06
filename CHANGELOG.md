@@ -1,6 +1,10 @@
 # Changelog
 
 ## Versions
+## 3.2.0
+Dailies - Alliance Tol Barad (v3)
+- Add Tol Barad Quests (across the bridge)
+
 ## 3.1.0
 Dailies - Horde Tol Barad (v2)
 - Add initial guide
