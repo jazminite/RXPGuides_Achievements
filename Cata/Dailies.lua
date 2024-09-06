@@ -1,6 +1,6 @@
 RXPGuides.RegisterGuide([[
   << Alliance
-  #version 2
+  #version 3
   #group Achievement Dailies
   #cata
   #name Tol Barad
@@ -326,12 +326,12 @@ RXPGuides.RegisterGuide([[
     .daily 28188 >>Accept Prison Revolt
     .daily 28223 >>Accept The Warden
   step
-    .goto Tol Barad,54.40,46.37
-    .target Sergeant Parker
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Parker|r at Baradin Hold
-    .daily 28122 >>Accept A Huge Problem
-    .daily 28162 >>Accept Swamp Bait
-    .daily 28163 >>Accept The Leftovers
+    .goto Tol Barad,54.28,45.77
+    .target Commander Stevens
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Stevens|r at Baradin Hold
+    .daily 28117 >>Accept Clearing the Depths
+    .daily 28120 >>Accept Learning From The Past
+    .daily 28118 >>Accept The Imprisoned Archmage
   step
     .goto Tol Barad,54.40,46.37
     .target Sergeant Parker
@@ -341,39 +341,129 @@ RXPGuides.RegisterGuide([[
     .daily 28163 >>Accept The Leftovers
   step
     .isOnQuest 28117
-    .goto Tol Barad,60.7,51.3
-    >>Kill |cRXP_ENEMY_Ghosts|r East of Baradin Hold
+    #completewith galus
+    >>Kill |cRXP_ENEMY_Ghosts|r in the Cursed Depths
     .complete 28117,1 >>Clearing the Depths
     .mob Ghastly Convict
+    .mob Captive Spirit
+    .mob Cellblock Ooze
   step
+    #completewith galus
     .isOnQuest 28120
-    .goto Tol Barad,58.4,49.6
-    >>Loot the |cRXP_LOOT_Dusty Prison Journals|r from the ground East of Baradin Hold
+    >>Loot |cRXP_LOOT_Dusty Prison Journals|r from the ground in the Cursed Depths
     .complete 28120,1 >>Learning From The Past
   step
+    #label galus
     .isOnQuest 28118
+    .goto Tol Barad,60.85,50.10,5,0
     .goto Tol Barad,57.6,54.6
-    >>Kill |cRXP_ENEMY_Archmage Galus|r East of Baradin Hold for the |cRXP_LOOT_Archmage Galus' Staff|r
+    >>Kill |cRXP_ENEMY_Archmage Galus|r in the Cursed Depths for |cRXP_LOOT_Archmage Galus' Staff|r
     .complete 28118,1 >>The Imprisoned Archmage
     .mob Archmage Galus
   step
+    .isOnQuest 28120
+    .goto Tol Barad,60.85,50.10
+    >>Loot |cRXP_LOOT_Dusty Prison Journals|r from the ground in the Cursed Depths
+    .complete 28120,1 >>Learning From The Past
+  step
+    .isOnQuest 28117
+    .goto Tol Barad,60.85,50.10
+    >>Kill |cRXP_ENEMY_Ghosts|r in the Cursed Depths
+    .complete 28117,1 >>Clearing the Depths
+    .mob Ghastly Convict
+    .mob Captive Spirit
+    .mob Cellblock Ooze
+  step
+    .isOnQuest 28188
+    #completewith silva
+    >>Kill |cRXP_ENEMY_Prisoners|r at The Hole
+    .complete 28188,1 >>Prison Revolt
+    .mob Imprisoned Worker
+    .mob Exiled Mage
+  step
     .isOnQuest 28232
-    .goto Tol Barad,40.7,77.5
+    #completewith silva
+    >>Kill |cRXP_ENEMY_Imprisoned Workers|r at The Hole for |cRXP_LOOT_Cellblock Rations|r or Loot them from the ground
+    .complete 28232,1 >>Food From Below
+    .mob Imprisoned Worker
+  step
+    #label silva
+    .isOnQuest 28223
+    .goto Tol Barad,43.98,69.07,5,0
+    .goto Tol Barad,37.4,72.6
+    >>Kill |cRXP_ENEMY_Warden Silva|r at The Hole for the |cRXP_LOOT_Warden's Keys|r
+    .complete 28223,1 >>The Warden
+    .mob Warden Silva
+  step
+    .isOnQuest 28232
+    .goto Tol Barad,43.98,69.07
     >>Kill |cRXP_ENEMY_Imprisoned Workers|r at The Hole for |cRXP_LOOT_Cellblock Rations|r or Loot them from the ground
     .complete 28232,1 >>Food From Below
     .mob Imprisoned Worker
   step
     .isOnQuest 28188
-    .goto Tol Barad,40.7,77.5
+    .goto Tol Barad,43.98,69.07
     >>Kill |cRXP_ENEMY_Prisoners|r at The Hole
     .complete 28188,1 >>Prison Revolt
-    .mob Prisoner of War
+    .mob Imprisoned Worker
+    .mob Exiled Mage
   step
-    .isOnQuest 28223
-    .goto Tol Barad,37.4,72.6
-    >>Kill |cRXP_ENEMY_Warden Silva|r at The Hole for the |cRXP_LOOT_Warden's Keys|r
-    .complete 28223,1 >>The Warden
-    .mob Warden Silva
+    .isOnQuest 28162
+    .goto Tol Barad,40.02,48.71
+    >>Kill |cRXP_ENEMY_Crocolisks|r in the Swamp for |cRXP_LOOT_Crocolisk Hides|r
+    .complete 28162,1 >>Swamp Bait
+    .mob Baradin Crocolisk
+  step
+    .isOnQuest 28165
+    #completewith svarnos
+    >>Kill |cRXP_ENEMY_Demons|r at the D-Block
+    .complete 28165,1 >>D-Block
+    .mob Jailed Wrathguard
+    .mob Shivan Destroyer
+    .mob Cell Watcher
+    .mob Imprisoned Imp
+  step
+    .isOnQuest 28186
+    #completewith svarnos
+    >>Loot |cRXP_LOOT_Cursed Shackles|r from the ground in the D-Block
+    .complete 28186,1 >>Cursed Shackles
+  step
+    #label svarnos
+    .isOnQuest 28185
+    .goto Tol Barad,42.7,39.71,5,0
+    .goto Tol Barad,48.34,31.06
+    >>Kill |cRXP_ENEMY_Svarnos|r in the D-Block for |cRXP_LOOT_Svarnos' Cursed Collar|r
+    .complete 28185,1 >>Svarnos
+    .mob Svarnos
+  step
+    .isOnQuest 28186
+    .goto Tol Barad,42.7,39.71
+    >>Loot |cRXP_LOOT_Cursed Shackles|r from the ground in the D-Block
+    .complete 28186,1 >>Cursed Shackles
+  step
+    .isOnQuest 28165
+    .goto Tol Barad,42.7,39.71
+    >>Kill |cRXP_ENEMY_Demons|r at the D-Block
+    .complete 28165,1 >>D-Block
+    .mob Jailed Wrathguard
+    .mob Shivan Destroyer
+    .mob Cell Watcher
+    .mob Imprisoned Imp
+  step
+    .isOnQuest 28163
+    .goto Tol Barad,49.8,24.21
+    >>Kill |cRXP_ENEMY_Horde Infantry|r at Ironclad Garrison
+    .complete 28163,1 >>The Leftovers
+    .mob Horde Shaman Infantry
+    .mob Horde Rogue Infantry
+    .mob Horde Mage Infantry
+    .mob Horde Druid Infantry
+  step
+    .isOnQuest 28122
+    >>Kill |cRXP_ENEMY_Problim|r in Tol Barad|r
+    .complete 28122,1 >>A Huge Problem
+    .mob Problim
+    >>|cRXP_WARN_NOTE|r: He patrols around the zone
   step
     .isQuestComplete 28232
     .goto Tol Barad,53.68,47.1
@@ -392,7 +482,60 @@ RXPGuides.RegisterGuide([[
     .target Marshal Fallows
     >>Return to |cRXP_FRIENDLY_Marshal Fallows|r at Baradin Hold
     .dailyturnin 28223 >>The Warden
-
+  step
+    .isQuestComplete 28117
+    .goto Tol Barad,54.28,45.77
+    .target Commander Stevens
+    >>Return to |cRXP_FRIENDLY_Commander Stevens|r at Baradin Hold
+    .dailyturnin 28117 >>Turn in Clearing the Depths
+  step
+    .isQuestComplete 28120
+    .goto Tol Barad,54.28,45.77
+    .target Commander Stevens
+    >>Return to |cRXP_FRIENDLY_Commander Stevens|r at Baradin Hold
+    .dailyturnin 28120 >>Turn in Learning From The Past
+  step
+    .isQuestComplete 28118
+    .goto Tol Barad,54.28,45.77
+    .target Commander Stevens
+    >>Return to |cRXP_FRIENDLY_Commander Stevens|r at Baradin Hold
+    .dailyturnin 28118 >>Turn in The Imprisoned Archmage
+  step
+    .isQuestComplete 28186
+    .goto Tol Barad,53.21,46.15
+    .target 2nd Lieutenant Wansworth
+    >>Return to |cRXP_FRIENDLY_2nd Lieutenant Wansworth|r at Baradin Hold
+    .dailyturnin 28186 >>Turn in Cursed Shackles
+  step
+    .isQuestComplete 28165
+    .goto Tol Barad,53.21,46.15
+    .target 2nd Lieutenant Wansworth
+    >>Return to |cRXP_FRIENDLY_2nd Lieutenant Wansworth|r at Baradin Hold
+    .dailyturnin 28165 >>Turn in D-Block
+  step
+    .isQuestComplete 28185
+    .goto Tol Barad,53.21,46.15
+    .target 2nd Lieutenant Wansworth
+    >>Return to |cRXP_FRIENDLY_2nd Lieutenant Wansworth|r at Baradin Hold
+    .dailyturnin 28185 >>Turn in Svarnos
+  step
+    .isQuestComplete 28122
+    .goto Tol Barad,54.40,46.37
+    .target Sergeant Parker
+    >>Return to |cRXP_FRIENDLY_Sergeant Parker|r at Baradin Hold
+    .dailyturnin 28122 >>Turn in A Huge Problem
+  step
+    .isQuestComplete 28162
+    .goto Tol Barad,54.40,46.37
+    .target Sergeant Parker
+    >>Return to |cRXP_FRIENDLY_Sergeant Parker|r at Baradin Hold
+    .dailyturnin 28162 >>Turn in Swamp Bait
+  step
+    .isQuestComplete 28163
+    .goto Tol Barad,54.40,46.37
+    .target Sergeant Parker
+    >>Return to |cRXP_FRIENDLY_Sergeant Parker|r at Baradin Hold
+    .dailyturnin 28163 >>Turn in The Leftovers
   step
     +You have finished the Daily Tol Barad Quests for today!
 ]])
