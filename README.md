@@ -6,8 +6,10 @@ Download the latest release on [Curseforge][2].
 
 ## Guides
 The guides in this addon are intended for **Cataclysm Classic** only.
-### Dailies
-- Tol Barad - Alliance + Horde
+### Molten Front
+- Molten Front - Part I for Alliance + Horde
+### Tol Barad
+- Tol Barad - Dailies for Alliance + Horde
 
 ## Issues
 To report issues with these guides, open a [Github Issue][4].

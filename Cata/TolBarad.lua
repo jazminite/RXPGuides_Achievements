@@ -1,9 +1,10 @@
 RXPGuides.RegisterGuide([[
   << Alliance
   #version 3
-  #group Achievement Dailies
+  #group Achievements
+  #subgroup Tol Barad
   #cata
-  #name Tol Barad
+  #name Tol Barad - Dailies
 
   step
     #completewith next
@@ -543,9 +544,10 @@ RXPGuides.RegisterGuide([[
 RXPGuides.RegisterGuide([[
   << Horde
   #version 2
-  #group Achievement Dailies
+  #group Achievements
+  #subgroup Tol Barad
   #cata
-  #name Tol Barad
+  #name Tol Barad - Dailies
 
   step
     #completewith next

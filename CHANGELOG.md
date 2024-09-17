@@ -1,6 +1,10 @@
 # Changelog
 
 ## Versions
+## 3.3.0
+- Rearrange groups and files
+- Add Molten Front - Part I (v1) for Alliance + Horde
+
 ## 3.2.0
 Dailies - Alliance Tol Barad (v3)
 - Add Tol Barad Quests (across the bridge)
