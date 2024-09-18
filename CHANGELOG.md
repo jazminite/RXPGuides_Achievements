@@ -1,6 +1,10 @@
 # Changelog
 
 ## Versions
+## 3.4.0
+- Molten Front - Part I (v2) - Fix Horde coordinates
+- Add Molten Front - Dailies (v1) for Alliance + Horde
+
 ## 3.3.0
 - Rearrange groups and files
 - Add Molten Front - Part I (v1) for Alliance + Horde
