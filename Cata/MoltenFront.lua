@@ -269,8 +269,15 @@ RXPGuides.RegisterGuide([[
     .goto Mount Hyjal,27.19,62.55
     .target Matoclaw
     >>Talk to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
-    .daily 29123,29149,29127,29163,29166 >>Accept the Daily Quests
+    .daily 29123,29149,29127,29163,29166,29164,29147,29125 >>Accept the Daily Quests
   step
+    .isOnQuest 29125,29147,29164
+    .goto Mount Hyjal,27.55,62.47
+    .target Dorda'en Nightweaver
+    >>Talk to |cRXP_FRIENDLY_Dorda'en Nightweaver|r at the Sanctuary of Malorne
+    .daily 29247,29246,29248 >>Accept the Daily Quests
+  step
+    .isOnQuest 29123,29149,29127,29163,29166
     .goto Mount Hyjal,27.16,61.98
     .target Mylune
     >>Talk to |cRXP_FRIENDLY_Mylune|r at the Sanctuary of Malorne
@@ -280,6 +287,28 @@ RXPGuides.RegisterGuide([[
     .target Captain Soren Moonfall
     >>Talk to |cRXP_FRIENDLY_Captain Soren Moonfall|r at the Sanctuary of Malorne
     .daily 29128 >>The Protectors of Hyjal
+  step
+    .isOnQuest 29164
+    .goto Mount Hyjal,36.8,56.6
+    .use 69235
+    >>Kill |cRXP_ENEMY_Firelands Invaders|r in the Regrowth and use the Fang of the Wolf atop the corpses
+    .complete 29164,1 >>Perfecting Your Howl
+    .mob Flame Terror
+    .mob Charred Invader
+    .mob Brimstone Hound
+    .mob Scarred Acolyte
+    .mob Charred Flamewalker
+  step
+    .isQuestComplete 29164  
+    .turnin 29164 >>Click the popup to turn in Perfecting Your Howl
+    .accept 29165 >>Accept The Call of the Pack
+  step
+    .isOnQuest 29165
+    .goto Mount Hyjal,41.75,56.10
+    .use 69235
+    >>Summon and Kill |cRXP_ENEMY_Lylagar|r 
+    .complete 29165,1 >>The Call of the Pack
+    .mob Lylagar
   step
     .isOnQuest 29123
     .goto Mount Hyjal,14.06,42.83
@@ -385,6 +414,12 @@ RXPGuides.RegisterGuide([[
     .target Matoclaw
     >>Return to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
     .dailyturnin 29163 >>Rage Against the Flames
+  step
+    .isQuestComplete 29165
+    .goto Mount Hyjal,27.19,62.55
+    .target Matoclaw
+    >>Return to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
+    .dailyturnin 29165 >>The Call of the Pack
   step
     #completewith next
     .goto Mount Hyjal,27.52,56.64,5 >>Take the portal to the Molten Front
