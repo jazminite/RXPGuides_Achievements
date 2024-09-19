@@ -357,7 +357,7 @@ RXPGuides.RegisterGuide([[
     .accept 29122 >>Accept Echoes of Nemesis
   step
     .isOnQuest 29122
-    .goto Mount Hyjal,24.6,55.6
+    .goto Mount Hyjal,24.01,55.86
     >>Speak with Tooga to summon and kill |cRXP_ENEMY_Nemesis|r 
     .complete 29122,1 >>Echoes of Nemesis
     .mob Nemesis
@@ -378,6 +378,13 @@ RXPGuides.RegisterGuide([[
     >>Summon and Kill |cRXP_ENEMY_Pyrachnis|r at The Regrowth portal
     .complete 29162,1 >>Nature's Blessing
     .target Pyrachnis
+  step
+    .isOnQuest 29128
+    .goto Mount Hyjal,31.4,87.4
+    >>Kill |cRXP_ENEMY_Fiery Behemoths or Seething Pyrelords|r at Sethria's Roost
+    .complete 29128,1 >>The Protectors of Hyjal
+    .mob Fiery Behemoth
+    .mob Seething Pyrelord
   step
     .isQuestComplete 29162
     .goto Mount Hyjal,27.16,61.98
@@ -424,10 +431,21 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .goto Mount Hyjal,27.52,56.64,5 >>Take the portal to the Molten Front
   step
+    .goto Molten Front,48.50,86.17
+    .target Rayne Feathersong
+    >>Talk to |cRXP_FRIENDLY_Rayne Feathersong|r at Malfurion's Breach
+    .daily 29139,29143 >>Accept the Daily Quests
+  step
     .goto Molten Front,45.72,86.12
     .target Captain Irontree
     >>Talk to |cRXP_FRIENDLY_Captain Irontree|r at Malfurion's Breach
     .accept 29138 >>Accept Burn Victims
+  step
+    .isQuestComplete 29128
+    .goto Molten Front,45.62,85.79
+    .target General Taldris Moonfall
+    >>Talk to |cRXP_FRIENDLY_General Taldris Moonfall|r at Malfurion's Breach
+    .dailyturnin 29128 >>Turn in The Protectors of Hyjal
   step
     .goto Molten Front,45.62,85.79
     .target General Taldris Moonfall
@@ -439,13 +457,7 @@ RXPGuides.RegisterGuide([[
     >>Talk to |cRXP_FRIENDLY_General Taldris Moonfall|r at Malfurion's Breach
     .daily 29304,29141,29142,29137 >>Accept the Daily Quests
   step
-    .goto Molten Front,48.50,86.17
-    .target Rayne Feathersong
-    >>Talk to |cRXP_FRIENDLY_Rayne Feathersong|r at Malfurion's Breach
-    .daily 29139,29143 >>Accept the Daily Quests
-  step
     .isOnQuest 29138
-    .goto Molten Front,49,71.28
     .use 69240
     >>Heal |cRXP_FRIENDLY_Wounded Hyjal Defenders|r in the Ashen Fields
     .complete 29138,1 >>Burn Victims
