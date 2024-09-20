@@ -283,7 +283,7 @@ RXPGuides.RegisterGuide([[
     >>Talk to |cRXP_FRIENDLY_Mylune|r at the Sanctuary of Malorne
     .daily 29101,29161 >>Accept the Daily Quests
   step
-    .goto Mount Hyjal,27.4,61.57
+    .goto Mount Hyjal,27.05,61.70
     .target Captain Soren Moonfall
     >>Talk to |cRXP_FRIENDLY_Captain Soren Moonfall|r at the Sanctuary of Malorne
     .daily 29128 >>The Protectors of Hyjal
@@ -379,12 +379,46 @@ RXPGuides.RegisterGuide([[
     .complete 29162,1 >>Nature's Blessing
     .target Pyrachnis
   step
+    .isOnQuest 29147
+    .goto Mount Hyjal,11.2,36.6
+    .use 69234
+    >>Use the |cRXP_ENEMY_Quill of the Bird-Queen|r and cast Call the Flock to gather birds in The Regrowth
+    .complete 29147,1
+    .complete 29147,2
+    .complete 29147,3 >>Call the Flock
+    .target Alpine Songbird
+    .target Forest Owl
+    .target Goldwing Hawk
+  step
+    .isQuestComplete 29147  
+    .turnin 29147 >>Click the popup to turn in Call the Flock
+    .accept 29148 >>Accept Wings Aflame
+  step
+    .isOnQuest 29148
+    .goto Mount Hyjal,13.6,44.4
+    .use 69212
+    >>Summon and Kill |cRXP_ENEMY_Millagazor|r 
+    .complete 29148,1 >>Wings Aflame
+    .target Millagazor
+  step
+    .isOnQuest 29246
+    .goto Mount Hyjal,30.4,79.2
+    >>Kill |cRXP_ENEMY_Seething Firelords|r in Sethria's Roost for |cRXP_LOOT_Flame-Wreathed Hearts|r
+    .complete 29246,1 >>Relieving the Pain
+    .mob Seething Firelord
+  step
     .isOnQuest 29128
     .goto Mount Hyjal,31.4,87.4
     >>Kill |cRXP_ENEMY_Fiery Behemoths or Seething Pyrelords|r at Sethria's Roost
     .complete 29128,1 >>The Protectors of Hyjal
     .mob Fiery Behemoth
     .mob Seething Pyrelord
+  step
+    .isQuestComplete 29246
+    .goto Mount Hyjal,27.55,62.47
+    .target Dorda'en Nightweaver
+    >>Return to |cRXP_FRIENDLY_Dorda'en Nightweaver|r at the Sanctuary of Malorne
+    .dailyturnin 29246 >>Relieving the Pain
   step
     .isQuestComplete 29162
     .goto Mount Hyjal,27.16,61.98
@@ -428,6 +462,12 @@ RXPGuides.RegisterGuide([[
     >>Return to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
     .dailyturnin 29165 >>The Call of the Pack
   step
+    .isQuestComplete 29148
+    .goto Mount Hyjal,27.19,62.55
+    .target Matoclaw
+    >>Return to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
+    .dailyturnin 29148 >>Wings Aflame
+  step
     #completewith next
     .goto Mount Hyjal,27.52,56.64,5 >>Take the portal to the Molten Front
   step
@@ -457,6 +497,10 @@ RXPGuides.RegisterGuide([[
     >>Talk to |cRXP_FRIENDLY_General Taldris Moonfall|r at Malfurion's Breach
     .daily 29304,29141,29142,29137 >>Accept the Daily Quests
   step
+    .isOnQuest 29143
+    >>Lead the |cRXP_FRIENDLY_Hyjal Wisp|r to a fire portal in the Ashen Fields. Protect the Wisp until it closes the portal.
+    .complete 29143,1 >>Wisp Away
+  step
     .isOnQuest 29138
     .use 69240
     >>Heal |cRXP_FRIENDLY_Wounded Hyjal Defenders|r in the Ashen Fields
@@ -471,6 +515,11 @@ RXPGuides.RegisterGuide([[
     >>Kill |cRXP_ENEMY_Druids of the Flame|r in the Ashen Fields
     .complete 29142,1 >>Traitors Return
     .mob Druid of the Flame
+  step
+    .isOnQuest 29137
+    >>Kill |cRXP_ENEMY_Lava Bursters|r in the Ashen Fields
+    .complete 29137,1 >>Breach in the Defenses
+    .mob Lava Bursters
   step
     .isOnQuest 29179
     >>Kill |cRXP_ENEMY_Charred Combatants|r in the Ashen Fields
