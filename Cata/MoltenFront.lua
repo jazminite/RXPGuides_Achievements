@@ -305,10 +305,27 @@ RXPGuides.RegisterGuide([[
   step
     .isOnQuest 29165
     .goto Mount Hyjal,41.75,56.10
-    .use 69235
-    >>Summon and Kill |cRXP_ENEMY_Lylagar|r 
+    .use 69225
+    >>Use the Fang to Summon and Kill |cRXP_ENEMY_Lylagar|r 
     .complete 29165,1 >>The Call of the Pack
     .mob Lylagar
+  step
+    .isOnQuest 29125
+    .goto Mount Hyjal,33.9,59.5
+    >>Catch |cRXP_FRIENDLY_Spirits of Malorne|r by walking close to them
+    .complete 29125,1 >>Between the Trees
+    .target Spirit of Malorne
+  step
+    .isQuestComplete 29125  
+    .turnin 29125 >>Click the popup to turn in Between the Trees
+    .accept 29126 >>Accept The Power of Malorne
+  step
+    .isOnQuest 29126
+    .goto Mount Hyjal,41.6,56.2
+    .use 68997
+    >>Use the Staff to Summon and Kill |cRXP_ENEMY_Galenges|r 
+    .complete 29126,1 >>The Power of Malorne
+    .mob Galenges
   step
     .isOnQuest 29123
     .goto Mount Hyjal,14.06,42.83
@@ -345,6 +362,11 @@ RXPGuides.RegisterGuide([[
     .mob Charred Invader
     .mob Brimstone Hound
     .mob Scarred Acolyte
+  step
+    .isOnQuest 29166
+    .goto Mount Hyjal,39,56
+    >>Pick |cRXP_LOOT_Blueroot Vines|r from the ground near trees
+    .complete 29166,1 >>Supplies for the Other Side
   step
     .isOnQuest 29101
     .goto Mount Hyjal,21.2,57.0
@@ -407,6 +429,12 @@ RXPGuides.RegisterGuide([[
     .complete 29246,1 >>Relieving the Pain
     .mob Seething Firelord
   step
+    .isOnQuest 29247
+    .goto Mount Hyjal,30.4,79.2
+    >>Kill |cRXP_ENEMY_Fiery Behemoths|r in Sethria's Roost for |cRXP_LOOT_Sulfur-Laced Wrappings|r
+    .complete 29247,1 >>Treating the Wounds
+    .mob Fiery Behemoth
+  step
     .isOnQuest 29128
     .goto Mount Hyjal,31.4,87.4
     >>Kill |cRXP_ENEMY_Fiery Behemoths or Seething Pyrelords|r at Sethria's Roost
@@ -419,6 +447,12 @@ RXPGuides.RegisterGuide([[
     .target Dorda'en Nightweaver
     >>Return to |cRXP_FRIENDLY_Dorda'en Nightweaver|r at the Sanctuary of Malorne
     .dailyturnin 29246 >>Relieving the Pain
+  step
+    .isQuestComplete 29247
+    .goto Mount Hyjal,27.55,62.47
+    .target Dorda'en Nightweaver
+    >>Return to |cRXP_FRIENDLY_Dorda'en Nightweaver|r at the Sanctuary of Malorne
+    .dailyturnin 29247 >>Treating the Wounds
   step
     .isQuestComplete 29162
     .goto Mount Hyjal,27.16,61.98
@@ -456,6 +490,12 @@ RXPGuides.RegisterGuide([[
     >>Return to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
     .dailyturnin 29163 >>Rage Against the Flames
   step
+    .isQuestComplete 29166
+    .goto Mount Hyjal,27.19,62.55
+    .target Matoclaw
+    >>Return to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
+    .dailyturnin 29166 >>Supplies for the Other Side
+  step
     .isQuestComplete 29165
     .goto Mount Hyjal,27.19,62.55
     .target Matoclaw
@@ -467,6 +507,12 @@ RXPGuides.RegisterGuide([[
     .target Matoclaw
     >>Return to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
     .dailyturnin 29148 >>Wings Aflame
+  step
+    .isQuestComplete 29126
+    .goto Mount Hyjal,27.19,62.55
+    .target Matoclaw
+    >>Return to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
+    .dailyturnin 29126 >>The Power of Malorne
   step
     #completewith next
     .goto Mount Hyjal,27.52,56.64,5 >>Take the portal to the Molten Front
@@ -508,20 +554,36 @@ RXPGuides.RegisterGuide([[
     .target Wounded Hyjal Defender
   step
     .isOnQuest 29139
+    .goto Molten Front,46.6,62.8,0
     >>Plant |cRXP_PICK_Smothervine Seeds|r in the Ash Piles in the Ashen Fields
     .complete 29139,1 >>Aggressive Growth
   step
     .isOnQuest 29142
+    .goto Molten Front,48.8,71.6,0
     >>Kill |cRXP_ENEMY_Druids of the Flame|r in the Ashen Fields
     .complete 29142,1 >>Traitors Return
     .mob Druid of the Flame
   step
     .isOnQuest 29137
+    .goto Molten Front,50.0,44.0,0
     >>Kill |cRXP_ENEMY_Lava Bursters|r in the Ashen Fields
     .complete 29137,1 >>Breach in the Defenses
     .mob Lava Bursters
   step
+    .isOnQuest 29304
+    .goto Molten Front,48.2,62.8,0
+    >>Kill |cRXP_ENEMY_Ancient Charhounds|r in the Ashen Fields
+    .complete 29304,1 >>The Dogs of War
+    .mob Ancient Charhound
+  step
+    .isOnQuest 29141
+    .goto Molten Front,48.8,62.6,0
+    >>Kill |cRXP_ENEMY_Molten Behemoths|r in the Ashen Fields
+    .complete 29141,1 >>The Harder They Fall
+    .mob Molten Behemoth
+  step
     .isOnQuest 29179
+    .goto Molten Front,48.0,70.4,0
     >>Kill |cRXP_ENEMY_Charred Combatants|r in the Ashen Fields
     .complete 29179,1 >>Hostile Elements
     .mob Charred Vanquisher
