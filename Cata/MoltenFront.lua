@@ -3,7 +3,7 @@ RXPGuides.RegisterGuide([[
   #group Achievements
   #subgroup Molten Front
   #cata
-  #name Molten Front - Part I
+  #name Part I - Unlock the Dailies
 
   step
     .xp 85 >>You must be |cFFFCDC00level 85|r to start the Molten Front quests
@@ -350,7 +350,7 @@ RXPGuides.RegisterGuide([[
   #group Achievements
   #subgroup Molten Front
   #cata
-  #name Molten Front - Dailies
+  #name Dailies
 
   step
     .xp 85 >>You must be |cFFFCDC00level 85|r to do the Molten Front quests
@@ -728,4 +728,38 @@ RXPGuides.RegisterGuide([[
     .dailyturnin 29137 >>Turn in Breach in the Defenses
   step
     +You have finished the Daily Molten Front Quests for today!
+]])
+
+RXPGuides.RegisterGuide([[
+  #version 1
+  #group Achievements
+  #subgroup Molten Front
+  #cata
+  #name Part II - Druids of the Talon
+
+  step
+    >>Collect |cRXP_FRIENDLY_Marks of the World Tree|r by completing daily quests in Mount Hyjal and the Molten Front
+    .complete 29181,1 >>Druids of the Talon
+  step
+    .goto Mount Hyjal,43.6,45.8
+    .target Skylord Omnuron
+    >>Talk to |cRXP_FRIENDLY_Skylord Omnuron|r
+    .turnin 29181 >>Turn in Druids of the Talon
+]])
+
+RXPGuides.RegisterGuide([[
+  #version 1
+  #group Achievements
+  #subgroup Molten Front
+  #cata
+  #name Part II - Shadow Wardens
+
+  step
+    >>Collect |cRXP_FRIENDLY_Marks of the World Tree|r by completing daily quests in Mount Hyjal and the Molten Front
+    .complete 29214,1 >>The Shadow Wardens
+  step
+    .goto Mount Hyjal,26.8,62.0
+    .target Captain Saynna Stormrunner
+    >>Talk to |cRXP_FRIENDLY_Captain Saynna Stormrunner|r at the Sanctuary of Malorne
+    .turnin 29214 >>Turn in The Shadow Wardens
 ]])
