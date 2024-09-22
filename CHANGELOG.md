@@ -1,6 +1,18 @@
 # Changelog
 
 ## Versions
+## 3.4.0
+MOLTEN FRONT
+- Part I - Unlock the Dailies (v2)
+    - Guide renamed
+    - Fix Horde coordinates
+    - Add other daily quests
+- Dailies (v1)
+    - Guide added for Alliance + Horde
+- Guides started for:
+    - Part II - Druids of the Talon (v1)
+    - Part II - Shadow Wardens (v1)
+
 ## 3.3.0
 - Rearrange groups and files
 - Add Molten Front - Part I (v1) for Alliance + Horde
