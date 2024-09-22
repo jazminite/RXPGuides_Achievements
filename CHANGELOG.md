@@ -2,7 +2,9 @@
 
 ## Versions
 ## 3.4.0
-- Molten Front - Part I (v2) - Fix Horde coordinates
+- Molten Front - Part I (v2)
+    - Fix Horde coordinates
+    - Add other daily quests
 - Add Molten Front - Dailies (v1) for Alliance + Horde
 
 ## 3.3.0

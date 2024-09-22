@@ -28,6 +28,8 @@ RXPGuides.RegisterGuide([[
     .turnin 29387 >>Turn in Guardians of Hyjal: Firelands Invasion! << Alliance
     .turnin 29388 >>Turn in Guardians of Hyjal: Firelands Invasion! << Horde
     .accept 29145 >>Accept Opening the Door
+
+  -- COMBINED GUIDE STARTS HERE
   step
     .goto Mount Hyjal,27.10,54.58
     .target Arch Druid Hamuul Runetotem
@@ -98,13 +100,112 @@ RXPGuides.RegisterGuide([[
   step
     .goto Mount Hyjal,27.19,62.55
     .target Matoclaw
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
-    .daily 29123,29149,29127,29163,29166 >>Accept the Daily Quests
+    >>Talk to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
+    .daily 29123,29149,29127,29163,29166,29164,29147,29125 >>Accept the Daily Quests
   step
     .goto Mount Hyjal,27.16,61.98
     .target Mylune
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mylune|r at the Sanctuary of Malorne
+    >>Talk to |cRXP_FRIENDLY_Mylune|r at the Sanctuary of Malorne
     .daily 29101,29161 >>Accept the Daily Quests
+  step
+    .isOnQuest 29101
+    .goto Mount Hyjal,21.2,57.0
+    >>Punt |cRXP_FRIENDLY_Children of Tortolla|r into water
+    .complete 29101,1 >>Punting Season
+    .target Children of Tortolla
+  step
+    .isQuestComplete 29101  
+    .turnin 29101 >>Click the popup to turn in Punting Season
+    .accept 29122 >>Accept Echoes of Nemesis
+  step
+    .isOnQuest 29122
+    .goto Mount Hyjal,24.6,55.6
+    >>Speak with Tooga to summon and kill |cRXP_ENEMY_Nemesis|r 
+    .complete 29122,1 >>Echoes of Nemesis
+    .mob Nemesis
+  step
+    .isOnQuest 29161
+    .goto Mount Hyjal,12.72,34.25
+    >>Rescue |cRXP_FRIENDLY_Hyjal Bear Cubs|r from the trees in the Whistling Grove
+    .complete 29161,1 >>Those Bears Up There
+    .target Hyjal Bear Cub
+  step
+    .isQuestComplete 29161  
+    .turnin 29161 >>Click the popup to turn in Those Bears Up There
+    .accept 29162 >>Accept Nature's Blessing
+  step
+    .isOnQuest 29162
+    .goto Mount Hyjal,13.28,44.75
+    .use 69232
+    >>Summon and Kill |cRXP_ENEMY_Pyrachnis|r at The Regrowth portal
+    .complete 29162,1 >>Nature's Blessing
+    .target Pyrachnis
+  step
+    .isOnQuest 29166
+    .goto Mount Hyjal,39,56
+    >>Pick |cRXP_LOOT_Blueroot Vines|r from the ground near trees
+    .complete 29166,1 >>Supplies for the Other Side
+  step
+    .isOnQuest 29125
+    .goto Mount Hyjal,33.9,59.5
+    >>Catch |cRXP_FRIENDLY_Spirits of Malorne|r by walking close to them
+    .complete 29125,1 >>Between the Trees
+    .target Spirit of Malorne
+  step
+    .isQuestComplete 29125  
+    .turnin 29125 >>Click the popup to turn in Between the Trees
+    .accept 29126 >>Accept The Power of Malorne
+  step
+    .isOnQuest 29126
+    .goto Mount Hyjal,41.6,56.2
+    .use 68997
+    >>Use the Staff to Summon and Kill |cRXP_ENEMY_Galenges|r 
+    .complete 29126,1 >>The Power of Malorne
+    .mob Galenges
+  step
+    .isOnQuest 29147
+    .goto Mount Hyjal,11.2,36.6
+    .use 69234
+    >>Use the |cRXP_ENEMY_Quill of the Bird-Queen|r and cast Call the Flock to gather birds in The Regrowth
+    .complete 29147,1
+    .complete 29147,2
+    .complete 29147,3 >>Call the Flock
+    .target Alpine Songbird
+    .target Forest Owl
+    .target Goldwing Hawk
+  step
+    .isQuestComplete 29147  
+    .turnin 29147 >>Click the popup to turn in Call the Flock
+    .accept 29148 >>Accept Wings Aflame
+  step
+    .isOnQuest 29148
+    .goto Mount Hyjal,13.6,44.4
+    .use 69212
+    >>Summon and Kill |cRXP_ENEMY_Millagazor|r 
+    .complete 29148,1 >>Wings Aflame
+    .target Millagazor
+  step
+    .isOnQuest 29164
+    .goto Mount Hyjal,36.8,56.6
+    .use 69235
+    >>Kill |cRXP_ENEMY_Firelands Invaders|r in the Regrowth and use the Fang of the Wolf atop the corpses
+    .complete 29164,1 >>Perfecting Your Howl
+    .mob Flame Terror
+    .mob Charred Invader
+    .mob Brimstone Hound
+    .mob Scarred Acolyte
+    .mob Charred Flamewalker
+  step
+    .isQuestComplete 29164  
+    .turnin 29164 >>Click the popup to turn in Perfecting Your Howl
+    .accept 29165 >>Accept The Call of the Pack
+  step
+    .isOnQuest 29165
+    .goto Mount Hyjal,41.75,56.10
+    .use 69225
+    >>Use the Fang to Summon and Kill |cRXP_ENEMY_Lylagar|r 
+    .complete 29165,1 >>The Call of the Pack
+    .mob Lylagar
   step
     .isOnQuest 29123
     .goto Mount Hyjal,14.06,42.83
@@ -142,39 +243,6 @@ RXPGuides.RegisterGuide([[
     .mob Brimstone Hound
     .mob Scarred Acolyte
   step
-    .isOnQuest 29101
-    .goto Mount Hyjal,21.2,57.0
-    >>Punt |cRXP_FRIENDLY_Children of Tortolla|r into water
-    .complete 29101,1 >>Punting Season
-    .target Children of Tortolla
-  step
-    .isQuestComplete 29101  
-    .turnin 29101 >>Click the popup to turn in Punting Season
-    .accept 29122 >>Accept Echoes of Nemesis
-  step
-    .isOnQuest 29122
-    .goto Mount Hyjal,24.6,55.6
-    >>Speak with Tooga to summon and kill |cRXP_ENEMY_Nemesis|r 
-    .complete 29122,1 >>Echoes of Nemesis
-    .mob Nemesis
-  step
-    .isOnQuest 29161
-    .goto Mount Hyjal,12.72,34.25
-    >>Rescue |cRXP_FRIENDLY_Hyjal Bear Cubs|r from the trees in the Whistling Grove
-    .complete 29161,1 >>Those Bears Up There
-    .target Hyjal Bear Cub
-  step
-    .isQuestComplete 29161  
-    .turnin 29161 >>Click the popup to turn in Those Bears Up There
-    .accept 29162 >>Accept Nature's Blessing
-  step
-    .isOnQuest 29162
-    .goto Mount Hyjal,13.28,44.75
-    .use 69232
-    >>Summon and Kill |cRXP_ENEMY_Pyrachnis|r at The Regrowth portal
-    .complete 29162,1 >>Nature's Blessing
-    .target Pyrachnis
-  step
     .isQuestComplete 29162
     .goto Mount Hyjal,27.16,61.98
     .target Mylune
@@ -186,6 +254,30 @@ RXPGuides.RegisterGuide([[
     .target Mylune
     >>Return to |cRXP_FRIENDLY_Mylune|r at the Sanctuary of Malorne
     .dailyturnin 29122 >>Echoes of Nemesis
+  step
+    .isQuestComplete 29165
+    .goto Mount Hyjal,27.19,62.55
+    .target Matoclaw
+    >>Return to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
+    .dailyturnin 29165 >>The Call of the Pack
+  step
+    .isQuestComplete 29126
+    .goto Mount Hyjal,27.19,62.55
+    .target Matoclaw
+    >>Return to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
+    .dailyturnin 29126 >>The Power of Malorne
+  step
+    .isQuestComplete 29148
+    .goto Mount Hyjal,27.19,62.55
+    .target Matoclaw
+    >>Return to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
+    .dailyturnin 29148 >>Wings Aflame
+  step
+    .isQuestComplete 29166
+    .goto Mount Hyjal,27.19,62.55
+    .target Matoclaw
+    >>Return to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
+    .dailyturnin 29166 >>Supplies for the Other Side
   step
     .isQuestComplete 29123
     .goto Mount Hyjal,27.19,62.55
