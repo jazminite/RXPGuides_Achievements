@@ -346,7 +346,7 @@ RXPGuides.RegisterGuide([[
 ]])
 
 RXPGuides.RegisterGuide([[
-  #version 1
+  #version 2
   #group Achievements
   #subgroup Molten Front
   #cata
@@ -418,6 +418,12 @@ RXPGuides.RegisterGuide([[
     >>Use the Staff to Summon and Kill |cRXP_ENEMY_Galenges|r 
     .complete 29126,1 >>The Power of Malorne
     .mob Galenges
+  step
+    .isOnQuest 29248
+    .goto Mount Hyjal,30.6,52.2
+    >>Kill |cRXP_ENEMY_Charred Flamewakers|r in The Regrowth for |cRXP_LOOT_Flamewaker Scales|r
+    .complete 29248,1 >>Releasing the Pressure
+    .mob Charred Flamewaker
   step
     .isOnQuest 29123
     .goto Mount Hyjal,14.06,42.83
@@ -546,6 +552,12 @@ RXPGuides.RegisterGuide([[
     >>Return to |cRXP_FRIENDLY_Dorda'en Nightweaver|r at the Sanctuary of Malorne
     .dailyturnin 29247 >>Treating the Wounds
   step
+    .isQuestComplete 29248
+    .goto Mount Hyjal,27.55,62.47
+    .target Dorda'en Nightweaver
+    >>Return to |cRXP_FRIENDLY_Dorda'en Nightweaver|r at the Sanctuary of Malorne
+    .dailyturnin 29248 >>Releasing the Pressure
+  step
     .isQuestComplete 29162
     .goto Mount Hyjal,27.16,61.98
     .target Mylune
@@ -645,10 +657,10 @@ RXPGuides.RegisterGuide([[
     .complete 29138,1 >>Burn Victims
     .target Wounded Hyjal Defender
   step
-    .isOnQuest 29139
     .goto Molten Front,46.6,62.8,0
     >>Plant |cRXP_PICK_Smothervine Seeds|r in the Ash Piles in the Ashen Fields
     .complete 29139,1 >>Aggressive Growth
+    .isOnQuest 29139
   step
     .isOnQuest 29142
     .goto Molten Front,48.8,71.6,0
@@ -737,14 +749,152 @@ RXPGuides.RegisterGuide([[
   #cata
   #name Part II - Druids of the Talon
 
-  step
+    step
     >>Collect |cRXP_FRIENDLY_Marks of the World Tree|r by completing daily quests in Mount Hyjal and the Molten Front
     .complete 29181,1 >>Druids of the Talon
   step
     .goto Mount Hyjal,43.6,45.8
     .target Skylord Omnuron
-    >>Talk to |cRXP_FRIENDLY_Skylord Omnuron|r
+    >>Talk to |cRXP_FRIENDLY_Skylord Omnuron|r upstairs at the Shrine of Aviana in Mount Hyjal
     .turnin 29181 >>Turn in Druids of the Talon
+  step
+    .goto Mount Hyjal,42.6,45.6
+    .target Isara Riverstride
+    >>Talk to |cRXP_FRIENDLY_Isara Riverstride|r at the Shrine of Aviana
+    .accept 29182 >>Accept Flight of the Storm Crows
+  step
+    #completewith next
+    .goto Mount Hyjal,27.52,56.64,10 >>Take the portal to the Molten Front
+  step
+    .goto Molten Front,43.6,81.2
+    .target Skylord Omnuron
+    >>Talk to |cRXP_FRIENDLY_Skylord Omnuron|r at Malfurion's Breach
+    .turnin 29182 >>Turn in Flight of the Storm Crows
+  step
+    .goto Molten Front,45.62,85.79
+    .target General Taldris Moonfall
+    >>Talk to |cRXP_FRIENDLY_General Taldris Moonfall|r at Malfurion's Breach
+    .accept 29206 >>Accept Into the Fire
+  step
+    .goto Molten Front,41.6,80.3
+    >>Escort the |cRXP_FRIENDLY_Windcaller|r through the Furnace to access the Molten Flow
+    .complete 29206,1 >>Into the Fire
+    .target Windcaller Voramus
+  step
+    .goto Molten Front,43.0,60.2
+    .target Thisalee Crow
+    >>Talk to |cRXP_FRIENDLY_Thisalee Crow|r inside The Molten Flow
+    .turnin 29206 >>Turn in Into the Fire
+    .accept 29265 >>Accept Fire Flowers
+    .accept 29264 >>Accept Flamewakers of the Molten Flow
+  step
+    #completewith next
+    .goto Molten Front,50.26,39.46
+    >>Kill |cRXP_ENEMY_Flamewakers|r inside The Molten Flow
+    .complete 29264,1 >>Flamewakers of the Molten Flow
+    .mob Flamewaker Sentinel
+    .mob Flamewaker Shaman
+    .mob Flamewaker Hunter
+  step
+    .goto Molten Front,47.88,35.15
+    >>Pick |cRXP_LOOT_Luciferns|r inside The Molten Flow
+    .complete 29265,1 >>Fire Flowers
+  step
+    .goto Molten Front,50.26,39.46
+    >>Kill |cRXP_ENEMY_Flamewakers|r inside The Molten Flow
+    .complete 29264,1 >>Flamewakers of the Molten Flow
+    .mob Flamewaker Sentinel
+    .mob Flamewaker Shaman
+    .mob Flamewaker Hunter
+  step
+    .goto Molten Front,51.8,31.0
+    .target Anren Shadowseeker
+    >>Talk to |cRXP_FRIENDLY_Anren Shadowseeker|r 
+    .accept 29272 >>Accept Need... Water... Badly...
+  step
+    .goto Molten Front,42.61,59.79
+    >>Escort |cRXP_FRIENDLY_Anren Shadowseeker|r to the entrance of the Molten Front
+    .complete 29272,1 >>Need... Water... Badly...
+    .target Anren Shadowseeker
+  step
+    .goto Molten Front,42.61,59.79
+    .target Thisalee Crow
+    >>Talk to |cRXP_FRIENDLY_Thisalee Crow|r inside The Molten Flow
+    .turnin 29264 >>Turn in Flamewakers of the Molten Flow
+  step
+    #completewith next
+    .goto Molten Front,33.33,67.59,5 >>Exit the Molten Flow by jumping into the airstream
+  step
+    .goto Molten Front,36.15,59.30
+    .target Tholo Whitehoof
+    >>Talk to |cRXP_FRIENDLY_Tholo Whitehoof|r at The Furnace
+    .turnin 29272 >>Turn in Need... Water... Badly...
+  step
+    .goto Molten Front,35.99,59.60
+    .target Anren Shadowseeker
+    >>Talk to |cRXP_FRIENDLY_Anren Shadowseeker|r at The Furnace
+    .daily 29274,29273 >>Accept the Daily Quest
+  step
+    .goto Molten Front,36.26,56.69
+    .target Choluna
+    >>Talk to |cRXP_FRIENDLY_Choluna|r at The Furnace
+    .turnin 29265 >>Turn in Fire Flowers
+  step
+    .goto Molten Front,34.5,56.28
+    .target Morthis Whisperwing
+    >>Talk to |cRXP_FRIENDLY_Morthis Whisperwing|r at The Furnace
+    .daily 29287,29288,29289 >>Accept the Daily Quest
+  step
+    .goto Molten Front,34.32,56.46
+    .target Arthorn Windsong
+    >>Talk to |cRXP_FRIENDLY_Arthorn Windsong|r at The Furnace
+    .daily 29293,29296 >>Accept the Daily Quest
+  step
+    .isOnQuest 29274
+    .goto Molten Front,41.8,42.0
+    >>Kill |cRXP_ENEMY_Charhounds|r in the Magma Springs for |cRXP_LOOT_Houndbone Ash|r
+    .complete 29274,1 >>Hounds of Shannox
+    .mob Charhound
+    .mob Ancient Charhound
+  step
+    .isOnQuest 29273
+    .goto Molten Front,21,29
+    .use 69806
+    >>Use |cRXP_PICK_Tholo's Thermometer|r to measure the temperature of the three large lava pools on Fireplume Peak
+    .complete 29273,1 >>How Hot
+    .complete 29273,2
+    .complete 29273,3
+  step
+    .isOnQuest 29296
+    .goto Molten Front,21.2,28.2
+    >>Kill |cRXP_ENEMY_Fire Hawks|r on Fireplume Peak
+    .complete 29296,1 >>Territorial Birds
+    .mob Fire Hawk
+  step
+    .isOnQuest 29287
+    .goto Molten Front,24.5,42.1
+    >>Retrieve a |cRXP_LOOT_Fire Hawk Egg|r from the top of Fireplume Peak
+    .complete 29287,1 >>Peaked Interest
+  step
+    .isQuestComplete 29296
+    .goto Molten Front,34.32,56.46
+    .target Arthorn Windsong
+    >>Return to |cRXP_FRIENDLY_Arthorn Windsong|r at The Furnace
+    .dailyturnin 29296 >>Turn in Territorial Birds
+  step
+    .isQuestComplete 29287
+    .goto Molten Front,34.5,56.28
+    .target Morthis Whisperwing
+    >>Return to |cRXP_FRIENDLY_Morthis Whisperwing|r at The Furnace
+    .dailyturnin 29287 >>Turn in Peaked Interest
+  step
+    .isQuestComplete 29274
+    .goto Molten Front,51.28,85.3
+    .target Tholo Whitehoof
+    >>Talk to |cRXP_FRIENDLY_Tholo Whitehoof|r at Malfurion's Breach
+    .dailyturnin 29274 >>Turn in Hounds of Shannox
+  step
+    +You have finished all the quests in this guide.
 ]])
 
 RXPGuides.RegisterGuide([[

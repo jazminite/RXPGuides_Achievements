@@ -1,6 +1,12 @@
 # Changelog
 
 ## Versions
+## 3.5.0
+MOLTEN FRONT
+- Dailies (v2)
+    - Add missing quest
+- Part II - Druids of the Talon (v2)
+    - Add full quest chain
 ## 3.4.0
 MOLTEN FRONT
 - Part I - Unlock the Dailies (v2)
