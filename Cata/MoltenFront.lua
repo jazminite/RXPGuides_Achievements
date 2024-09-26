@@ -657,10 +657,10 @@ RXPGuides.RegisterGuide([[
     .complete 29138,1 >>Burn Victims
     .target Wounded Hyjal Defender
   step
+    .isOnQuest 29139
     .goto Molten Front,46.6,62.8,0
     >>Plant |cRXP_PICK_Smothervine Seeds|r in the Ash Piles in the Ashen Fields
     .complete 29139,1 >>Aggressive Growth
-    .isOnQuest 29139
   step
     .isOnQuest 29142
     .goto Molten Front,48.8,71.6,0
@@ -692,6 +692,11 @@ RXPGuides.RegisterGuide([[
     .complete 29179,1 >>Hostile Elements
     .mob Charred Vanquisher
     .mob Charred Soldier
+  step
+    .isOnQuest 29139
+    .goto Molten Front,46.6,62.8,0
+    >>Plant |cRXP_PICK_Smothervine Seeds|r in the Ash Piles in the Ashen Fields
+    .complete 29139,1 >>Aggressive Growth
   step
     .isQuestComplete 29139
     .goto Molten Front,48.50,86.17
@@ -739,6 +744,9 @@ RXPGuides.RegisterGuide([[
     >>Return to |cRXP_FRIENDLY_General Taldris Moonfall|r at Malfurion's Breach
     .dailyturnin 29137 >>Turn in Breach in the Defenses
   step
+    >>You must collect |cRXP_WARN_150 Marks of the World Tree|r to continue to the next set of dailies.
+    .complete 29181,1 >>Druids of the Talon
+  step
     +You have finished the Daily Molten Front Quests for today!
 ]])
 
@@ -749,7 +757,7 @@ RXPGuides.RegisterGuide([[
   #cata
   #name Part II - Druids of the Talon
 
-    step
+  step
     >>Collect |cRXP_FRIENDLY_Marks of the World Tree|r by completing daily quests in Mount Hyjal and the Molten Front
     .complete 29181,1 >>Druids of the Talon
   step
