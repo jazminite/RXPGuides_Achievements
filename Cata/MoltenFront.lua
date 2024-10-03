@@ -1104,9 +1104,9 @@ RXPGuides.RegisterGuide([[
     .daily 29160,29189,29159 >>Accept the Daily Quests
   step
     .goto Molten Front,71.0,38.5
-    >>Kill a |cRXP_ENEMY_Druid of the Flame|r and accept the quest from the acorn he drops.
-    .accept >>The Mysterious Seed
     .mob Druid of the Flame
+    >>Kill a |cRXP_ENEMY_Druid of the Flame|r and accept the quest from the acorn he drops.
+    .accept 29245 >>Accept The Mysterious Seed
   step
     .isOnQuest 29211
     .goto Molten Front,71.0,38.5
@@ -1146,23 +1146,6 @@ RXPGuides.RegisterGuide([[
     .mob Cinderweb Creeper
     .mob Cinderweb Spinner
   step
-    .isQuestComplete 29211
-    .goto Molten Front,64.84,67.19
-    .target Marin Bladewing
-    >>Return to |cRXP_FRIENDLY_Marin Bladewing|r at the Forlorn Spire
-    .dailyturnin 29211 >>Turn in Solar Core Destruction
-  step
-    .isQuestComplete 29192
-    .goto Molten Front,64.84,67.19
-    .target Marin Bladewing
-    >>Return to |cRXP_FRIENDLY_Marin Bladewing|r at the Forlorn Spire
-    .dailyturnin 29192 >>Turn in The Wardens are Watching
-  step
-    .goto Molten Front,64.84,67.19
-    .target Marin Bladewing
-    >>Talk to |cRXP_FRIENDLY_Marin Bladewing|r at the Forlorn Spire
-    .accept 29210 >>Accept Enduring the Heat
-  step
     .isQuestComplete 29159
     .goto Molten Front,66.0,64.0
     .target Deldren Ravenelm
@@ -1180,6 +1163,23 @@ RXPGuides.RegisterGuide([[
     .target Deldren Ravenelm
     >>Return to |cRXP_FRIENDLY_Deldren Ravenelm|r at the Forlorn Spire
     .dailyturnin 29160 >>Turn in Egg-stinction
+  step
+    .isQuestComplete 29211
+    .goto Molten Front,64.84,67.19
+    .target Marin Bladewing
+    >>Return to |cRXP_FRIENDLY_Marin Bladewing|r at the Forlorn Spire
+    .dailyturnin 29211 >>Turn in Solar Core Destruction
+  step
+    .isQuestComplete 29192
+    .goto Molten Front,64.84,67.19
+    .target Marin Bladewing
+    >>Return to |cRXP_FRIENDLY_Marin Bladewing|r at the Forlorn Spire
+    .dailyturnin 29192 >>Turn in The Wardens are Watching
+  step
+    .goto Molten Front,64.84,67.19
+    .target Marin Bladewing
+    >>Talk to |cRXP_FRIENDLY_Marin Bladewing|r at the Forlorn Spire
+    .accept 29210 >>Accept Enduring the Heat
   step
     .goto Molten Front,57.8,49.6
     >>Destroy all the |cRXP_ENEMY_Blue Flame Runes|r inside the Igneous Depths
