@@ -5,6 +5,8 @@
 MOLTEN FRONT
 - Dailies (v3)
     - Add Druid of the Talon daily quests
+- Part II - Shadow Wardens (v2)
+    - Add full quest chain
 
 ## 3.5.0
 MOLTEN FRONT
