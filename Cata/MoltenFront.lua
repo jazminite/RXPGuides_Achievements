@@ -346,17 +346,12 @@ RXPGuides.RegisterGuide([[
 ]])
 
 RXPGuides.RegisterGuide([[
-  #version 2
+  #version 3
   #group Achievements
   #subgroup Molten Front
   #cata
   #name Dailies
 
-  step
-    .xp 85 >>You must be |cFFFCDC00level 85|r to do the Molten Front quests
-  step
-    #completewith next
-    .zone Mount Hyjal >>Travel to Mount Hyjal
   step
     .goto Mount Hyjal,27.19,62.55
     .target Matoclaw
@@ -747,6 +742,150 @@ RXPGuides.RegisterGuide([[
     >>You must collect |cRXP_WARN_150 Marks of the World Tree|r to continue to the next set of dailies.
     .complete 29181,1 >>Druids of the Talon
   step
+    .goto Molten Front,45.62,85.79
+    .target General Taldris Moonfall
+    >>Talk to |cRXP_FRIENDLY_General Taldris Moonfall|r at Malfurion's Breach
+    .accept 29206 >>Accept Into the Fire
+  step
+    .goto Molten Front,41.6,80.3
+    >>Escort the |cRXP_FRIENDLY_Windcaller|r through the Furnace to access the Molten Flow
+    .complete 29206,1 >>Into the Fire
+    .target Windcaller Voramus
+  step
+    .goto Molten Front,43.0,60.2
+    .target Thisalee Crow
+    >>Talk to |cRXP_FRIENDLY_Thisalee Crow|r inside The Molten Flow
+    .turnin 29206 >>Turn in Into the Fire
+    .accept 29265 >>Accept Fire Flowers
+    .accept 29264 >>Accept Flamewakers of the Molten Flow
+  step
+    #completewith next
+    .goto Molten Front,50.26,39.46
+    >>Kill |cRXP_ENEMY_Flamewakers|r inside The Molten Flow
+    .complete 29264,1 >>Flamewakers of the Molten Flow
+    .mob Flamewaker Sentinel
+    .mob Flamewaker Shaman
+    .mob Flamewaker Hunter
+  step
+    .goto Molten Front,47.88,35.15
+    >>Pick |cRXP_LOOT_Luciferns|r inside The Molten Flow
+    .complete 29265,1 >>Fire Flowers
+  step
+    .goto Molten Front,50.26,39.46
+    >>Kill |cRXP_ENEMY_Flamewakers|r inside The Molten Flow
+    .complete 29264,1 >>Flamewakers of the Molten Flow
+    .mob Flamewaker Sentinel
+    .mob Flamewaker Shaman
+    .mob Flamewaker Hunter
+  step
+    .goto Molten Front,42.61,59.79
+    .target Thisalee Crow
+    >>Talk to |cRXP_FRIENDLY_Thisalee Crow|r inside The Molten Flow
+    .turnin 29264 >>Turn in Flamewakers of the Molten Flow
+  step
+    #completewith next
+    .goto Molten Front,33.33,67.59,5 >>Exit the Molten Flow by jumping into the airstream
+  step
+    .goto Molten Front,35.99,59.60
+    .target Tholo Whitehoof
+    .target Anren Shadowseeker
+    >>Talk to |cRXP_FRIENDLY_Anren Shadowseeker or Tholo Whitehoof|r at The Furnace
+    .daily 29274,29273 >>Accept the Daily Quest
+  step
+    .goto Molten Front,36.26,56.69
+    .target Choluna
+    >>Talk to |cRXP_FRIENDLY_Choluna|r at The Furnace
+    .turnin 29265 >>Turn in Fire Flowers
+  step
+    .goto Molten Front,34.5,56.28
+    .target Morthis Whisperwing
+    >>Talk to |cRXP_FRIENDLY_Morthis Whisperwing|r at The Furnace
+    .daily 29287,29288,29289,29290 >>Accept the Daily Quest
+  step
+    .goto Molten Front,34.32,56.46
+    .target Arthorn Windsong
+    >>Talk to |cRXP_FRIENDLY_Arthorn Windsong|r at The Furnace
+    .daily 29293,29296 >>Accept the Daily Quest
+  step
+    #completewith next
+    .goto Molten Front,34.11,56.9,5 >>Mount the |cRXP_FRIENDLY_Trained Fire Hawk|r 
+    .target Trained Fire Hawk
+  step
+    .isOnQuest 29290
+    .goto Molten Front,34.11,56.9
+    >>Use the Trained Fire Hawk to kill |cRXP_ENEMY_Flamewakers, Spiders, and Molten Lords|r in the Firelands
+    .complete 29290,1
+    .complete 29290,2
+    .complete 29290,3 >>Fire in the Skies
+    .mob Flamewaker
+    .mob Cinderweb Skitterer
+    .mob Molten Lord
+  step
+    .isOnQuest 29274
+    .goto Molten Front,41.8,42.0
+    >>Kill |cRXP_ENEMY_Charhounds|r in the Magma Springs for |cRXP_LOOT_Houndbone Ash|r
+    .complete 29274,1 >>Hounds of Shannox
+    .mob Charhound
+    .mob Ancient Charhound
+  step
+    .isOnQuest 29273
+    .goto Molten Front,20.77,28.97
+    .use 69806
+    >>Use |cRXP_PICK_Tholo's Thermometer|r to measure the temperature of the large lava pools on Fireplume Peak
+    .complete 29273,1 >>How Hot
+  step
+    .isOnQuest 29273
+    .goto Molten Front,30,31
+    .use 69806
+    >>Use |cRXP_PICK_Tholo's Thermometer|r to measure the temperature of the large lava pools on Fireplume Peak
+    .complete 29273,2 >>How Hot
+  step
+    .isOnQuest 29273
+    .goto Molten Front,23,40
+    .use 69806
+    >>Use |cRXP_PICK_Tholo's Thermometer|r to measure the temperature of the large lava pools on Fireplume Peak
+    .complete 29273,3 >>How Hot
+  step
+    .isOnQuest 29296
+    .goto Molten Front,21.2,28.2
+    >>Kill |cRXP_ENEMY_Fire Hawks|r on Fireplume Peak
+    .complete 29296,1 >>Territorial Birds
+    .mob Fire Hawk
+  step
+    .isOnQuest 29287
+    .goto Molten Front,24.5,42.1
+    >>Retrieve a |cRXP_LOOT_Fire Hawk Egg|r from the top of Fireplume Peak
+    .complete 29287,1 >>Peaked Interest
+  step
+    .isQuestComplete 29296
+    .goto Molten Front,34.32,56.46
+    .target Arthorn Windsong
+    >>Return to |cRXP_FRIENDLY_Arthorn Windsong|r at The Furnace
+    .dailyturnin 29296 >>Turn in Territorial Birds
+  step
+    .isQuestComplete 29293
+    .goto Molten Front,34.32,56.46
+    .target Arthorn Windsong
+    >>Return to |cRXP_FRIENDLY_Arthorn Windsong|r at The Furnace
+    .dailyturnin 29293 >>Turn in Singed Wings
+  step
+    .isQuestComplete 29287
+    .goto Molten Front,34.5,56.28
+    .target Morthis Whisperwing
+    >>Return to |cRXP_FRIENDLY_Morthis Whisperwing|r at The Furnace
+    .dailyturnin 29287 >>Turn in Peaked Interest
+  step
+    .isQuestComplete 29274
+    .goto Molten Front,51.28,85.3
+    .target Tholo Whitehoof
+    >>Talk to |cRXP_FRIENDLY_Tholo Whitehoof|r at Malfurion's Breach
+    .dailyturnin 29274 >>Turn in Hounds of Shannox
+  step
+    .isQuestComplete 29273
+    .goto Molten Front,51.28,85.3
+    .target Tholo Whitehoof
+    >>Talk to |cRXP_FRIENDLY_Tholo Whitehoof|r at Malfurion's Breach
+    .dailyturnin 29273 >>Turn in How Hot
     +You have finished the Daily Molten Front Quests for today!
 ]])
 
@@ -906,7 +1045,7 @@ RXPGuides.RegisterGuide([[
 ]])
 
 RXPGuides.RegisterGuide([[
-  #version 1
+  #version 2
   #group Achievements
   #subgroup Molten Front
   #cata
@@ -920,4 +1059,200 @@ RXPGuides.RegisterGuide([[
     .target Captain Saynna Stormrunner
     >>Talk to |cRXP_FRIENDLY_Captain Saynna Stormrunner|r at the Sanctuary of Malorne
     .turnin 29214 >>Turn in The Shadow Wardens
+  step
+    .goto Mount Hyjal,27.19,62.55
+    .target Matoclaw
+    >>Talk to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
+    .accept 29215 >>Accept The Hunt Begins
+  step
+    #completewith next
+    .goto Mount Hyjal,27.52,56.64,5 >>Take the portal to the Molten Front
+  step
+    .goto Molten Front,47.46,90.52
+    .target Captain Saynna Stormrunner
+    >>Talk to |cRXP_FRIENDLY_Captain Saynna Stormrunner|r inside the Sentinel Tree
+    .turnin 29215 >>Turn in The Hunt Begins
+  step
+    .goto Molten Front,45.62,85.79
+    .target General Taldris Moonfall
+    >>Talk to |cRXP_FRIENDLY_General Taldris Moonfall|r at Malfurion's Breach
+    .accept 29205 >>Accept The Forlorn Spire
+  step
+    .goto Molten Front,65.0,66.2
+    >>Protect the |cRXP_FRIENDLY_Druid Assault Group|r attempting to take the Forlorn Spire
+    .complete 29205,1 >>The Forlorn Spire
+    .target Druid Assault Group
+  step
+    .goto Molten Front,64.84,67.19
+    .target Marin Bladewing
+    >>Talk to |cRXP_FRIENDLY_Marin Bladewing|r at the Forlorn Spire
+    .turnin 29205 >>Turn in The Forlorn Spire
+  step
+    .goto Molten Front,64.84,67.19
+    .target Marin Bladewing
+    >>Talk to |cRXP_FRIENDLY_Marin Bladewing|r at the Forlorn Spire
+    .daily 29192,29211 >>Accept the Daily Quest
+  step
+    .goto Molten Front,66.0,65.8
+    .target Tholo Whitehoof
+    >>Talk to |cRXP_FRIENDLY_Tholo Whitehoof|r at the Forlorn Spire
+    .daily 29276 >>The Flame Spider Queen
+  step
+    .goto Molten Front,66.0,64.0
+    .target Deldren Ravenelm
+    >>Talk to |cRXP_FRIENDLY_Deldren Ravenelm|r at the Forlorn Spire
+    .daily 29160,29189,29159 >>Accept the Daily Quests
+  step
+    .goto Molten Front,71.0,38.5
+    .mob Druid of the Flame
+    >>Kill a |cRXP_ENEMY_Druid of the Flame|r and accept the quest from the acorn he drops.
+    .accept 29245 >>Accept The Mysterious Seed
+  step
+    .isOnQuest 29211
+    .goto Molten Front,71.0,38.5
+    >>Detonate a |cRXP_ENEMY_Solar Core|r in the Molten Front
+    .complete 29211,1 >>Solar Core Destruction
+    .mob Solar Core
+  step
+    .isOnQuest 29192
+    .goto Molten Front,71.0,38.5
+    >>Attack a |cRXP_ENEMY_Druid of the Flame|r then lure it into your Shadow Warden's trap
+    .complete 29192,1 >>The Wardens are Watching
+    .mob Druid of the Flame
+  step
+    .isOnQuest 29160
+    .goto Molten Front,68.0,44.5
+    >>Collect |cRXP_LOOT_Cinderweb Eggs|r from the pillars in The Widow's Clutch
+    .complete 29160,1 >>Egg-stinction
+  step
+    .isOnQuest 29189
+    .goto Molten Front,69.6,49.2
+    >>Free |cRXP_FRIENDLY_Victims|r out of Cinderweb Cocoons in The Widow's Clutch
+    .complete 29189,1 >>Wicked Webs
+    .mob Cinderweb Cocoon
+  step
+    .isOnQuest 29276
+    .goto Molten Front,69.6,49.2
+    >>Kill |cRXP_ENEMY_Spiders|r  for |cRXP_LOOT_Flame Venom and Searing Web Fluid|r
+    .complete 29276,1
+    .complete 29276,2 >>The Flame Spider Queen
+    .mob Cinderweb Creeper
+    .mob Cinderweb Spinner
+  step
+    .isOnQuest 29159
+    .goto Molten Front,69.6,49.2
+    >>Kill |cRXP_ENEMY_Cinderweb Spiders|r in The Widow's Clutch
+    .complete 29159,1 >>Pyrorachnophobia
+    .mob Cinderweb Creeper
+    .mob Cinderweb Spinner
+  step
+    .isQuestComplete 29159
+    .goto Molten Front,66.0,64.0
+    .target Deldren Ravenelm
+    >>Return to |cRXP_FRIENDLY_Deldren Ravenelm|r at the Forlorn Spire
+    .dailyturnin 29159 >>Turn in Pyrorachnophobia
+  step
+    .isQuestComplete 29189
+    .goto Molten Front,66.0,64.0
+    .target Deldren Ravenelm
+    >>Return to |cRXP_FRIENDLY_Deldren Ravenelm|r at the Forlorn Spire
+    .dailyturnin 29189 >>Turn in Wicked Webs
+  step
+    .isQuestComplete 29160
+    .goto Molten Front,66.0,64.0
+    .target Deldren Ravenelm
+    >>Return to |cRXP_FRIENDLY_Deldren Ravenelm|r at the Forlorn Spire
+    .dailyturnin 29160 >>Turn in Egg-stinction
+  step
+    .isQuestComplete 29211
+    .goto Molten Front,64.84,67.19
+    .target Marin Bladewing
+    >>Return to |cRXP_FRIENDLY_Marin Bladewing|r at the Forlorn Spire
+    .dailyturnin 29211 >>Turn in Solar Core Destruction
+  step
+    .isQuestComplete 29192
+    .goto Molten Front,64.84,67.19
+    .target Marin Bladewing
+    >>Return to |cRXP_FRIENDLY_Marin Bladewing|r at the Forlorn Spire
+    .dailyturnin 29192 >>Turn in The Wardens are Watching
+  step
+    .goto Molten Front,64.84,67.19
+    .target Marin Bladewing
+    >>Talk to |cRXP_FRIENDLY_Marin Bladewing|r at the Forlorn Spire
+    .accept 29210 >>Accept Enduring the Heat
+  step
+    .goto Molten Front,57.8,49.6
+    >>Destroy all the |cRXP_ENEMY_Blue Flame Runes|r inside the Igneous Depths
+    .complete 29210,1
+    .complete 29210,2 >>Enduring the Heat
+  step
+    .goto Molten Front,57.8,49.6
+    .target Theresa Barkskin
+    >>Talk to |cRXP_FRIENDLY_Theresa Barkskin|r inside the Igneous Depths
+    .turnin 29210 >>Turn in Enduring the Heat
+  step
+    .isQuestComplete 29276
+    .goto Molten Front,51.21,85.68
+    .target Anren Shadowseeker
+    >>Talk to |cRXP_FRIENDLY_Anren Shadowseeker|r at Malfurion's Breach
+    .dailyturnin 29276 >>Turn in The Flame Spider Queen
+  step
+    .goto Molten Front,50.6,87.0
+    .target Avrilla
+    >>Talk to |cRXP_FRIENDLY_Avrilla|r at Malfurion's Breach
+    .turnin 29245 >>Turn in The Mysterious Seed
+    .accept 29249 >>Accept Planting Season
+  step
+    .goto Molten Front,53.4,90.54
+    >>Plant the |cRXP_FRIENDLY_Acorn|r in the Un'Goro Soil at Malfurion's Breach
+    .complete 29249,1 >>Planting Season
+  step  
+    .complete 29249,1 29249 >>Click the popup to turn in Planting Season
+    .accept 29254 >>Accept Little Lasher
+  step
+    .goto Molten Front,50.6,87.0
+    .target Avrilla
+    >>Talk to |cRXP_FRIENDLY_Avrilla|r at Malfurion's Breach
+    .turnin 29254 >>Turn in Little Lasher
+  step
+    .goto Molten Front,50.6,87.0
+    .target Avrilla
+    >>Talk to |cRXP_FRIENDLY_Avrilla|r at Malfurion's Breach
+    .daily 29255,29299,29257 >>Accept the Daily Quests
+  step
+    .isOnQuest 29255
+    .goto Molten Front,48.8,70.0
+    >>Kill |cRXP_ENEMY_Charred Soldiers and Charred Vanquishers|r in the Ashen Fields for |cRXP_LOOT_Embergris|r
+    .complete 29255,1 >>Embergris
+    .mob Charred Soldier
+    .mob Charred Vanquisher
+  step
+    .isOnQuest 29299
+    >>Help the |cRXP_FRIENDLY_Crimson Lasher|r drink from Ember Pools, which are created by fighting Emberspit Scorpions.
+    .complete 29299,1 >>Some Like It Hot
+    .mob Emberspit Scorpion
+  step
+    .isOnQuest 29257
+    >>Collect |cRXP_FRIENDLY_Magmolias|r from the Magma Springs
+    .complete 29257,1 >>Steal Magmolias
+  step
+    .isQuestComplete 29255
+    .goto Molten Front,50.6,87.0
+    .target Avrilla
+    >>Return to |cRXP_FRIENDLY_Avrilla|r at Malfurion's Breach
+    .dailyturnin 29255 >>Turn in Embergris
+  step
+    .isQuestComplete 29299
+    .goto Molten Front,50.6,87.0
+    .target Avrilla
+    >>Return to |cRXP_FRIENDLY_Avrilla|r at Malfurion's Breach
+    .dailyturnin 29299 >>Turn in Some Like It Hot
+  step
+    .isQuestComplete 29257
+    .goto Molten Front,50.6,87.0
+    .target Avrilla
+    >>Return to |cRXP_FRIENDLY_Avrilla|r at Malfurion's Breach
+    .dailyturnin 29257 >>Turn in Steal Magmolias
+  step
+    +You have finished all the quests in this guide.
 ]])
