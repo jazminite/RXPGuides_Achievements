@@ -1,6 +1,12 @@
 # Changelog
 
 ## Versions
+## 3.6.1
+MOLTEN FRONT
+- Dailies (v4)
+    - Add missing quests
+    - Small route changes
+
 ## 3.6.0
 MOLTEN FRONT
 - Dailies (v3)

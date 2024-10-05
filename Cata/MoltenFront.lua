@@ -346,7 +346,7 @@ RXPGuides.RegisterGuide([[
 ]])
 
 RXPGuides.RegisterGuide([[
-  #version 3
+  #version 4
   #group Achievements
   #subgroup Molten Front
   #cata
@@ -420,6 +420,22 @@ RXPGuides.RegisterGuide([[
     .complete 29248,1 >>Releasing the Pressure
     .mob Charred Flamewaker
   step
+    .isOnQuest 29101
+    .goto Mount Hyjal,21.2,57.0
+    >>Punt |cRXP_FRIENDLY_Children of Tortolla|r into water
+    .complete 29101,1 >>Punting Season
+    .target Children of Tortolla
+  step
+    .isQuestComplete 29101  
+    .turnin 29101 >>Click the popup to turn in Punting Season
+    .accept 29122 >>Accept Echoes of Nemesis
+  step
+    .isOnQuest 29122
+    .goto Mount Hyjal,24.01,55.86
+    >>Speak with Tooga to summon and kill |cRXP_ENEMY_Nemesis|r 
+    .complete 29122,1 >>Echoes of Nemesis
+    .mob Nemesis
+  step
     .isOnQuest 29123
     .goto Mount Hyjal,14.06,42.83
     >>Kill |cRXP_ENEMY_Firelands Invaders|r in the Regrowth or Sethria's Roost
@@ -460,22 +476,6 @@ RXPGuides.RegisterGuide([[
     .goto Mount Hyjal,39,56
     >>Pick |cRXP_LOOT_Blueroot Vines|r from the ground near trees
     .complete 29166,1 >>Supplies for the Other Side
-  step
-    .isOnQuest 29101
-    .goto Mount Hyjal,21.2,57.0
-    >>Punt |cRXP_FRIENDLY_Children of Tortolla|r into water
-    .complete 29101,1 >>Punting Season
-    .target Children of Tortolla
-  step
-    .isQuestComplete 29101  
-    .turnin 29101 >>Click the popup to turn in Punting Season
-    .accept 29122 >>Accept Echoes of Nemesis
-  step
-    .isOnQuest 29122
-    .goto Mount Hyjal,24.01,55.86
-    >>Speak with Tooga to summon and kill |cRXP_ENEMY_Nemesis|r 
-    .complete 29122,1 >>Echoes of Nemesis
-    .mob Nemesis
   step
     .isOnQuest 29161
     .goto Mount Hyjal,12.72,34.25
@@ -616,6 +616,11 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .goto Mount Hyjal,27.52,56.64,5 >>Take the portal to the Molten Front
   step
+    .goto Molten Front,50.6,87.0
+    .target Avrilla
+    >>Talk to |cRXP_FRIENDLY_Avrilla|r at Malfurion's Breach
+    .daily 29255,29299,29257 >>Accept the Daily Quests
+  step
     .goto Molten Front,48.50,86.17
     .target Rayne Feathersong
     >>Talk to |cRXP_FRIENDLY_Rayne Feathersong|r at Malfurion's Breach
@@ -646,7 +651,40 @@ RXPGuides.RegisterGuide([[
     >>Lead the |cRXP_FRIENDLY_Hyjal Wisp|r to a fire portal in the Ashen Fields. Protect the Wisp until it closes the portal.
     .complete 29143,1 >>Wisp Away
   step
-    .isOnQuest 29138
+    .isOnQuest 29255
+    .goto Molten Front,48.8,70.0
+    >>Kill |cRXP_ENEMY_Charred Soldiers and Charred Vanquishers|r in the Ashen Fields for |cRXP_LOOT_Embergris|r
+    .complete 29255,1 >>Embergris
+    .mob Charred Soldier
+    .mob Charred Vanquisher
+  step
+    .isOnQuest 29299
+    >>Help the |cRXP_FRIENDLY_Crimson Lasher|r drink from Ember Pools, which are created by fighting Emberspit Scorpions.
+    .complete 29299,1 >>Some Like It Hot
+    .mob Emberspit Scorpion
+  step
+    .isOnQuest 29257
+    >>Collect |cRXP_FRIENDLY_Magmolias|r from the Magma Springs
+    .complete 29257,1 >>Steal Magmolias
+  step
+    .isQuestComplete 29255
+    .goto Molten Front,50.6,87.0
+    .target Avrilla
+    >>Return to |cRXP_FRIENDLY_Avrilla|r at Malfurion's Breach
+    .dailyturnin 29255 >>Turn in Embergris
+  step
+    .isQuestComplete 29299
+    .goto Molten Front,50.6,87.0
+    .target Avrilla
+    >>Return to |cRXP_FRIENDLY_Avrilla|r at Malfurion's Breach
+    .dailyturnin 29299 >>Turn in Some Like It Hot
+  step
+    .isQuestComplete 29257
+    .goto Molten Front,50.6,87.0
+    .target Avrilla
+    >>Return to |cRXP_FRIENDLY_Avrilla|r at Malfurion's Breach
+    .dailyturnin 29257 >>Turn in Steal Magmolias
+  step
     .use 69240
     >>Heal |cRXP_FRIENDLY_Wounded Hyjal Defenders|r in the Ashen Fields
     .complete 29138,1 >>Burn Victims
@@ -681,29 +719,16 @@ RXPGuides.RegisterGuide([[
     .complete 29141,1 >>The Harder They Fall
     .mob Molten Behemoth
   step
-    .isOnQuest 29179
     .goto Molten Front,48.0,70.4,0
     >>Kill |cRXP_ENEMY_Charred Combatants|r in the Ashen Fields
     .complete 29179,1 >>Hostile Elements
     .mob Charred Vanquisher
     .mob Charred Soldier
   step
-    .isOnQuest 29139
-    .goto Molten Front,46.6,62.8,0
-    >>Plant |cRXP_PICK_Smothervine Seeds|r in the Ash Piles in the Ashen Fields
-    .complete 29139,1 >>Aggressive Growth
-  step
-    .isQuestComplete 29139
     .goto Molten Front,48.50,86.17
     .target Rayne Feathersong
     >>Return to |cRXP_FRIENDLY_Rayne Feathersong|r at Malfurion's Breach
-    .dailyturnin 29139 >>Aggressive Growth
-  step
-    .isQuestComplete 29143
-    .goto Molten Front,48.50,86.17
-    .target Rayne Feathersong
-    >>Return to |cRXP_FRIENDLY_Rayne Feathersong|r at Malfurion's Breach
-    .dailyturnin 29143 >>Wisp Away
+    .dailyturnin 29139,29143 >>Turn in Aggressive Growth or Wisp Away
   step
     .goto Molten Front,45.72,86.12
     .target Captain Irontree
@@ -758,6 +783,19 @@ RXPGuides.RegisterGuide([[
     .turnin 29206 >>Turn in Into the Fire
     .accept 29265 >>Accept Fire Flowers
     .accept 29264 >>Accept Flamewakers of the Molten Flow
+  step
+    .goto Molten Front,43.0,60.2
+    .target Anren Shadowseeker
+    >>Talk to |cRXP_FRIENDLY_Anren Shadowseeker|r inside The Molten Flow
+    .accept 29274 >>Accept Hounds of Shannox
+    |cRXP_WARN_NOTE|r: If Anren is not here, skip this step
+  step
+    .isOnQuest 29274
+    .goto Molten Front,41.8,42.0
+    >>Kill |cRXP_ENEMY_Charhounds|r inside The Molten Flow for |cRXP_LOOT_Houndbone Ash|r
+    .complete 29274,1 >>Hounds of Shannox
+    .mob Charhound
+    .mob Ancient Charhound
   step
     #completewith next
     .goto Molten Front,50.26,39.46
@@ -821,13 +859,6 @@ RXPGuides.RegisterGuide([[
     .mob Cinderweb Skitterer
     .mob Molten Lord
   step
-    .isOnQuest 29274
-    .goto Molten Front,41.8,42.0
-    >>Kill |cRXP_ENEMY_Charhounds|r in the Magma Springs for |cRXP_LOOT_Houndbone Ash|r
-    .complete 29274,1 >>Hounds of Shannox
-    .mob Charhound
-    .mob Ancient Charhound
-  step
     .isOnQuest 29273
     .goto Molten Front,20.77,28.97
     .use 69806
@@ -839,6 +870,12 @@ RXPGuides.RegisterGuide([[
     .use 69806
     >>Use |cRXP_PICK_Tholo's Thermometer|r to measure the temperature of the large lava pools on Fireplume Peak
     .complete 29273,2 >>How Hot
+  step
+    .isOnQuest 29293
+    .goto Molten Front,19.8,30.6
+    >>Rescue |cRXP_FRIENDLY_Injured Druids of the Talon|r on Fireplume Peak
+    .complete 29293,1 >>Singed Wings
+    .target Injured Druid of the Talon
   step
     .isOnQuest 29273
     .goto Molten Front,23,40
@@ -886,6 +923,7 @@ RXPGuides.RegisterGuide([[
     .target Tholo Whitehoof
     >>Talk to |cRXP_FRIENDLY_Tholo Whitehoof|r at Malfurion's Breach
     .dailyturnin 29273 >>Turn in How Hot
+  step
     +You have finished the Daily Molten Front Quests for today!
 ]])
 
