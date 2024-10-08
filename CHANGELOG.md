@@ -1,6 +1,14 @@
 # Changelog
 
 ## Versions
+## 3.6.1
+MOLTEN FRONT
+- Dailies (v4)
+    - Add missing quests
+    - Small route changes
+- Part II - Shadow Wardens (v3)
+    - Fix code error
+
 ## 3.6.0
 MOLTEN FRONT
 - Dailies (v3)
