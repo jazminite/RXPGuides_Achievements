@@ -1,4 +1,110 @@
 RXPGuides.RegisterGuide([[
+  #version 1
+  #group Achievements
+  #subgroup Molten Front
+  #cata
+  #name Achievements Check
+
+  step
+    #sticky
+    >>|cRXP_WARN_Achievement - Veteran of the Molten Front|r
+    >>Complete the Regrowth and Molten Front achievements listed below.
+    .achievement 5879,1
+    .achievement 5879,2
+    .achievement 5879,3
+    .achievement 5879,4
+    .achievement 5879,5
+    .achievement 5879,6
+    .achievement 5879,7
+    .achievement 5879,8
+    .achievement 5879,9
+    .achievement 5879,10
+    .achievement 5879,11
+    .achievement 5879,12
+    .achievement 5879,13
+    .achievement 5879,14
+  step
+    >>|cRXP_WARN_Achievement - Ludicrous Speed|r
+    >>While on the quest Call the Flock in Mount Hyjal, obtain 65 stacks of Soar.
+    .achievement 5879,11
+  step
+    >>|cRXP_WARN_Achievement - And the Meek Shall Inherit Kalimdor|r
+    >>Help each of the following critters get revenge on the mean old fire elementals.
+    .achievement 5868,1
+    .achievement 5868,2
+    .achievement 5868,3
+    .achievement 5868,4
+  step
+    >>|cRXP_WARN_Achievement - Have... Have We Met?|r
+    >>Acknowledge your recognition by /waving at the following NPCs in Sethria's Roost.
+    .achievement 5865,1
+    .achievement 5865,2
+    .achievement 5865,3
+    .achievement 5865,4
+    .achievement 5865,5
+    .achievement 5865,6
+    .target Linken
+    .target Nat Pagle
+    .target Mankrik
+    .target Hemet Nesingwary
+    .target Chromie
+    .target Thassarian
+  step
+    >>|cRXP_WARN_Achievement - Infernal Ambassadors|r
+    >>Slay the elite invaders of Hyjal in the following ways.
+    .achievement 5869,1
+    .achievement 5869,2
+    .achievement 5869,3
+    .achievement 5869,4
+    .achievement 5869,5
+  step
+    >>|cRXP_WARN_Achievement - Master of the Molten Flow|r
+    >>Complete the following challenges within the Molten Flow.
+    .achievement 5871,1
+    .achievement 5871,2
+    .achievement 5871,3
+  step
+    >>|cRXP_WARN_Achievement - Fireside Chat|r
+    >>Speak with the following characters during the attack on the Molten Front.
+    .achievement 5870,1
+    .achievement 5870,2
+    .achievement 5870,3
+    .achievement 5870,4
+    .achievement 5870,5
+    .achievement 5870,6
+    .achievement 5870,7
+    .achievement 5870,8
+  step
+    >>|cRXP_WARN_Achievement - Legacy of Leyara|r
+    >>Complete the Leyara quests in Mount Hyjal and the Molten Front.
+    .achievement 5859,1
+    .achievement 5859,2
+    .achievement 5859,3
+  step
+    >>|cRXP_WARN_Achievement - Ready for Raiding II|r
+    >>Slay the following Lieutenants of Flame in Ragnaros' Reach without getting hit by their special attacks.
+    .achievement 5873,1
+    .achievement 5873,2
+    .achievement 5873,3
+    .achievement 5873,4
+    .achievement 5873,5
+  step
+    >>|cRXP_WARN_Achievement - The Molten Front Offensive|r
+    >>Unlock each of the following in the attack on the Molten Front.
+    .achievement 5866,1
+    .achievement 5866,2
+    .achievement 5866,3
+    .achievement 5866,4
+    .achievement 5866,5
+    .achievement 5866,6
+    .achievement 5866,7
+    .achievement 5866,8
+    .achievement 5866,9
+  step
+    +Congratulations!! You have completed all the Molten Front Achievements.
+]])
+
+RXPGuides.RegisterGuide([[
   #version 2
   #group Achievements
   #subgroup Molten Front
@@ -346,7 +452,7 @@ RXPGuides.RegisterGuide([[
 ]])
 
 RXPGuides.RegisterGuide([[
-  #version 4
+  #version 5
   #group Achievements
   #subgroup Molten Front
   #cata
@@ -613,10 +719,9 @@ RXPGuides.RegisterGuide([[
     >>Return to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
     .dailyturnin 29126 >>The Power of Malorne
   step
-    #completewith next
-    .goto Mount Hyjal,27.52,56.64,5 >>Take the portal to the Molten Front
+    .goto Mount Hyjal,27.52,56.64,10 >>Take the portal to the Molten Front
   step
-    .isQuestComplete 29254
+    .isQuestTurnedIn 29254
     .goto Molten Front,50.6,87.0
     .target Avrilla
     >>Talk to |cRXP_FRIENDLY_Avrilla|r at Malfurion's Breach
@@ -773,7 +878,7 @@ RXPGuides.RegisterGuide([[
     >>Talk to |cRXP_FRIENDLY_General Taldris Moonfall|r at Malfurion's Breach
     .accept 29206 >>Accept Into the Fire
   step
-    .goto Molten Front 43.24,80.43,5,0
+    .goto Molten Front,43.24,80.43,5,0
     .goto Molten Front,34.63,68.60
     >>Escort the |cRXP_FRIENDLY_Windcaller|r through the Furnace to access the Molten Flow
     .complete 29206,1 >>Into the Fire
@@ -1297,6 +1402,59 @@ RXPGuides.RegisterGuide([[
     .target Avrilla
     >>Return to |cRXP_FRIENDLY_Avrilla|r at Malfurion's Breach
     .dailyturnin 29257 >>Turn in Steal Magmolias
+  step
+    +You have finished all the quests in this guide.
+]])
+
+RXPGuides.RegisterGuide([[
+  #version 1
+  #group Achievements
+  #subgroup Molten Front
+  #cata
+  #name Part III - Filling the Moonwell
+
+  step
+    #sticky
+    >>|cRXP_WARN_!!!WARNING!!!|r
+    >>Don't work on this guide until you have finished the achievement:
+    .achievement 5879,3
+  step
+    .goto Molten Front,44.8,86.6
+    .target Ayla Shadowstorm
+    >>Talk to |cRXP_FRIENDLY_Ayla Shadowstorm|r at Malfurion's Breach
+    .accept 29279 >>Accept Filling the Moonwell
+  step
+    >>Collect |cRXP_FRIENDLY_Marks of the World Tree|r by completing daily quests in Mount Hyjal and the Molten Front
+    .complete 29279,1 >>Filling the Moonwell
+  step
+    .goto Mount Hyjal,27.19,62.55
+    .target Matoclaw
+    >>Talk to |cRXP_FRIENDLY_Matoclaw|r at the Sanctuary of Malorne
+    .turnin 29279 >>Turn in Filling the Moonwell
+    .accept 29280 >>Accept Nourishing Waters
+  step
+    #completewith next
+    .goto Mount Hyjal,27.52,56.64,5 >>Take the portal to the Molten Front
+  step
+    .goto Molten Front,44.8,86.6
+    .target Ayla Shadowstorm
+    >>Talk to |cRXP_FRIENDLY_Ayla Shadowstorm|r at Malfurion's Breach
+    .turnin 29280 >>Turn in Nourishing Waters
+  step
+    .goto Molten Front,47.04,90.50
+    .target Malfurion Stormrage
+    >>Talk to |cRXP_FRIENDLY_Malfurion Stormrage|r inside the Sentinel Tree
+    .accept 29203 >>Accept Into the Depths
+  step
+    .goto Molten Front,57.8,49.6
+    >>Kill |cRXP_ENEMY_Leyara|r inside the Igneous Depths
+    .complete 29203,1 >>Into the Depths
+    .mob Leyara
+  step
+    .goto Molten Front,47.04,90.50
+    .target Malfurion Stormrage
+    >>Talk to |cRXP_FRIENDLY_Malfurion Stormrage|r inside the Sentinel Tree
+    .turnin 29203 >>Turn in Into the Depths
   step
     +You have finished all the quests in this guide.
 ]])
