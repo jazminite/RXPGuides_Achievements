@@ -1,6 +1,13 @@
 # Changelog
 
 ## Versions
+## 3.7.0
+MOLTEN FRONT
+- Achievements Check (v1)
+- Dailies (v5)
+    - Fix errors
+- Part III - Filling the Moonwell (v1)
+
 ## 3.6.1
 MOLTEN FRONT
 - Dailies (v4)
