@@ -50,6 +50,21 @@ RXPGuides.RegisterGuide([[
     .target Chromie
     .target Thassarian
   step
+    >>|cRXP_WARN_Achievement - The Fiery Lords of Sethria's Roost|r
+    >>Hunt down and slay the following minions of Ragnaros in Sethria's Roost.
+    .achievement 5861,1
+    .achievement 5861,2
+    .achievement 5861,3
+    .achievement 5861,4
+    .target Andrazor
+    .target Kelbnar
+    .target Searris
+    .target Fah Jarakk
+  step
+    >>|cRXP_WARN_Achievement - Gang War|r
+    >>Win a duel in Sethria's Roost while on the quest "The Protectors of Hyjal."
+    .achievement 5879,9
+  step
     >>|cRXP_WARN_Achievement - Infernal Ambassadors|r
     >>Slay the elite invaders of Hyjal in the following ways.
     .achievement 5869,1
@@ -63,6 +78,9 @@ RXPGuides.RegisterGuide([[
     .achievement 5871,1
     .achievement 5871,2
     .achievement 5871,3
+    .target Flamewaker Hunter
+    .target Flamewaker Sentinel
+    .target Flamewaker Shaman
   step
     >>|cRXP_WARN_Achievement - Fireside Chat|r
     >>Speak with the following characters during the attack on the Molten Front.
@@ -74,6 +92,29 @@ RXPGuides.RegisterGuide([[
     .achievement 5870,6
     .achievement 5870,7
     .achievement 5870,8
+  step
+    >>|cRXP_WARN_Achievement - Flawless Victory|r
+    >>Solo kill a Molten Behemoth in the Molten Front without taking any damage from Molten Stomp or Fiery Boulder.
+    .achievement 5879,12
+  step
+    >>|cRXP_WARN_Achievement - Death From Above|r
+    >>Bomb the following elementals during a bombing run in the Molten Front.
+    .achievement 5874,1
+    .achievement 5874,2
+    .achievement 5874,3
+    .achievement 5874,4
+    .achievement 5874,5
+    .achievement 5874,6
+    .target Singeslayer
+    .target Flashfire
+    .target Heatflayer
+    .target Ragepyre
+    .target Hatespark
+    .target Blazefury
+  step
+    >>|cRXP_WARN_Achievement - King of the Spider-Hill|r
+    >>Reach the highest point in the Widow's Clutch within the Molten Front.
+    .achievement 5879,4
   step
     >>|cRXP_WARN_Achievement - Legacy of Leyara|r
     >>Complete the Leyara quests in Mount Hyjal and the Molten Front.
@@ -1456,5 +1497,5 @@ RXPGuides.RegisterGuide([[
     >>Talk to |cRXP_FRIENDLY_Malfurion Stormrage|r inside the Sentinel Tree
     .turnin 29203 >>Turn in Into the Depths
   step
-    +You have finished all the quests in this guide.
+    +More quests coming soon!!!
 ]])
