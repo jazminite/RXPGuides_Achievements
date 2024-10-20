@@ -1,6 +1,10 @@
 # Changelog
 
 ## Versions
+## 3.8.0
+HOLIDAYS
+- Add Hallows End (v1) for Alliance
+
 ## 3.7.0
 MOLTEN FRONT
 - Achievements Check (v1)
