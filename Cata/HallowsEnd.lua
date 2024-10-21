@@ -6,35 +6,8 @@ RXPGuides.RegisterGuide([[
   #name Hallows End
 
   step
-    #sticky
-    >>#3
-    .achievement 966,3
-    >>#6
-    .achievement 966,6
-    >>#10
-    .achievement 966,10
-    >>#12
-    .achievement 966,12
-    >>#13
-    .achievement 966,13
-    >>#16
-    .achievement 966,16
-    >>#17
-    .achievement 966,17
-    >>#18
-    .achievement 966,18
-    >>#19
-    .achievement 966,19
-    >>#20
-    .achievement 966,20
-    >>#26
-    .achievement 966,26
-    +stop
-  step
     #completewith next
     .zone Stormwind City >> Head to Stormwind
-
--- ------------------------
   step
     .goto Stormwind City,60.48,75.25
     >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Trade District Inn
@@ -191,9 +164,33 @@ RXPGuides.RegisterGuide([[
     .achievement 966,24
   step
     #completewith next
-    .fly Darkshire
+    .fly Bogpaddle
     .goto Blasted Lands,61.24,21.61
     .target Alexandra Constantine
+  step
+    .goto Swamp of Sorrows,71.6,14.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Bogpaddle Inn
+    .accept 28967 >>Accept Candy Bucket
+    .turnin 28967 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 966,13
+  step
+    #completewith next
+    .fly The Harborage
+    .goto Swamp of Sorrows,72.0,12.0
+    .target Skeezie
+  step
+    .goto Swamp of Sorrows,28.9,32.4
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at The Harborage
+    .accept 28968 >>Accept Candy Bucket
+    .turnin 28968 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 966,20
+  step
+    #completewith next
+    .fly Darkshire
+    .goto Swamp of Sorrows,30.6,34.6
+    .target Yedrin
   step
     .goto Duskwood,73.8,44.3
     >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Darkshire Inn
@@ -320,88 +317,104 @@ RXPGuides.RegisterGuide([[
     .goto Ironforge,18.45,51.41
     .target Innkeeper Firebrew
     >>Talk to |cRXP_FRIENDLY_Innkeeper Firebrew|r in the Ironforge Inn
-    .accept 20490 >>Accept Chicken Clucking for a Mint
+    .accept 8353 >>Accept Chicken Clucking for a Mint
   step
     .goto Ironforge,18.45,51.41
     >>Chicken emote at |cRXP_FRIENDLY_Innkeeper Firebrew|r in the Ironforge Inn
-    .complete 20490,1 >>Chicken Clucking for a Mint
+    .complete 8353,1 >>Chicken Clucking for a Mint
     .emote CHICKEN,5111
     .target Innkeeper Firebrew
   step
     .goto Ironforge,18.45,51.41
     .target Innkeeper Firebrew
     >>Talk to |cRXP_FRIENDLY_Innkeeper Firebrew|r in the Ironforge Inn
-    .turnin 20490 >>Turn in Chicken Clucking for a Mint
--- ------------------------
-
+    .turnin 8353 >>Turn in Chicken Clucking for a Mint
   step
     #completewith next
     .fly Menethil Harbor
-    .goto Loch Modan,33.86,50.94
+    .goto Ironforge,55.73,48.13
+    .target Gryth Thurden
   step
-    >>Click the Pumpkin in the Menethil Harbor Inn
-    .accept 12343
-    .turnin 12343
     .goto Wetlands,10.8,61.0
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Menethil Harbor Inn
+    .accept 12343 >>Accept Candy Bucket
+    .turnin 12343 >>Turn In Candy Bucket
     .use 37586
     .achievement 966,10
   step
-    #completewith next
-    .fly Southshore
-    .goto Wetlands,9.52,59.66
-  step
-    >>Click the Pumpkin in the Southshore Inn
-    .accept 12346
-    .turnin 12346
-    .goto Hillsbrad Foothills,51.1,59.0
+    .goto Wetlands,26.1,26.0
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Swiftgear Station
+    .accept 28990 >>Accept Candy Bucket
+    .turnin 28990 >>Turn In Candy Bucket
     .use 37586
-    .achievement 966,11
+    .achievement 966,16
   step
-    >>If you need the achievement, talk to the |cRXP_FRIENDLY_Sergeant Hartman|r outside the Inn
-    .accept 1658
-    .accept 8373
-    .goto Hillsbrad Foothills,50.03,57.4
-    .target Sergeant Hartman
-    .achievement 1656,10
-  step
-    .isOnQuest 8373
-    >>Use the |cRXP_PICK_Stink Bomb Cleaner|r on any stink bomb.
-    .complete 8373,1
-    .turnin 8373
-    .use 20604
-    .achievement 1040,1
+    .goto Wetlands,58.2,39.2
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Greenwarden's Grove
+    .accept 28991 >>Accept Candy Bucket
+    .turnin 28991 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 966,17
   step
     #completewith next
-    .fly Aerie Peak >>Fly to Aerie Peak, The Hinterlands
-    .goto Hillsbrad Foothills,49.36,52.25
+    .fly Refuge Point
+    .goto Wetlands,56.4,41.8
+    .target Halana
   step
-    >>Click the Pumpkin in the Aerie Peak Inn
-    .accept 12351
-    .turnin 12351
-    .goto The Hinterlands,14.1,41.5
+    .goto Arathi Highlands,40.1,49.0
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Refuge Point
+    .accept 28954 >>Accept Candy Bucket
+    .turnin 28954 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 966,26
+  step
+    #completewith next
+    .fly Stormfeather Outpost
+    .goto Arathi Highlands,39.8,47.4
+    .target Cedrik Prose
+  step
+    .goto The Hinterlands,66.2,44.4
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Stormfeather Outpost
+    .accept 28970 >>Accept Candy Bucket
+    .turnin 28970 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 966,19
+  step
+    #completewith next
+    .fly Light's Hope Chapel
+    .goto The Hinterlands,65.6,44.8
+    .target Brock Rockbeard
+  step
+    .goto Eastern Plaguelands,75.56,52.36
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Light's Hope Chapel
+    .accept 12402 >>Accept Candy Bucket
+    .turnin 12402 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 966,3
+  step
+    #completewith next
+    .fly Aerie Peak
+    .goto Eastern Plaguelands,75.8,53.4
+    .target Khaelyn Steelwing
+  step
+    .goto The Hinterlands,14.2,44.7
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Aerie Peak Inn
+    .accept 12351 >>Accept Candy Bucket
+    .turnin 12351 >>Turn In Candy Bucket
     .use 37586
     .achievement 966,6
   step
     #completewith next
-    .fly Light's Hope Chapel
-    .goto The Hinterlands,11.14,46.12
-  step
-    >>Click the Pumpkin inside Light's Hope Chapel
-    .accept 12402
-    .turnin 12402
-    .goto Eastern Plaguelands,75.9,52.3
-    .use 37586
-    .achievement 966,3
-  step
-    .isOnQuest 1658
-    #completewith next
     .fly Chillwind Camp
+    .goto The Hinterlands,11.0,46.0
+    .target Guthrum Thunderfist
   step
-    .isOnQuest 1658
-    >>Travel to Tirisfal Glades
-    .goto Tirisfal Glades,84.54,70.4,15,0
-    .goto Tirisfal Glades,55.4,69.6
-    .complete 1658,1
+    .goto Western Plaguelands,43.4,84.4
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Chillwind Camp Inn
+    .accept 28988 >>Accept Candy Bucket
+    .turnin 28988 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 966,18
 
   -- KALIMDOR --------------------------------------
   step
