@@ -103,6 +103,10 @@ RXPGuides.RegisterGuide([[
     >>Talk to |cRXP_FRIENDLY_Anson Hastings|r in the Trade District Inn
     .turnin 29430 >>Turn in A Friend in Need
   step
+    .use 69191
+    >>Use the |cRXP_FRIENDLY_Arcane Cleanser|r to clean up stink bombs in Stormwind
+    .complete 29144,1 >>Clean Up in Stormwind
+  step
     #completewith next
     .fly Sentinel Hill
     .goto Stormwind City,71.0,72.5
@@ -415,6 +419,11 @@ RXPGuides.RegisterGuide([[
     .turnin 28988 >>Turn In Candy Bucket
     .use 37586
     .achievement 966,18
+  step
+    .goto Tirisfal Glades,62.71,68.27
+    .use 68648
+    >>Use the |cRXP_FRIENDLY_Dousing Agent|r on the Wickerman in the Undercity courtyard
+    .complete 29371,1 >>A Time to Lose
 
   -- KALIMDOR --------------------------------------
   step
@@ -423,30 +432,20 @@ RXPGuides.RegisterGuide([[
     .achievement 963,1
     >>#2
     .achievement 963,2
-    >>#3
-    .achievement 963,3
     >>#4
     .achievement 963,4
-    >>#5
-    .achievement 963,5
     >>#6
     .achievement 963,6
-    >>#7
-    .achievement 963,7
     >>#8
     .achievement 963,8
     >>#9
     .achievement 963,9
     >>#10
     .achievement 963,10
-    >>#11
-    .achievement 963,11
     >>#12
     .achievement 963,12
     >>#13
     .achievement 963,13
-    >>#14
-    .achievement 963,14
     >>#15
     .achievement 963,15
     >>#16
@@ -461,94 +460,108 @@ RXPGuides.RegisterGuide([[
     .achievement 963,20
     >>#21
     .achievement 963,21
+    >>#22
+    .achievement 963,22
+    >>#23
+    .achievement 963,23
+    >>#24
+    .achievement 963,24
+    >>#25
+    .achievement 963,25
+    >>#26
+    .achievement 963,26
+    >>#27
+    .achievement 963,27
+    >>#28
+    .achievement 963,28
     +stop
+
+-- --------------------------------------
   step
     #completewith next
-    .zone The Exodar >>Teleport to The Exodar << Mage
-    .zone The Exodar >>Travel to The Exodar << !Mage
+    .zone The Exodar >>Teleport to Exodar << Mage
+    .zone The Exodar >>Travel to Exodar << !Mage
   step
-    #completewith next
-    +Talk to the Innkeeper for Trick or Treat if you don't have the debuff
-  step
-    >>Click the Pumpkin in the Exodar Inn
-    .accept 12337
-    .turnin 12337
     .goto The Exodar,59.2,18.5
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in The Exodar Inn
+    .accept 12337 >>Accept Candy Bucket
+    .turnin 12337 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,7
+    .achievement 963,5
   step
     #completewith next
     .fly Blood Watch
-    .goto The Exodar,68.52,63.58
+    .goto The Exodar,54.4,36.6
+    .target Stephanos
   step
-    >>Click the Pumpkin in the Blood Watch Inn
-    .accept 12341
-    .turnin 12341
     .goto Bloodmyst Isle,55.7,60.0
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Blood Watch Inn
+    .accept 12341 >>Accept Candy Bucket
+    .turnin 12341 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,5
+    .achievement 963,3
   step << Mage
     #completewith next
-    .zone The Exodar >>Teleport to The Exodar
+    .zone The Exodar >>Teleport to Exodar
+  step << Mage
+    #completewith next
+    .fly Azure Watch
+    .goto The Exodar,54.4,36.6
+    .target Stephanos
   step << !Mage
     #completewith next
-    .fly The Exodar
-    .goto Bloodmyst Isle,57.63,53.98
+    .fly Azure Watch
+    .goto Bloodmyst Isle,57.6,54.0
+    .target Laando
   step
-    >>Click the Pumpkin in the Azure Watch Inn
-    .accept 12333
-    .turnin 12333
     .goto Azuremyst Isle,48.5,49.0
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Azure Watch Inn
+    .accept 12333 >>Accept Candy Bucket
+    .turnin 12333 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,9
+    .achievement 963,7
   step << Mage
     #completewith next
     .zone Darnassus >>Teleport to Darnassus
-  step << Mage
-    >>Click the Pumpkin in the Darnassus Inn
-    .accept 12334
-    .turnin 12334
-    .goto Darnassus,67.5,16.1
-    .use 37586
-    .achievement 963,16
-  step << Mage
-    >>Travel to Teldrassil
-    >>Click the Pumpkin in the Dolanaar Inn
-    .accept 12331
-    .turnin 12331
-    .goto Teldrassil,55.6,59.8
-    .use 37586
-    .achievement 963,13
   step << !Mage
     #completewith next
-    .goto Azuremyst Isle,20.23,54.13,15 >>Take the boat on Azuremyst Isle to Darkshore
-  step << !Mage
-    >>Click the Pumpkin in the Auberdine Inn
-    .accept 12338
-    .turnin 12338
-    .goto Darkshore,37.0,44.0
+    .fly Rut'theran Village
+    .goto Azuremyst Isle,49.70,49.15
+    .target Zaldaan
+  step
+    .goto Darnassus,62.20,33.16
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Darnassus Inn
+    .accept 12334 >>Accept Candy Bucket
+    .turnin 12334 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,1
-  step << !Mage
-    #completewith next
-    .fly Rut'theran Village >>Fly to Rut'theran Village, Teldrassil
-    .goto Darkshore,36.37,45.58
-  step << !Mage
-    >>Enter Darnassus
-    >>Click the Pumpkin in the Darnassus Inn
-    .accept 12334
-    .turnin 12334
-    .goto Darnassus,67.5,16.1
-    .use 37586
-    .achievement 963,16
-  step << !Mage
+    .achievement 963,14
+  step
+    .goto Darnassus,62.4,32.8
+    .target Innkeeper Saelienne
+    >>Talk to |cRXP_FRIENDLY_Innkeeper Saelienne|r at the Darnassus Inn
+    .accept 8357 >>Accept Dancing for Marzipan
+  step
+    .goto Darnassus,62.4,32.8
+    >>Dance emote at |cRXP_FRIENDLY_Innkeeper Saelienne|r at the Darnassus Inn
+    .complete 8357,1 >>Dancing for Marzipan
+    .emote DANCE,6735
+    .target Innkeeper Saelienne
+  step
+    .goto Darnassus,62.4,32.8
+    .target Innkeeper Saelienne
+    >>Talk to |cRXP_FRIENDLY_Innkeeper Saelienne|r at the Darnassus Inn
+    .turnin 8357 >>Turn in Dancing for Marzipan
+  step
+    .goto Teldrassil,55.38,52.26
     >>Travel to Teldrassil
-    >>Click the Pumpkin in the Dolanaar Inn
-    .accept 12331
-    .turnin 12331
-    .goto Teldrassil,55.6,59.8
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Dolanaar Inn
+    .accept 12331 >>Accept Candy Bucket
+    .turnin 12331 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,13
+    .achievement 963,11 
+
+-- --------------------------------------
+
   step
     #completewith next
     .zone Darnassus >>Teleport to Darnassus << Mage
@@ -680,6 +693,51 @@ RXPGuides.RegisterGuide([[
     .achievement 963,12
 
   -- OUTLANDS --------------------------------------
+  step
+    #sticky
+    >>#1
+    .achievement 969,1
+    >>#2
+    .achievement 969,2
+    >>#3
+    .achievement 969,3
+    >>#4
+    .achievement 969,4
+    >>#5
+    .achievement 969,5
+    >>#6
+    .achievement 969,6
+    >>#7
+    .achievement 969,7
+    >>#8
+    .achievement 969,8
+    >>#9
+    .achievement 969,9
+    >>#10
+    .achievement 969,10
+    >>#11
+    .achievement 969,11
+    >>#12
+    .achievement 969,12
+    >>#13
+    .achievement 969,13
+    >>#14
+    .achievement 969,14
+    >>#15
+    .achievement 969,15
+    >>#16
+    .achievement 969,16
+    >>#17
+    .achievement 969,17
+    >>#18
+    .achievement 969,18
+    >>#19
+    .achievement 969,19
+    >>#20
+    .achievement 969,20
+    >>#21
+    .achievement 969,21
+    +stop
   step
     #completewith next
     .zone Shattrath City >>Teleport to Shattrath << Mage
