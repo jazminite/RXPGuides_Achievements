@@ -432,8 +432,6 @@ RXPGuides.RegisterGuide([[
     .achievement 963,1
     >>#2
     .achievement 963,2
-    >>#4
-    .achievement 963,4
     >>#6
     .achievement 963,6
     >>#8
@@ -464,16 +462,8 @@ RXPGuides.RegisterGuide([[
     .achievement 963,22
     >>#23
     .achievement 963,23
-    >>#24
-    .achievement 963,24
-    >>#25
-    .achievement 963,25
     >>#26
     .achievement 963,26
-    >>#27
-    .achievement 963,27
-    >>#28
-    .achievement 963,28
     +stop
 
 -- --------------------------------------
@@ -559,58 +549,120 @@ RXPGuides.RegisterGuide([[
     .turnin 12331 >>Turn In Candy Bucket
     .use 37586
     .achievement 963,11 
-
--- --------------------------------------
-
   step
     #completewith next
     .zone Darnassus >>Teleport to Darnassus << Mage
-    .goto Teldrassil,35.93,54.32,10 >>Head back to Darnassus << !Mage
-  step << Mage
+    .zone Darnassus >>Head back to Darnassus << !Mage
+  step
     #completewith next
-    .fly Auberdine
-    .goto Teldrassil,58.4,94.0
-  step << Mage
-    >>Click the Pumpkin in the Auberdine Inn
-    .accept 12338
-    .turnin 12338
-    .goto Darkshore,37.0,44.0
+    .fly Lor'danel
+    .goto Teldrassil,55.41,88.47
+    .target Vesprystus
+  step
+    .goto Darkshore,50.8,18.8
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Lor'danel Inn
+    .accept 28951 >>Accept Candy Bucket
+    .turnin 28951 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,1
+    .achievement 963,28
+  step
+    #completewith next
+    .fly Whisperwind Grove
+    .goto Darkshore,51.72,17.67
+    .target Teldira Moonfeather
+  step
+    .goto Felwood,44.7,29.0
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Whisperwind Grove Inn
+    .accept 28994 >>Accept Candy Bucket
+    .turnin 28994 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 963,25
+  step
+    #completewith next
+    .fly Talonbranch Glade
+    .goto Felwood,43.6,28.6
+    .target Hanah Southsong
+  step
+    .goto Felwood,61.9,26.7
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Talonbranch Glade
+    .accept 28995 >>Accept Candy Bucket
+    .turnin 28995 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 963,24
   step
     #completewith next
     .fly Everlook
-    .goto Darkshore,36.37,45.58 << Mage
-    .goto Teldrassil,58.4,94.0 << !Mage
+    .goto Felwood,60.53,25.30
+    .target Mishellena
   step
-    >>Click the Pumpkin in the Everlook Inn
-    .accept 12400
-    .turnin 12400
-    .goto Winterspring,61.3,38.8
+    .goto Winterspring,59.82,51.18
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Everlook Inn
+    .accept 12400 >>Accept Candy Bucket
+    .turnin 12400 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,10
+    .achievement 963,8
   step
     #completewith next
-    .fly Astranaar >>Fly to Astranaar, Ashenvale
-    .goto Winterspring,62.33,36.65
+    .fly Nordrassil
+    .goto Winterspring,60.98,48.66
+    .target Maethrya
   step
-    >>Click the Pumpkin in the Astranaar Inn
-    .accept 12345
-    .turnin 12345
+    .goto Mount Hyjal,63.1,24.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Nordrassil Inn
+    .accept 28999 >>Accept Candy Bucket
+    .turnin 28999 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 5837,10
+  step
+    #completewith next
+    .fly Shrine of Aviana
+    .goto Mount Hyjal,62.2,21.6
+    .target Fayran Elthas
+  step
+    .goto Mount Hyjal,42.7,45.7
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Shrine of Aviana
+    .accept 29001 >>Accept Candy Bucket
+    .turnin 29001 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 5837,13
+  step
+    #completewith next
+    .fly Grove of Aessina
+    .goto Mount Hyjal,41.2,42.6
+    .target Dinorae Swiftfeather
+  step
+    .goto Mount Hyjal,18.65,37.33
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Grove of Aessina
+    .accept 29000 >>Accept Candy Bucket
+    .turnin 29000 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 5837,2
+  step
+    #completewith next
+    .fly Astranaar
+    .goto Mount Hyjal,19.59,36.42
+    .target Elizil Wintermoth
+  step
     .goto Ashenvale,37.0,49.3
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Astranaar Inn
+    .accept 12345 >>Accept Candy Bucket
+    .turnin 12345 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,6
+    .achievement 963,4
   step
     #completewith next
-    .fly Stonetalon Peak
-    .goto Ashenvale,34.45,48.05
+    .fly Thal'darah Overlook
+    .goto Ashenvale,34.4,48.0
+    .target Daelyshia
   step
-    >>Click the Pumpkin in the Stonetalon Peak Inn
-    .accept 12347
-    .turnin 12347
-    .goto Stonetalon Mountains,35.5,6.4
+    .goto Stonetalon Mountains,39.5,32.8
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Thal'darah Overlook Inn
+    .accept 29012 >>Accept Candy Bucket
+    .turnin 29012 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,2
+    .achievement 963,27
+-- --------------------------------------
+
   step
     #completewith next
     .fly Nijel's Point
