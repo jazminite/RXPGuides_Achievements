@@ -1,4 +1,5 @@
 RXPGuides.RegisterGuide([[
+  << Alliance
   #version 1
   #group Achievements
   #subgroup Holidays
@@ -22,7 +23,8 @@ RXPGuides.RegisterGuide([[
     .accept 8311 >>Accept Hallow's End Treats for Jesper!
   step
     .goto Elwynn Forest,32.09,50.52
-    .target |cRXP_FRIENDLY_Celestine of the Harvest|r and |cRXP_FRIENDLY_Keira|r
+    .target Celestine of the Harvest
+    .target Keira
     >>Talk to |cRXP_FRIENDLY_Celestine of the Harvest|r and |cRXP_FRIENDLY_Keira|r outside Stormwind
     .accept 29075 >>Accept A Time to Gain
     .accept 29371 >>Accept A Time to Lose
@@ -37,11 +39,23 @@ RXPGuides.RegisterGuide([[
     .goto Elwynn Forest,32.71,49.53
     >>Click the |cRXP_FRIENDLY_Bonfire|r outside Stormwind
     .complete 29075,1 >>A Time to Gain
+    .achievement 1040,2
   step
     .goto Elwynn Forest,32.09,50.52
     .target Celestine of the Harvest
     >>Talk to |cRXP_FRIENDLY_Celestine of the Harvest|r outside Stormwind
     .turnin 29075 >>Turn in A Time to Gain
+  step
+    .goto Elwynn Forest,32.24,50.72,5,0
+    >>Talk to |cRXP_FRIENDLY_Gertrude Fenlow|r to gain access to a broom, then drop stink bombs in the Undercity.
+    .complete 29054,1 >>Stink Bombs Away!
+    .target Gertrude Fenlow
+    .achievement 1040,3
+  step
+    .goto Elwynn Forest,32.35,50.81
+    .target Gretchen Fenlow
+    >>Talk to |cRXP_FRIENDLY_Gretchen Fenlow|r outside Stormwind
+    .turnin 29054 >>Turn in Stink Bombs Away!
   step
     .goto Elwynn Forest,43.7,65.9
     >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Goldshire Inn
@@ -81,6 +95,7 @@ RXPGuides.RegisterGuide([[
     .use 69191
     >>Use the |cRXP_FRIENDLY_Arcane Cleanser|r to clean up stink bombs in Stormwind
     .complete 29144,1 >>Clean Up in Stormwind
+    .achievement 1040,4
   step
     .goto Stormwind City,60.48,75.25
     .target Innkeeper Allison
@@ -106,6 +121,12 @@ RXPGuides.RegisterGuide([[
     .use 69191
     >>Use the |cRXP_FRIENDLY_Arcane Cleanser|r to clean up stink bombs in Stormwind
     .complete 29144,1 >>Clean Up in Stormwind
+    .achievement 1040,4
+  step
+    .goto Elwynn Forest,32.35,50.81
+    .target Gretchen Fenlow
+    >>Talk to |cRXP_FRIENDLY_Gretchen Fenlow|r outside Stormwind
+    .turnin 29144 >>Turn in Clean Up in Stormwind
   step
     #completewith next
     .fly Sentinel Hill
@@ -424,6 +445,7 @@ RXPGuides.RegisterGuide([[
     .use 68648
     >>Use the |cRXP_FRIENDLY_Dousing Agent|r on the Wickerman in the Undercity courtyard
     .complete 29371,1 >>A Time to Lose
+    .achievement 1040,1
 
   -- KALIMDOR --------------------------------------
   step
@@ -1276,7 +1298,8 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .goto Stormwind City,73.41,17.06,5 >>Take the portal to Vashj'ir
   step
-    .goto Kelp'thar Forest,63.5,60.5
+    .goto Kelp'thar Forest 61.07,64.30,10
+    .goto Kelp'thar Forest,63.47,60.22
     >>Click the |cRXP_FRIENDLY_Pumpkin|r at Deepmist Grotto
     .accept 28981 >>Accept Candy Bucket
     .turnin 28981 >>Turn In Candy Bucket
@@ -1395,4 +1418,31 @@ RXPGuides.RegisterGuide([[
     >>|cRXP_WARN_RELOAD|r THIS GUIDE IF YOU ARE MISSING CHECKS!
   step
     +CONGRATULATIONS!!! You have completed this guide.
+]])
+
+RXPGuides.RegisterGuide([[
+  << Horde
+  #version 1
+  #group Achievements
+  #subgroup Holidays
+  #cata
+  #name Hallows End
+
+  step
+    #sticky
+    >>There is only a stub guide for the Horde.
+    +I recommend referencing this article on wowhead:
+    .link https://www.wowhead.com/cata/guide/holidays/hallows-end >> Hallow's End Holiday Guide - Cataclysm Classic
+  step
+    >>|cRXP_WARN_Achievement - Hallowed Be Thy Name|r
+    .achievement 1657,1
+    .achievement 1657,2
+    .achievement 1657,3
+    .achievement 1657,4
+    .achievement 1657,5
+    .achievement 1657,6
+    .achievement 1657,7
+    .achievement 1657,8
+    .achievement 1657,9
+    .achievement 1657,10
 ]])
