@@ -1042,6 +1042,7 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly K3
     .goto Dalaran,72.02,45.68
+    .target Aludane Whitecloud
   step
     >>Click the |cRXP_FRIENDLY_Pumpkin|r in the K3 Inn
     .accept 13461
@@ -1053,6 +1054,7 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly Frosthold
     .goto The Storm Peaks,40.74,84.56
+    .target Skizzle Slickslide
   step
     >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Frosthold Inn
     .accept 13448
@@ -1064,6 +1066,7 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly Bouldercrag's Refuge
     .goto The Storm Peaks,29.51,74.34
+    .target Faldorf Bitterchill
   step
     >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Bouldercrag's Refuge Inn
     .accept 13462
@@ -1075,6 +1078,7 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly Zim'Torga
     .goto The Storm Peaks,30.63,36.35
+    .target Breck Rockbrow
   step
     >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Zim'Torga Inn
     .accept 12940
@@ -1130,7 +1134,7 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly Kamagua
     .goto Howling Fjord,31.26,44
-    >>|cFFFCDC00NOTE|r: If you have 280% flying, it's faster to skip the flight path.
+    >>|cFFFCDC00NOTE|r: If you have 280%+ flying, it's faster to skip the flight path.
   step
     >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Kamagua Inn
     .accept 13452
@@ -1250,6 +1254,71 @@ RXPGuides.RegisterGuide([[
     .use 37586
     .achievement 5836,22
 
+  -- CATACLYSM ------------------------------------
+  step
+    #completewith next
+    .zone Stormwind City >>Teleport to Stormwind << Mage
+    .zone Stormwind City >>Travel to Stormwind << !Mage
+  step
+    #completewith next
+    .goto Stormwind City,73.47,19.27,5 >>Take the portal to Deepholm
+  step
+    .goto Deepholm,47.38,51.71
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Temple of Earth
+    .accept 29020 >>Accept Candy Bucket
+    .turnin 29020 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 5837,11
+  step
+    #completewith next
+    .goto Deepholm,48.55,53.80,5 >>Take the portal back to Stormwind
+  step
+    #completewith next
+    .goto Stormwind City,73.41,17.06,5 >>Take the portal to Vashj'ir
+  step
+    .goto Kelp'thar Forest,63.5,60.5
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Deepmist Grotto
+    .accept 28981 >>Accept Candy Bucket
+    .turnin 28981 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 5837,3
+  step
+    #completewith next
+    .fly Silver Tide Hollow
+    .goto Kelp'thar Forest,56.10,31.16
+    .target Swift Seahorse
+  step
+    .goto Shimmering Expanse,49.2,41.9
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Silver Tide Hollow
+    .accept 28982 >>Accept Candy Bucket
+    .turnin 28982 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 5837,5
+  step
+    #completewith next
+    .fly Tranquil Wash
+    .goto Shimmering Expanse,49.50,41.29
+    .target Swift Seahorse
+  step
+    .goto Shimmering Expanse,49.7,57.4
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Tranquil Wash
+    .accept 28983 >>Accept Candy Bucket
+    .turnin 28983 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 5837,7
+  step
+    #completewith next
+    .fly Darkbreak Cove
+    .goto Shimmering Expanse,48.60,57.43
+    .target Swift Seahorse
+  step
+    .goto Abyssal Depths,54.7,72.2
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Darkbreak Cove
+    .accept 28985 >>Accept Candy Bucket
+    .turnin 28985 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 5837,4
+
   -- OTHER ACHIEVEMENTS -----------------------
   step
     >>Achievement - |cRXP_WARN_That Sparkling Smile|r
@@ -1257,24 +1326,22 @@ RXPGuides.RegisterGuide([[
     .use 20393
     .use 37604
     .achievement 981,1
-    +stop
   step
-    >>Achievements - |cRXP_WARN_Bring Me The Head of... Oh Wait|r and |cRXP_WARN_Out With It|r
+    >>Achievement - |cRXP_WARN_Bring Me The Head of... Oh Wait|r
     >>Queue the Random Dungeon Finder (RDF)
     >>Kill the Headless Horseman
-    >>Stand next to the boss when he dies for |cRXP_PICK_Tricky Treats|r
-    >>Eat the |cRXP_PICK_Tricky Treats|r until you get the achievement
     .achievement 255,1
+  step
+    >>Achievement - |cRXP_WARN_Out With It|r
+    >>Eat |cRXP_PICK_Tricky Treats|r until you get the achievement
     .achievement 288,1
     .use 33226
-    +stop
   step
     >>Achievement - |cRXP_WARN_Sinister Calling|r
-    >>Obtain a Sinister Squashling pet and Hallowed Helm
+    >>Obtain a Sinister Squashling pet and Hallowed Helm, which are found in Treat Bags or purchased with Tricky Treats
     .use 54516
     .achievement 292,1
     .achievement 292,2
-    +stop
   step
     >>Achievement - |cRXP_WARN_Check Your Head|r
     >>Use a |cRXP_PICK_Weighted Jack-o'-Lantern|r on each of the Alliance races
@@ -1283,13 +1350,11 @@ RXPGuides.RegisterGuide([[
     .achievement 291,7
     .achievement 291,9
     .achievement 291,10
-    .achievement 291,11
     .achievement 291,12
     .use 34068
-    +stop
   step
     >>Achievements - |cRXP_WARN_G.N.E.R.D. Rage|r and |cRXP_WARN_Check Your Head|r
-    >>Queue for any Battleground
+    >>Queue for any Battleground and use the |cRXP_PICK_G.N.E.R.D candy|r
     .achievement 1261,1
     >>Use a |cRXP_PICK_Weighted Jack-o'-Lantern|r on each of the Horde races
     .achievement 291,1
@@ -1297,9 +1362,9 @@ RXPGuides.RegisterGuide([[
     .achievement 291,3
     .achievement 291,4
     .achievement 291,8
+    .achievement 291,11
     .use 37583
     .use 34068
-    +stop
   step
     >>|cRXP_WARN_Achievement - The Masquerade|r
     >>Get transformed by each of the Hallowed Wands, which are found in Treat Bags or purchased with Tricky Treats
@@ -1310,7 +1375,6 @@ RXPGuides.RegisterGuide([[
     .achievement 283,5
     .achievement 283,6
     .achievement 283,7
-    +stop
   step
     >>|cRXP_WARN_Achievement - Hallowed Be Thy Name|r
     .achievement 1656,1
@@ -1323,8 +1387,12 @@ RXPGuides.RegisterGuide([[
     .achievement 1656,8
     .achievement 1656,9
     .achievement 1656,10
+    >>|cRXP_WARN_Other Hallowed End Achievements|r
+    .achievement 5836
+    .achievement 5837
+    .achievement 284
+    .achievement 292
     >>|cRXP_WARN_RELOAD|r THIS GUIDE IF YOU ARE MISSING CHECKS!
-    +stop
   step
     +CONGRATULATIONS!!! You have completed this guide.
 ]])
