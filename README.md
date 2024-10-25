@@ -6,12 +6,17 @@ Download the latest release on [Curseforge][2].
 
 ## Guides
 The guides in this addon are intended for **Cataclysm Classic** only.
+### Holidays
+Alliance
+- Hallows End
 ### Molten Front
 Alliance + Horde
+- Achievements Check
 - Dailies
 - Part I - Unlock the Dailies
 - Part II - Druids of the Talon
 - Part II - Shadow Wardens
+- Part III - Filling the Moonwell
 ### Tol Barad
 Alliance + Horde
 - Dailies
