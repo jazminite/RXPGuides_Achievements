@@ -427,47 +427,6 @@ RXPGuides.RegisterGuide([[
 
   -- KALIMDOR --------------------------------------
   step
-    #sticky
-    >>#1
-    .achievement 963,1
-    >>#2
-    .achievement 963,2
-    >>#6
-    .achievement 963,6
-    >>#8
-    .achievement 963,8
-    >>#9
-    .achievement 963,9
-    >>#10
-    .achievement 963,10
-    >>#12
-    .achievement 963,12
-    >>#13
-    .achievement 963,13
-    >>#15
-    .achievement 963,15
-    >>#16
-    .achievement 963,16
-    >>#17
-    .achievement 963,17
-    >>#18
-    .achievement 963,18
-    >>#19
-    .achievement 963,19
-    >>#20
-    .achievement 963,20
-    >>#21
-    .achievement 963,21
-    >>#22
-    .achievement 963,22
-    >>#23
-    .achievement 963,23
-    >>#26
-    .achievement 963,26
-    +stop
-
--- --------------------------------------
-  step
     #completewith next
     .zone The Exodar >>Teleport to Exodar << Mage
     .zone The Exodar >>Travel to Exodar << !Mage
@@ -661,144 +620,221 @@ RXPGuides.RegisterGuide([[
     .turnin 29012 >>Turn In Candy Bucket
     .use 37586
     .achievement 963,27
--- --------------------------------------
-
+  step
+    #completewith next
+    .fly Farwatcher's Glen
+    .goto Stonetalon Mountains,40.10,31.97
+    .target Teloren
+  step
+    .goto Stonetalon Mountains,31.5,60.7
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Farwatcher's Glen Inn
+    .accept 29013 >>Accept Candy Bucket
+    .turnin 29013 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 963,19
   step
     #completewith next
     .fly Nijel's Point
-    .goto Stonetalon Mountains,36.45,7.19
+    .goto Stonetalon Mountains,32.0,61.8
+    .target Ceyora
   step
-    >>Click the Pumpkin in the Nijel's Point Inn
-    .accept 12348
-    .turnin 12348
     .goto Desolace,66.3,6.6
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Nijel's Point Inn
+    .accept 12348 >>Accept Candy Bucket
+    .turnin 12348 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,3
+    .achievement 963,1
   step
     #completewith next
-    .fly Feathermoon
-    .goto Desolace,64.68,10.52
+    .fly Windshear Hold
+    .goto Desolace,64.6,10.6
+    .target Baritanas Skyriver
   step
-    >>Click the Pumpkin in the Feathermoon Stronghold Inn
-    .accept 12350
-    .turnin 12350
-    .goto Feralas,30.9,43.5
+    .goto Stonetalon Mountains,59.0,56.3
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Windshear Hold Inn
+    .accept 29011 >>Accept Candy Bucket
+    .turnin 29011 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,14
+    .achievement 963,17
   step
     #completewith next
-    .fly Cenarion Hold
-    .goto Feralas,30.25,43.28
+    .fly Northwatch Expedition Base Camp
+    .goto Stonetalon Mountains,58.8,54.2
+    .target Allana Swiftglide
   step
-    >>Click the Pumpkin in the Cenarion Hold Inn
-    .accept 12401
-    .turnin 12401
-    .goto Silithus,51.8,39.0
+    .goto Stonetalon Mountains,71.0,79.0
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Northwatch Expedition Base Camp
+    .accept 29010 >>Accept Candy Bucket
+    .turnin 29010 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,11
+    .achievement 963,18
   step
     #completewith next
-    .fly Gadgetzan
-    .goto Silithus,50.60,34.46
+    .fly Honor's Stand
+    .goto Stonetalon Mountains,70.8,80.6
+    .target Kaluna Songflight
   step
-    >>Click the Pumpkin in the Gadgetzan Inn
-    .accept 12399
-    .turnin 12399
-    .goto Tanaris,52.5,27.9
+    .goto Southern Barrens,39.0,11.0
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Honor's Stand
+    .accept 29006 >>Accept Candy Bucket
+    .turnin 29006 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,8
+    .achievement 963,21
+  step
+    #completewith next
+    .fly Ratchet
+    .goto Southern Barrens,38.8,10.8
+    .target John Johnson
+  step
+    .goto The Barrens,67.3,74.6
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Ratchet Inn
+    .accept 12396 >>Accept Candy Bucket
+    .turnin 12396 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 963,10
+  step
+    #completewith next
+    .fly Northwatch Hold
+    .goto The Barrens,69.09,70.64
+    .target Bragok
+  step
+    .goto Southern Barrens,65.6,46.5
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Northwatch Hold Inn
+    .accept 29007 >>Accept Candy Bucket
+    .turnin 29007 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 963,20
+  step
+    #completewith next
+    .fly Fort Triumph
+    .goto Southern Barrens,66.36,47.12
+    .target Bill Williamson
+  step
+    .goto Southern Barrens,49.0,68.5
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Fort Triumph
+    .accept 29008 >>Accept Candy Bucket
+    .turnin 29008 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 963,22
   step << Mage
     #completewith next
     .zone Dustwallow Marsh >>Teleport to Theramore
   step << !Mage
     #completewith next
-    .fly Theramore
-    .goto Tanaris,50.99,29.33
+    .fly Theramore Isle
+    .goto Southern Barrens,66.4,47.2
+    .target Bill Williamson
   step
-    >>Click the Pumpkin in the Theramore Isle Inn
-    .accept 12349
-    .turnin 12349
     .goto Dustwallow Marsh,66.6,45.3
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Theramore Inn
+    .accept 12349 >>Accept Candy Bucket
+    .turnin 12349 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 963,13
+  step
+    #completewith next
+    .fly Mudsprocket
+    .goto Dustwallow Marsh,67.6,51.4
+    .target Baldruc
+  step
+    .goto Dustwallow Marsh,41.9,74.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Mudsprocket Inn
+    .accept 12398 >>Accept Candy Bucket
+    .turnin 12398 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 963,2
+  step
+    #completewith next
+    .fly Gadgetzan
+    .goto Dustwallow Marsh,42.8,72.4
+    .target Dyslix Silvergrub
+  step
+    .goto Tanaris,52.6,27.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Gadgetzan Inn
+    .accept 12399 >>Accept Candy Bucket
+    .turnin 12399 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 963,6
+  step
+    #completewith next
+    .fly Bootlegger Outpost
+    .goto Tanaris,51.0,29.2
+    .target Bera Stonehammer
+  step
+    .goto Tanaris,55.7,61.0
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Bootlegger Outpost Inn
+    .accept 29014 >>Accept Candy Bucket
+    .turnin 29014 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 963,16
+  step
+    #completewith next
+    .fly Marshal's Stand
+    .goto Tanaris,55.8,60.6
+    .target Slick Dropdip
+  step
+    .goto Un'Goro Crater,55.3,62.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Marshal's Stand
+    .accept 29018 >>Accept Candy Bucket
+    .turnin 29018 >>Turn In Candy Bucket
     .use 37586
     .achievement 963,15
   step
     #completewith next
-    .fly Mudsprocket
-    .goto Dustwallow Marsh,67.45,51.21
+    .fly Cenarion Hold
+    .goto Un'Goro Crater,55.97,64.10
+    .target Gryfe
   step
-    >>Click the Pumpkin in the Mudsprocket Inn
-    .accept 12398
-    .turnin 12398
-    .goto Dustwallow Marsh,41.9,74.1
+    .goto Silithus,55.5,36.8
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Cenarion Hold Inn
+    .accept 12401 >>Accept Candy Bucket
+    .turnin 12401 >>Turn In Candy Bucket
     .use 37586
-    .achievement 963,4
+    .achievement 963,9
   step
     #completewith next
-    .fly Ratchet
-    .goto Dustwallow Marsh,42.83,72.41
+    .fly Feathermoon
+    .goto Silithus,54.43,32.76
+    .target Cloud Skydancer
   step
-    >>Click the Pumpkin in the Ratchet Inn
-    .accept 12396
-    .turnin 12396
-    .goto The Barrens,62.1,39.4
+    .goto Feralas,46.3,45.2
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Feathermoon Inn
+    .accept 12350 >>Accept Candy Bucket
+    .turnin 12350 >>Turn In Candy Bucket
     .use 37586
     .achievement 963,12
-
-  -- OUTLANDS --------------------------------------
   step
-    #sticky
-    >>#1
-    .achievement 969,1
-    >>#2
-    .achievement 969,2
-    >>#3
-    .achievement 969,3
-    >>#4
-    .achievement 969,4
-    >>#5
-    .achievement 969,5
-    >>#6
-    .achievement 969,6
-    >>#7
-    .achievement 969,7
-    >>#8
-    .achievement 969,8
-    >>#9
-    .achievement 969,9
-    >>#10
-    .achievement 969,10
-    >>#11
-    .achievement 969,11
-    >>#12
-    .achievement 969,12
-    >>#13
-    .achievement 969,13
-    >>#14
-    .achievement 969,14
-    >>#15
-    .achievement 969,15
-    >>#16
-    .achievement 969,16
-    >>#17
-    .achievement 969,17
-    >>#18
-    .achievement 969,18
-    >>#19
-    .achievement 969,19
-    >>#20
-    .achievement 969,20
-    >>#21
-    .achievement 969,21
-    +stop
+    #completewith next
+    .fly Dreamer's Rest
+    .goto Feralas,46.78,45.34
+    .target Irela Moonfeather
+  step
+    .goto Feralas,51.1,17.8
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Dreamer's Rest Inn
+    .accept 28952 >>Accept Candy Bucket
+    .turnin 28952 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 963,23
+  step
+    #completewith next
+    .fly Karnum's Glade
+    .goto Feralas,50.24,16.73
+    .target Selor
+  step
+    .goto Desolace,56.7,50.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Karnum's Glade Inn
+    .accept 28993 >>Accept Candy Bucket
+    .turnin 28993 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 963,26
+
+  -- OUTLANDS ------------------------------------
   step
     #completewith next
     .zone Shattrath City >>Teleport to Shattrath << Mage
     .zone Shattrath City >>Travel to Shattrath << !Mage
   step
-    #completewith next
-    +Talk to the Innkeeper for Trick or Treat if you don't have the debuff
-  step
-    >>Click the Pumpkin in the Aldor Rise or Scryer's Tier Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Aldor Rise or Scryer's Tier Inn
     .accept 12404
     .turnin 12404
     .goto Shattrath City,56.2,81.7
@@ -808,8 +844,9 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly Allerian Stronghold
     .goto Shattrath City,63.98,41.21
+    .target Nutral
   step
-    >>Click the Pumpkin in the Allerian Stronghold Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Allerian Stronghold Inn
     .accept 12356
     .turnin 12356
     .goto Terokkar Forest,56.6,53.2
@@ -819,8 +856,9 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly Wildhammer Stronghold
     .goto Terokkar Forest,59.45,55.38
+    .target Furnan Skysoar
   step
-    >>Click the Pumpkin in the Wildhammer Stronghold Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Wildhammer Stronghold Inn
     .accept 12360
     .turnin 12360
     .goto Shadowmoon Valley,37.0,58.3
@@ -832,8 +870,9 @@ RXPGuides.RegisterGuide([[
     >>|cRXP_WARN_OR|r 
     .fly Sanctum of the Stars
     .goto Shadowmoon Valley,37.61,55.48
+    .target Brubeck Stormfoot
   step
-    >>Click the Pumpkin in the Altar of Sha'tar or Sanctum of the Stars Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Altar of Sha'tar or Sanctum of the Stars Inn
     .accept 12409
     .turnin 12409
     .goto Shadowmoon Valley,56.3,59.8
@@ -842,9 +881,12 @@ RXPGuides.RegisterGuide([[
   step
     #completewith next
     .fly Honor Hold
-    .goto Shadowmoon Valley,56.32,57.86
+    .goto Shadowmoon Valley,56.32,57.86,-1
+    .goto Shadowmoon Valley,63.2,30.4,-1
+    .target Alieshor
+    .target Maddix
   step
-    >>Click the Pumpkin in the Honor Hold Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Honor Hold Inn
     .accept 12352
     .turnin 12352
     .goto Hellfire Peninsula,54.2,63.7
@@ -854,8 +896,9 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly Temple of Telhamat
     .goto Hellfire Peninsula,54.7,62.36
+    .target Flightmaster Krill Bitterhue
   step
-    >>Click the Pumpkin in the Temple of Telhamat Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Temple of Telhamat Inn
     .accept 12353
     .turnin 12353
     .goto Hellfire Peninsula,23.4,36.4
@@ -863,7 +906,7 @@ RXPGuides.RegisterGuide([[
     .achievement 969,12
   step
     >>Travel to Zangarmarsh
-    >>Click the Pumpkin in the Cenarion Refuge Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Cenarion Refuge Inn
     .accept 12403
     .turnin 12403
     .goto Zangarmarsh,78.5,62.9
@@ -871,7 +914,7 @@ RXPGuides.RegisterGuide([[
     .achievement 969,2
   step
     >>Travel to Telredor
-    >>Click the Pumpkin in the Telredor Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Telredor Inn
     .accept 12354
     .turnin 12354
     .goto Zangarmarsh,67.2,48.9
@@ -881,8 +924,9 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly Orebor Harborage
     .goto Zangarmarsh,67.83,51.43
+    .target Munci
   step
-    >>Click the Pumpkin in the Orebor Harborage Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Orebor Harborage Inn
     .accept 12355
     .turnin 12355
     .goto Zangarmarsh,41.9,26.2
@@ -892,8 +936,9 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly Sylvanaar
     .goto Zangarmarsh,41.29,28.95
+    .target Halu
   step
-    >>Click the Pumpkin in the Sylvanaar Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Sylvanaar Inn
     .accept 12358
     .turnin 12358
     .goto Blade's Edge Mountains,35.8,63.7
@@ -903,8 +948,9 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly Toshley's Station
     .goto Blade's Edge Mountains,37.82,61.42
+    .target Amerun Leafshade
   step
-    >>Click the Pumpkin in the Toshley's Station Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Toshley's Station Inn
     .accept 12359
     .turnin 12359
     .goto Blade's Edge Mountains,61.1,68.1
@@ -914,8 +960,9 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly Evergrove
     .goto Blade's Edge Mountains,61.14,70.44
+    .target Rip Pedalslam
   step
-    >>Click the Pumpkin in the Evergrove Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Evergrove Inn
     .accept 12406
     .turnin 12406
     .goto Blade's Edge Mountains,62.9,38.3
@@ -925,8 +972,9 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly Area 52
     .goto Blade's Edge Mountains,61.67,39.63
+    .target Fhyn Leafshadow
   step
-    >>Click the Pumpkin in the Area 52 Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Area 52 Inn
     .accept 12407
     .turnin 12407
     .goto Netherstorm,32.1,64.5
@@ -936,8 +984,9 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly The Stormspire
     .goto Netherstorm,33.77,63.99
+    .target Krexcil
   step
-    >>Click the Pumpkin in The Stormspire Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in The Stormspire Inn
     .accept 12408
     .turnin 12408
     .goto Netherstorm,43.4,36.1
@@ -950,40 +999,307 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .fly Telaar
     .goto Shattrath City,63.98,41.21
+    .target Nutral
   step << !Mage
     #completewith next
     .fly Telaar
     .goto Netherstorm,45.3,34.92
+    .target Grennik
   step
-    >>Click the Pumpkin in the Telaar Inn
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Telaar Inn
     .accept 12357
     .turnin 12357
     .goto Nagrand,54.2,75.9
     .use 37586
     .achievement 969,3
+
+  -- NORTHREND --------------------------
   step
-    >>|cRXP_WARN_Achievement - Tricks and Treats of Outland|r.
-    .achievement 969,1
-    .achievement 969,2
-    .achievement 969,3
-    .achievement 969,4
-    .achievement 969,5
-    .achievement 969,6
-    .achievement 969,7
-    .achievement 969,8
-    .achievement 969,9
-    .achievement 969,10
-    .achievement 969,11
-    .achievement 969,12
-    .achievement 969,13
-    .achievement 969,14
-    .achievement 969,15
+    #sticky
+    >>#1 - 
+    .achievement 5836,1
+    >>#2 - 
+    .achievement 5836,2
+    >>#3 - 
+    .achievement 5836,3
+    >>#4 - 
+    .achievement 5836,4
+    >>#5 - 
+    .achievement 5836,5
+    >>#6 - 
+    .achievement 5836,6
+    >>#7 - 
+    .achievement 5836,7
+    >>#8 - 
+    .achievement 5836,8
+    >>#9 - 
+    .achievement 5836,9
+    >>#10 - 
+    .achievement 5836,10
+    >>#11 - 
+    .achievement 5836,11
+    >>#12 - 
+    .achievement 5836,12
+    >>#13 - 
+    .achievement 5836,13
+    >>#14 - 
+    .achievement 5836,14
+    >>#15 - 
+    .achievement 5836,15
+    >>#16
+    .achievement 5836,16
+    >>#17
+    .achievement 5836,17
+    >>#18
+    .achievement 5836,18
+    >>#19
+    .achievement 5836,19
+    >>#20
+    .achievement 5836,20
+    >>#21
+    .achievement 5836,21
+    >>#22
+    .achievement 5836,22
   step
     #completewith next
-    +Talk to the Innkeeper for Trick or Treat if you don't have the debuff
+    .zone Dalaran >> Teleport to Dalaran << Mage
+    .zone Dalaran >> Travel to Dalaran << !Mage
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Dalaran Sewers Inn
+    .accept 13472
+    .turnin 13472
+    .use 37586
+    .achievement 5836,
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Dalaran Inn
+    .accept 13463
+    .turnin 13463
+    .goto Dalaran,48.3,40.8
+    .use 37586
+    .achievement 5836,
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Alliance Inn
+    .accept 13473
+    .turnin 13473
+    .goto Dalaran,42.7,63.3
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly K3
+    .goto Dalaran,72.02,45.68
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the K3 Inn
+    .accept 13461
+    .turnin 13461
+    .goto The Storm Peaks,41.1,85.9
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Frosthold
+    .goto The Storm Peaks,40.74,84.56
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Frosthold Inn
+    .accept 13448
+    .turnin 13448
+    .goto The Storm Peaks,28.7,74.3
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Bouldercrag's Refuge
+    .goto The Storm Peaks,29.51,74.34
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Bouldercrag's Refuge Inn
+    .accept 13462
+    .turnin 13462
+    .goto The Storm Peaks,30.9,37.2
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Zim'Torga
+    .goto The Storm Peaks,30.63,36.35
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Zim'Torga Inn
+    .accept 12940
+    .turnin 12940
+    .goto Zul'Drak,59.3,57.1
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Westfall Brigade
+    .goto Zul'Drak,60.03,56.73
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Westfall Brigade Inn
+    .accept 12945
+    .turnin 12945
+    .goto Grizzly Hills,59.6,26.4
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Fort Wildervar
+    .goto Grizzly Hills,59.88,26.65
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Fort Wildervar Inn
+    .accept 13435
+    .turnin 13435
+    .goto Howling Fjord,60.5,15.9
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Valgarde Port
+    .goto Howling Fjord,60.06,16.1
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Valgarde Port Inn
+    .accept 13433
+    .turnin 13433
+    .goto Howling Fjord,58.4,62.8
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Westguard Keep
+    .goto Howling Fjord,59.78,63.25
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Westguard Keep Inn
+    .accept 13434
+    .turnin 13434
+    .goto Howling Fjord,30.8,41.5
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Kamagua
+    .goto Howling Fjord,31.26,44
+    >>|cFFFCDC00NOTE|r: If you have 280% flying, it's faster to skip the flight path.
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Kamagua Inn
+    .accept 13452
+    .turnin 13452
+    .goto Howling Fjord,25.4,59.8
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Amberpine Lodge
+    .goto Howling Fjord,24.69,57.84
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Amberpine Lodge Inn
+    .accept 12944
+    .turnin 12944
+    .goto Grizzly Hills,32,60.2
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly The Argent Stand
+    .goto Grizzly Hills,31.32,59.13
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in The Argent Stand Inn
+    .accept 12941
+    .turnin 12941
+    .goto Zul'Drak,40.8,66.1
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Wintergarde Keep
+    .goto Zul'Drak,41.54,64.46
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Wintergarde Keep Inn
+    .accept 13439
+    .turnin 13439
+    .goto Dragonblight,77.5,51.3
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Wyrmrest Temple
+    .goto Dragonblight,77.03,49.8
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Wyrmrest Temple Inn
+    .accept 13456
+    .turnin 13456
+    .goto Dragonblight,60.1,53.5
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Moa'ki
+    .goto Dragonblight,60.33,51.49
+    >>|cFFFCDC00NOTE|r: If you have 280% flying, it's faster to skip the flight path.
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Moa'ki Inn
+    .accept 13459
+    .turnin 13459
+    .goto Dragonblight,48.1,74.7
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Stars' Rest
+    .goto Dragonblight,48.5,74.38
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Stars' Rest
+    .accept 13438
+    .turnin 13438
+    .goto Dragonblight,29,56.2
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Unu'pe
+    .goto Dragonblight,29.17,55.35
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Unu'pe Inn
+    .accept 13460
+    .turnin 13460
+    .goto Borean Tundra,78.4,49.2
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Valiance Keep
+    .goto Borean Tundra,78.52,51.49
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Valiance Keep Inn
+    .accept 13436
+    .turnin 13436
+    .goto Borean Tundra,58.5,67.9
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Fizzcrank Airstrip
+    .goto Borean Tundra,58.94,68.3
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Fizzcrank Airstrip Inn
+    .accept 13437
+    .turnin 13437
+    .goto Borean Tundra,57.1,18.8
+    .use 37586
+    .achievement 5836,
+  step
+    #completewith next
+    .fly Nesingwary Base Camp
+    .goto Borean Tundra,56.56,20.07
+  step
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Nesingwary Base Camp
+    .accept 12950
+    .turnin 12950
+    .goto Sholazar Basin,26.7,59.2
+    .use 37586
+    .achievement 5836,
+
+  -- OTHER ACHIEVEMENTS -----------------------
   step
     >>Achievement - |cRXP_WARN_That Sparkling Smile|r
-    >>|cRXP_LOOT_Tooth Picks|r are found in Treat Bags provided by Innkeepers (once per hour)
+    >>Use a |cRXP_LOOT_Tooth Pick|r, which are found in Treat Bags or purchased with Tricky Treats
     .use 20393
     .use 37604
     .achievement 981,1
@@ -998,26 +1314,28 @@ RXPGuides.RegisterGuide([[
     .use 33226
   step
     >>Achievement - |cRXP_WARN_Sinister Calling|r
-    >>Queue the Random Dungeon Finder (RDF)
-    >>Kill the Headless Horseman
-    >>Open the |cRXP_PICK_Loot-Filled Pumpkin|r (available once per day) which can drop:
+    >>Obtain a Sinister Squashling pet and Hallowed Helm
     .use 54516
     .achievement 292,1
     .achievement 292,2
+    +stop
   step
     >>Achievement - |cRXP_WARN_Check Your Head|r
-    >>Use a |cRXP_PICK_Weighted Jack-o'-Lantern|r on each of the Alliance races:
+    >>Use a |cRXP_PICK_Weighted Jack-o'-Lantern|r on each of the Alliance races
     .achievement 291,5
     .achievement 291,6
     .achievement 291,7
     .achievement 291,9
     .achievement 291,10
+    .achievement 291,11
+    .achievement 291,12
     .use 34068
+    +stop
   step
     >>Achievements - |cRXP_WARN_G.N.E.R.D. Rage|r and |cRXP_WARN_Check Your Head|r
     >>Queue for any Battleground
     .achievement 1261,1
-    >>Use a |cRXP_PICK_Weighted Jack-o'-Lantern|r on each of the Horde races:
+    >>Use a |cRXP_PICK_Weighted Jack-o'-Lantern|r on each of the Horde races
     .achievement 291,1
     .achievement 291,2
     .achievement 291,3
@@ -1025,9 +1343,10 @@ RXPGuides.RegisterGuide([[
     .achievement 291,8
     .use 37583
     .use 34068
+    +stop
   step
     >>|cRXP_WARN_Achievement - The Masquerade|r
-    >>Get transformed by each of the Hallowed Wands:
+    >>Get transformed by each of the Hallowed Wands, which are found in Treat Bags or purchased with Tricky Treats
     .achievement 283,1
     .achievement 283,2
     .achievement 283,3
@@ -1035,6 +1354,7 @@ RXPGuides.RegisterGuide([[
     .achievement 283,5
     .achievement 283,6
     .achievement 283,7
+    +stop
   step
     >>|cRXP_WARN_Achievement - Hallowed Be Thy Name|r
     .achievement 1656,1
@@ -1047,8 +1367,8 @@ RXPGuides.RegisterGuide([[
     .achievement 1656,8
     .achievement 1656,9
     .achievement 1656,10
-    .achievement 1656,11
     >>|cRXP_WARN_RELOAD|r THIS GUIDE IF YOU ARE MISSING CHECKS!
+    +stop
   step
-    >>CONGRATULATIONS!!! You should now have the Achievement |cRXP_WARN_Hallowed Be Thy Name|r.
+    +CONGRATULATIONS!!! You have completed this guide.
 ]])
