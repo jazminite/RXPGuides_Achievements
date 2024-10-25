@@ -1015,52 +1015,6 @@ RXPGuides.RegisterGuide([[
 
   -- NORTHREND --------------------------
   step
-    #sticky
-    >>#1 - 
-    .achievement 5836,1
-    >>#2 - 
-    .achievement 5836,2
-    >>#3 - 
-    .achievement 5836,3
-    >>#4 - 
-    .achievement 5836,4
-    >>#5 - 
-    .achievement 5836,5
-    >>#6 - 
-    .achievement 5836,6
-    >>#7 - 
-    .achievement 5836,7
-    >>#8 - 
-    .achievement 5836,8
-    >>#9 - 
-    .achievement 5836,9
-    >>#10 - 
-    .achievement 5836,10
-    >>#11 - 
-    .achievement 5836,11
-    >>#12 - 
-    .achievement 5836,12
-    >>#13 - 
-    .achievement 5836,13
-    >>#14 - 
-    .achievement 5836,14
-    >>#15 - 
-    .achievement 5836,15
-    >>#16
-    .achievement 5836,16
-    >>#17
-    .achievement 5836,17
-    >>#18
-    .achievement 5836,18
-    >>#19
-    .achievement 5836,19
-    >>#20
-    .achievement 5836,20
-    >>#21
-    .achievement 5836,21
-    >>#22
-    .achievement 5836,22
-  step
     #completewith next
     .zone Dalaran >> Teleport to Dalaran << Mage
     .zone Dalaran >> Travel to Dalaran << !Mage
@@ -1069,21 +1023,21 @@ RXPGuides.RegisterGuide([[
     .accept 13472
     .turnin 13472
     .use 37586
-    .achievement 5836,
+    .achievement 5836,10
   step
     >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Dalaran Inn
     .accept 13463
     .turnin 13463
     .goto Dalaran,48.3,40.8
     .use 37586
-    .achievement 5836,
+    .achievement 5836,12
   step
     >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Alliance Inn
     .accept 13473
     .turnin 13473
     .goto Dalaran,42.7,63.3
     .use 37586
-    .achievement 5836,
+    .achievement 5836,11
   step
     #completewith next
     .fly K3
@@ -1094,7 +1048,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13461
     .goto The Storm Peaks,41.1,85.9
     .use 37586
-    .achievement 5836,
+    .achievement 5836,6
   step
     #completewith next
     .fly Frosthold
@@ -1105,7 +1059,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13448
     .goto The Storm Peaks,28.7,74.3
     .use 37586
-    .achievement 5836,
+    .achievement 5836,5
   step
     #completewith next
     .fly Bouldercrag's Refuge
@@ -1116,7 +1070,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13462
     .goto The Storm Peaks,30.9,37.2
     .use 37586
-    .achievement 5836,
+    .achievement 5836,14
   step
     #completewith next
     .fly Zim'Torga
@@ -1127,7 +1081,7 @@ RXPGuides.RegisterGuide([[
     .turnin 12940
     .goto Zul'Drak,59.3,57.1
     .use 37586
-    .achievement 5836,
+    .achievement 5836,4
   step
     #completewith next
     .fly Westfall Brigade
@@ -1138,7 +1092,7 @@ RXPGuides.RegisterGuide([[
     .turnin 12945
     .goto Grizzly Hills,59.6,26.4
     .use 37586
-    .achievement 5836,
+    .achievement 5836,8
   step
     #completewith next
     .fly Fort Wildervar
@@ -1149,7 +1103,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13435
     .goto Howling Fjord,60.5,15.9
     .use 37586
-    .achievement 5836,
+    .achievement 5836,18
   step
     #completewith next
     .fly Valgarde Port
@@ -1160,7 +1114,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13433
     .goto Howling Fjord,58.4,62.8
     .use 37586
-    .achievement 5836,
+    .achievement 5836,7
   step
     #completewith next
     .fly Westguard Keep
@@ -1171,7 +1125,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13434
     .goto Howling Fjord,30.8,41.5
     .use 37586
-    .achievement 5836,
+    .achievement 5836,15
   step
     #completewith next
     .fly Kamagua
@@ -1183,7 +1137,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13452
     .goto Howling Fjord,25.4,59.8
     .use 37586
-    .achievement 5836,
+    .achievement 5836,2
   step
     #completewith next
     .fly Amberpine Lodge
@@ -1194,7 +1148,7 @@ RXPGuides.RegisterGuide([[
     .turnin 12944
     .goto Grizzly Hills,32,60.2
     .use 37586
-    .achievement 5836,
+    .achievement 5836,16
   step
     #completewith next
     .fly The Argent Stand
@@ -1205,7 +1159,7 @@ RXPGuides.RegisterGuide([[
     .turnin 12941
     .goto Zul'Drak,40.8,66.1
     .use 37586
-    .achievement 5836,
+    .achievement 5836,1
   step
     #completewith next
     .fly Wintergarde Keep
@@ -1216,7 +1170,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13439
     .goto Dragonblight,77.5,51.3
     .use 37586
-    .achievement 5836,
+    .achievement 5836,19
   step
     #completewith next
     .fly Wyrmrest Temple
@@ -1227,7 +1181,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13456
     .goto Dragonblight,60.1,53.5
     .use 37586
-    .achievement 5836,
+    .achievement 5836,3
   step
     #completewith next
     .fly Moa'ki
@@ -1239,7 +1193,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13459
     .goto Dragonblight,48.1,74.7
     .use 37586
-    .achievement 5836,
+    .achievement 5836,9
   step
     #completewith next
     .fly Stars' Rest
@@ -1250,7 +1204,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13438
     .goto Dragonblight,29,56.2
     .use 37586
-    .achievement 5836,
+    .achievement 5836,17
   step
     #completewith next
     .fly Unu'pe
@@ -1261,7 +1215,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13460
     .goto Borean Tundra,78.4,49.2
     .use 37586
-    .achievement 5836,
+    .achievement 5836,13
   step
     #completewith next
     .fly Valiance Keep
@@ -1272,7 +1226,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13436
     .goto Borean Tundra,58.5,67.9
     .use 37586
-    .achievement 5836,
+    .achievement 5836,20
   step
     #completewith next
     .fly Fizzcrank Airstrip
@@ -1283,7 +1237,7 @@ RXPGuides.RegisterGuide([[
     .turnin 13437
     .goto Borean Tundra,57.1,18.8
     .use 37586
-    .achievement 5836,
+    .achievement 5836,21
   step
     #completewith next
     .fly Nesingwary Base Camp
@@ -1294,7 +1248,7 @@ RXPGuides.RegisterGuide([[
     .turnin 12950
     .goto Sholazar Basin,26.7,59.2
     .use 37586
-    .achievement 5836,
+    .achievement 5836,22
 
   -- OTHER ACHIEVEMENTS -----------------------
   step
@@ -1303,6 +1257,7 @@ RXPGuides.RegisterGuide([[
     .use 20393
     .use 37604
     .achievement 981,1
+    +stop
   step
     >>Achievements - |cRXP_WARN_Bring Me The Head of... Oh Wait|r and |cRXP_WARN_Out With It|r
     >>Queue the Random Dungeon Finder (RDF)
@@ -1312,6 +1267,7 @@ RXPGuides.RegisterGuide([[
     .achievement 255,1
     .achievement 288,1
     .use 33226
+    +stop
   step
     >>Achievement - |cRXP_WARN_Sinister Calling|r
     >>Obtain a Sinister Squashling pet and Hallowed Helm
