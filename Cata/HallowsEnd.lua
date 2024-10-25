@@ -1298,7 +1298,7 @@ RXPGuides.RegisterGuide([[
     #completewith next
     .goto Stormwind City,73.41,17.06,5 >>Take the portal to Vashj'ir
   step
-    .goto Kelp'thar Forest 61.07,64.30,10
+    .goto Kelp'thar Forest,61.07,64.30,10,0
     .goto Kelp'thar Forest,63.47,60.22
     >>Click the |cRXP_FRIENDLY_Pumpkin|r at Deepmist Grotto
     .accept 28981 >>Accept Candy Bucket
