@@ -1422,17 +1422,284 @@ RXPGuides.RegisterGuide([[
 
 RXPGuides.RegisterGuide([[
   << Horde
-  #version 1
+  #version 2
   #group Achievements
   #subgroup Holidays
   #cata
   #name Hallows End
 
   step
-    #sticky
     >>There is only a stub guide for the Horde.
-    +I recommend referencing this article on wowhead:
+    >>I recommend referencing this article on wowhead:
     .link https://www.wowhead.com/cata/guide/holidays/hallows-end >> Hallow's End Holiday Guide - Cataclysm Classic
+  step
+    #completewith next
+    .zone Silvermoon City >>Travel to Silvermoon
+  step
+    .goto Silvermoon City,79.4,57.7
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Silvermoon City Inn
+    .accept 12369 >>Accept Candy Bucket
+    .turnin 12369 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,2
+  step
+    .goto Silvermoon City,67.6,72.9
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Wayfarer's Rest
+    .accept 12370 >>Accept Candy Bucket
+    .turnin 12370 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,13
+  step
+    .goto Eversong Woods,48.2,47.9
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Falconwing Square Inn
+    .accept 12364 >>Accept Candy Bucket
+    .turnin 12364 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,14
+  step
+    #completewith next
+    .fly Fairbreeze Village
+  step
+    .goto Eversong Woods,43.7,71.0
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Fairbreeze Village Inn
+    .accept 12365 >>Accept Candy Bucket
+    .turnin 12365 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,8
+  step
+    #completewith next
+    .fly Tranquillien
+  step
+    .goto Ghostlands,48.7,31.9
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Tranquillien Inn
+    .accept 12373 >>Accept Candy Bucket
+    .turnin 12373 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,6
+  step
+    #completewith next
+    .fly Light's Hope Chapel
+  step
+    .goto Eastern Plaguelands,75.56,52.36
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Light's Hope Chapel
+    .accept 12402 >>Accept Candy Bucket
+    .turnin 12402 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,15
+  step
+    #completewith next
+    .fly Andorhal
+  step
+    .goto Western Plaguelands,48.3,63.7
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Andorhal
+    .accept 28987 >>Accept Candy Bucket
+    .turnin 28987 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,20
+  step
+    #completewith next
+    .fly The Bulwark
+  step
+    .goto Tirisfal Glades,83.0,72.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at The Bulwark
+    .accept 28972 >>Accept Candy Bucket
+    .turnin 28972 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,21
+  step
+    #completewith next
+    .fly Undercity
+  step
+    .goto Undercity,67.7,37.5
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Trade Quarter Inn
+    .accept 12368 >>Accept Candy Bucket
+    .turnin 12368 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,11
+  step
+    #completewith next
+    .fly Brill
+  step
+    .goto Tirisfal Glades,61.0,51.4
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Brill Inn
+    .accept 12363 >>Accept Candy Bucket
+    .turnin 12363 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,12
+  step
+    #completewith next
+    .fly Forsaken Rear Guard
+  step
+    .goto Silverpine Forest,44.3,20.3
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Forsaken Rear Guard
+    .accept 28966 >>Accept Candy Bucket
+    .turnin 28966 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,23
+  step
+    #completewith next
+    .fly The Sepulcher
+  step
+    .goto Silverpine Forest,46.4,42.7
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in The Sepulcher Inn
+    .accept 12371 >>Accept Candy Bucket
+    .turnin 12371 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,4
+  step
+    #completewith next
+    .fly Tarren Mill
+  step
+    .goto Hillsbrad Foothills,57.9,47.3
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Tarren Mill Inn
+    .accept 12376 >>Accept Candy Bucket
+    .turnin 12376 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,3
+  step
+    #completewith next
+    .fly Eastpoint Tower
+  step
+    .goto Hillsbrad Foothills,60.3,63.7
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Eastpoint Tower
+    .accept 28962 >>Accept Candy Bucket
+    .turnin 28962 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,26
+  step
+    #completewith next
+    .fly Hiri'watha Research Station
+  step
+    .goto The Hinterlands,31.8,57.9
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Hiri'watha Research Station
+    .accept 28971 >>Accept Candy Bucket
+    .turnin 28971 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,19
+  step
+    #completewith next
+    .fly Revantusk Village
+  step
+    .goto The Hinterlands,78.2,81.5
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Revantusk Village
+    .accept 12387 >>Accept Candy Bucket
+    .turnin 12387 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,5
+  step
+    #completewith next
+    .fly Hammerfall
+  step
+    .goto Arathi Highlands,69.0,33.3
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Hammerfall Inn
+    .accept 12380 >>Accept Candy Bucket
+    .turnin 12380 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,7
+  step
+    #completewith next
+    .fly Fuselight
+  step
+    .goto Badlands,65.86,35.76
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Fuselight Inn
+    .accept 28955 >>Accept Candy Bucket
+    .turnin 28955 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,25
+  step
+    #completewith next
+    .fly New Kargath
+  step
+    .goto Badlands,18.4,42.7
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at New Kargath
+    .accept 28957 >>Accept Candy Bucket
+    .turnin 28957 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,24
+  step
+    #completewith next
+    .fly Iron Summit
+  step
+    .goto Searing Gorge,39.5,66.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Iron Summit
+    .accept 28965 >>Accept Candy Bucket
+    .turnin 28965 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,17
+  step << Mage
+    #completewith next
+    .zone Stonard >>Teleport to Stonard
+  step << !Mage
+    #completewith next
+    .fly Stonard
+  step
+    .goto Swamp of Sorrows,46.9,56.9
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Stonard
+    .accept 12384 >>Accept Candy Bucket
+    .turnin 12384 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,1
+  step
+    #completewith next
+    .fly Bogpaddle
+  step
+    .goto Swamp of Sorrows,71.6,14.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Bogpaddle Inn
+    .accept 28967 >>Accept Candy Bucket
+    .turnin 28967 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,16
+  step
+    #completewith next
+    .fly Dreadmaul Hold
+  step
+    .goto Blasted Lands,40.5,11.3
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Dreadmaul Hold
+    .accept 28959 >>Accept Candy Bucket
+    .turnin 28959 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,18
+  step
+    #completewith next
+    .fly Booty Bay
+  step
+    .goto The Cape of Stranglethorn,40.93,73.75
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Booty Bay Inn
+    .accept 12397 >>Accept Candy Bucket
+    .turnin 12397 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,10
+  step
+    #completewith next
+    .fly Hardwrench Hideaway
+  step
+    .goto The Cape of Stranglethorn,35.0,27.2
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Hardwrench Hideaway
+    .accept 28969 >>Accept Candy Bucket
+    .turnin 28969 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,22
+  step
+    #completewith next
+    .fly Grom'gol Base Camp
+  step
+    .goto Northern Stranglethorn,37.4,51.8
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Grom'gol Base Camp
+    .accept 12382 >>Accept Candy Bucket
+    .turnin 12382 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 967,9
+  step
+    #completewith next
+    .zone Orgrimmar >>Teleport to Orgrimmar << Mage
+    .zone Orgrimmar >>Travel to Orgrimmar << !Mage
+  step
+    .goto Orgrimmar,53.6,78.7
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Valley of Strength
+    .accept 12366 >>Accept Candy Bucket
+    .turnin 12366 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,1
   step
     >>|cRXP_WARN_Achievement - Hallowed Be Thy Name|r
     .achievement 1657,1
