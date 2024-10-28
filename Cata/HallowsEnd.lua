@@ -1628,7 +1628,7 @@ RXPGuides.RegisterGuide([[
     .achievement 967,17
   step << Mage
     #completewith next
-    .zone Stonard >>Teleport to Stonard
+    .zone Swamp of Sorrows >>Teleport to Stonard
   step << !Mage
     #completewith next
     .fly Stonard
@@ -1700,6 +1700,106 @@ RXPGuides.RegisterGuide([[
     .turnin 12366 >>Turn In Candy Bucket
     .use 37586
     .achievement 965,1
+  step
+    #completewith next
+    .fly Bilgewater Harbor
+  step
+    .goto Azshara,57.0,50.3
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Bilgewater Harbor
+    .accept 28992 >>Accept Candy Bucket
+    .turnin 28992 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,25
+  step
+    #completewith next
+    .fly Everlook
+  step
+    .goto Winterspring,59.82,51.18
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Everlook Inn
+    .accept 12400 >>Accept Candy Bucket
+    .turnin 12400 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,13
+  step
+    #completewith next
+    .fly Nordrassil
+  step
+    .goto Mount Hyjal,63.1,24.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Nordrassil Inn
+    .accept 28999 >>Accept Candy Bucket
+    .turnin 28999 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 5838,12
+  step
+    #completewith next
+    .fly Shrine of Aviana
+  step
+    .goto Mount Hyjal,42.7,45.7
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Shrine of Aviana
+    .accept 29001 >>Accept Candy Bucket
+    .turnin 29001 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 5838,1
+  step
+    #completewith next
+    .fly Grove of Aessina
+  step
+    .goto Mount Hyjal,18.65,37.33
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Grove of Aessina
+    .accept 29000 >>Accept Candy Bucket
+    .turnin 29000 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 5838,2
+  step
+    #completewith next
+    .fly Whisperwind Grove
+  step
+    .goto Felwood,44.7,29.0
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Whisperwind Grove
+    .accept 28994 >>Accept Candy Bucket
+    .turnin 28994 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,19
+  step
+    #completewith next
+    .fly Zoram'gar Outpost
+  step
+    .goto Ashenvale,12.9,34.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Zoram'gar Outpost
+    .accept 28989 >>Accept Candy Bucket
+    .turnin 28989 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,21
+  step
+    #completewith next
+    .fly Hellscream's Watch
+  step
+    .goto Ashenvale,38.6,42.4
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Hellscream's Watch
+    .accept 28958 >>Accept Candy Bucket
+    .turnin 28958 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,28
+  step
+    #completewith next
+    .fly Silverwind Refuge
+  step
+    .goto Ashenvale,50.2,67.3
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Silverwind Refuge
+    .accept 28953 >>Accept Candy Bucket
+    .turnin 28953 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,30
+  step
+    #completewith next
+    .fly Splintertree Post
+  step
+    .goto Ashenvale,73.9,60.6
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Splintertree Post
+    .accept 12377 >>Accept Candy Bucket
+    .turnin 12377 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,5
   step
     >>|cRXP_WARN_Achievement - Hallowed Be Thy Name|r
     .achievement 1657,1
