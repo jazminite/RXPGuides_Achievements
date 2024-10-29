@@ -1801,6 +1801,33 @@ RXPGuides.RegisterGuide([[
     .use 37586
     .achievement 965,5
   step
+    #completewith next
+    .fly Nozzlepot's Outpost
+  step
+    .goto The Barrens,62.5,16.6
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Nozzlepot's Outpost
+    .accept 29003 >>Accept Candy Bucket
+    .turnin 29003 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,24
+  step
+    #completewith next
+    .fly Razor Hill
+  step
+    .goto Durotar,51.6,41.6
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Razor Hill
+    .accept 12361 >>Accept Candy Bucket
+    .turnin 12361 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,8
+  step
+    .goto The Barrens,56.2,40.0
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Grol'dom Farm
+    .accept 29002 >>Accept Candy Bucket
+    .turnin 29002 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,24
+  step
     >>|cRXP_WARN_Achievement - Hallowed Be Thy Name|r
     .achievement 1657,1
     .achievement 1657,2
