@@ -1429,8 +1429,8 @@ RXPGuides.RegisterGuide([[
   #name Hallows End
 
   step
-    >>There is only a stub guide for the Horde.
-    >>I recommend referencing this article on wowhead:
+    >>There is only a partial guide for the Horde.
+    +I recommend referencing this article on wowhead:
     .link https://www.wowhead.com/cata/guide/holidays/hallows-end >> Hallow's End Holiday Guide - Cataclysm Classic
   step
     #completewith next
@@ -1826,7 +1826,198 @@ RXPGuides.RegisterGuide([[
     .accept 29002 >>Accept Candy Bucket
     .turnin 29002 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,24
+    .achievement 965,29
+  step
+    #completewith next
+    .fly Crossroads
+  step
+    .goto The Barrens,49.5,57.9
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Crossroads
+    .accept 12374 >>Accept Candy Bucket
+    .turnin 12374 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,11
+  step
+    #completewith next
+    .fly Ratchet
+  step
+    .goto The Barrens,67.3,74.6
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Ratchet Inn
+    .accept 12396 >>Accept Candy Bucket
+    .turnin 12396 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,7
+  step
+    #completewith next
+    .fly Brackenwall Village
+  step
+    .goto Dustwallow Marsh,36.8,32.4
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Brackenwall Village
+    .accept 12383 >>Accept Candy Bucket
+    .turnin 12383 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,10
+  step
+    #completewith next
+    .fly Desolation Hold
+  step
+    .goto Southern Barrens,40.7,69.3
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Desolation Hold
+    .accept 29005 >>Accept Candy Bucket
+    .turnin 29005 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,23
+  step
+    #completewith next
+    .fly Bloodhoof Village
+  step
+    .goto Mulgore,46.8,60.4
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Bloodhoof Village
+    .accept 12362 >>Accept Candy Bucket
+    .turnin 12362 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,6
+  step
+    #completewith next
+    .zone Thunder Bluff >>Teleport to Thunder Bluff << Mage
+    .zone Thunder Bluff >>Travel to Thunder Bluff << !Mage
+  step
+    .goto Thunder Bluff,45.6,64.9
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at the Lower Rise
+    .accept 12367 >>Accept Candy Bucket
+    .turnin 12367 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,15
+  step
+    #completewith next
+    .fly Hunter's Hill
+  step
+    .goto Southern Barrens,39.3,20.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Hunter's Hill
+    .accept 29004 >>Accept Candy Bucket
+    .turnin 29004 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,18
+  step
+    #completewith next
+    .fly Krom'gar Fortress
+  step
+    .goto Stonetalon Mountains,66.5,64.2
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Krom'gar Fortress
+    .accept 29009 >>Accept Candy Bucket
+    .turnin 29009 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,22
+  step
+    #completewith next
+    .fly Sun Rock Retreat
+  step
+    .goto Stonetalon Mountains,50.4,63.8
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Sun Rock Retreat
+    .accept 12378 >>Accept Candy Bucket
+    .turnin 12378 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,9
+  step
+    #completewith next
+    .fly Karnum's Glade
+  step
+    .goto Desolace,56.7,50.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Karnum's Glade Inn
+    .accept 28993 >>Accept Candy Bucket
+    .turnin 28993 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,20
+  step
+    #completewith next
+    .fly Shadowprey Village
+  step
+    .goto Desolace,24.1,68.3
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Shadowprey Village
+    .accept 12381 >>Accept Candy Bucket
+    .turnin 12381 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,2
+  step
+    #completewith next
+    .fly Camp Ataya
+  step
+    .goto Feralas,41.4,15.7
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Camp Ataya
+    .accept 28996 >>Accept Candy Bucket
+    .turnin 28996 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,27
+  step
+    #completewith next
+    .fly Stonemaul Hold
+  step
+    .goto Feralas,52.0,47.6
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Stonemaul Hold
+    .accept 28998 >>Accept Candy Bucket
+    .turnin 28998 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,26
+  step
+    #completewith next
+    .fly Camp Mojache
+  step
+    .goto Feralas,74.8,45.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Camp Mojache
+    .accept 12386 >>Accept Candy Bucket
+    .turnin 12386 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,4
+  step
+    #completewith next
+    .fly Cenarion Hold
+  step
+    .goto Silithus,55.5,36.8
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Cenarion Hold Inn
+    .accept 12401 >>Accept Candy Bucket
+    .turnin 12401 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,3
+  step
+    #completewith next
+    .fly Marshal's Stand
+  step
+    .goto Un'Goro Crater,55.3,62.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r at Marshal's Stand
+    .accept 29018 >>Accept Candy Bucket
+    .turnin 29018 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,16
+  step
+    #completewith next
+    .fly Bootlegger Outpost
+  step
+    .goto Tanaris,55.7,61.0
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Bootlegger Outpost Inn
+    .accept 29014 >>Accept Candy Bucket
+    .turnin 29014 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,17
+  step
+    #completewith next
+    .fly Gadgetzan
+  step
+    .goto Tanaris,52.6,27.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Gadgetzan Inn
+    .accept 12399 >>Accept Candy Bucket
+    .turnin 12399 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,12
+  step
+    #completewith next
+    .fly Mudsprocket
+  step
+    .goto Dustwallow Marsh,41.9,74.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Mudsprocket Inn
+    .accept 12398 >>Accept Candy Bucket
+    .turnin 12398 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 965,14
   step
     >>|cRXP_WARN_Achievement - Hallowed Be Thy Name|r
     .achievement 1657,1
@@ -1839,4 +2030,6 @@ RXPGuides.RegisterGuide([[
     .achievement 1657,8
     .achievement 1657,9
     .achievement 1657,10
+  step
+    +CONGRATULATIONS!! You have completed this guide.
 ]])

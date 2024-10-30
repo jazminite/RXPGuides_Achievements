@@ -3,7 +3,7 @@
 ## Versions
 ## 3.8.1
 HOLIDAYS
-- Hallows End (v2) - Horde
+- Hallows End (v2) partial guide for Horde
 
 ## 3.8.0
 HOLIDAYS
