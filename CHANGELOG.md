@@ -1,6 +1,10 @@
 # Changelog
 
 ## Versions
+## 3.8.1
+HOLIDAYS
+- Hallows End (v2) partial guide for Horde
+
 ## 3.8.0
 HOLIDAYS
 - Add Hallows End (v1) full guide for Alliance

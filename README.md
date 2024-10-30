@@ -7,7 +7,7 @@ Download the latest release on [Curseforge][2].
 ## Guides
 The guides in this addon are intended for **Cataclysm Classic** only.
 ### Holidays
-Alliance
+Alliance + Horde
 - Hallows End
 ### Molten Front
 Alliance + Horde
