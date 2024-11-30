@@ -97,7 +97,7 @@ RXPGuides.RegisterGuide([[
     >>Talk to the |cRXP_FRIENDLY_Caitrin Ironkettle|r
     .turnin 14048
     .turnin 14051
-    >>|cRXP_WARN_NOTE|r: For quest rewards, choose the Pilgrim's Hat and one of the chest pieces.
+    >>|cRXP_WARN_NOTE|r: For the quest rewards, choose the Pilgrim's Hat and one of the chest pieces.
     .goto Dun Morogh,52.87,36.07
     .target Caitrin Ironkettle
   step
@@ -149,7 +149,7 @@ RXPGuides.RegisterGuide([[
     >>Talk to the |cRXP_FRIENDLY_Mary Allerton|r
     .accept 14054
     .turnin 14054
-    >>|cRXP_WARN_NOTE|r: For quest reward, choose the |cRXP_LOOT_Turkey Shooter|r.
+    >>|cRXP_WARN_NOTE|r: For the quest reward, choose the |cRXP_LOOT_Turkey Shooter|r.
   step
     .goto Darnassus,62.12,46.14
     >>Cook the following food:
@@ -191,7 +191,7 @@ RXPGuides.RegisterGuide([[
     >>Talk to the |cRXP_FRIENDLY_Jasper Moore|r and |cRXP_FRIENDLY_Ellen Moore|r
     .turnin 14055
     .turnin 14053
-    >>|cRXP_WARN_NOTE|r: For quest rewards, choose |cRXP_LOOT_Turkey Shooters|r.
+    >>|cRXP_WARN_NOTE|r: For the quest rewards, choose |cRXP_LOOT_Turkey Shooters|r.
     .goto Elwynn Forest,33.76,50.76
     .target Jasper Moore
     .target Ellen Moore
@@ -268,19 +268,30 @@ RXPGuides.RegisterGuide([[
     .collect 30817,40 -- Simple Flour
     .collect 2678,40 -- Mild Spices
   step
-    .skill cooking,100,1 -- Shows if cooking skill is between 1-100
-    >>You will need extra |cRXP_FRIENDLY_Ripe Tirisfal Pumpkins|r to level your cooking
-    +Buy enough to get to 160 cooking
-    >>|cRXP_WARN_DON'T COOK THEM YET!|r
-  step
     .goto Tirisfal Glades,61.25,66.97
     .target Roberta Carter
     >>Talk to |cRXP_FRIENDLY_Roberta Carter|r
     .accept 14059 -- We're Out of Cranberry Chutney Again?
   step
     .goto Tirisfal Glades,61.25,66.83
-    >>Cook Spice Bread by the Fire pit
+    >>Cook Spice Bread for the stuffing
     .collect 30816,40 -- Spice Bread
+  step
+    >>Open the |cRXP_FRIENDLY_Bountiful Cookbook|r
+    .use 46810 -- Bountiful Cookbook
+    .train 66038 >>Learn Recipe: Spice Bread Stuffing
+    .use 46803 -- Recipe: Spice Bread Stuffing
+    >>and cook at least:
+    .collect 44837,40 -- Spice Bread Stuffing
+  step
+    .skill cooking,100 >>Level cooking to 100 with Spice Bread Stuffing
+  step
+    .train 66036 >>Learn Recipe: Pumpkin Pie
+    .use 46804 -- Recipe: Pumpkin Pie
+    >>and cook at least:
+    .collect 44836,40 -- Pumpkin Pie
+  step
+    .skill cooking,160 >>Level cooking to 160 with Pumpkin Pie
   step
     #completewith next
     >>Target another player at the |cRXP_FRIENDLY_Bountiful Table|r and spam pass them food.
@@ -316,26 +327,21 @@ RXPGuides.RegisterGuide([[
     >>Talk to the |cRXP_FRIENDLY_Ondani Greatmill|r
     .accept 14061 -- Can't Get Enough Turkey
     .accept 14062 -- Don't Forget The Stuffing!
-  step
-    >>Learn the recipes from the |cRXP_FRIENDLY_Bountiful Cookbook|r and
-    .use 46810 -- Bountiful Cookbook
-    >>Cook the following food:
-    .collect 44837,40 -- Spice Bread Stuffing
-    .collect 44836,40 -- Pumpkin Pie
-    .collect 44840,40 -- Cranberry Chutney
-    >>|cRXP_WARN_NOTE|r: You need |cRXP_LOOT_Spice Bread|r to cook the stuffing.
-  step
-    .goto Durotar,46.36,13.93
-    .target Ondani Greatmill
-    >>Talk to the |cRXP_FRIENDLY_Ondani Greatmill|r
     .turnin 14062 -- Don't Forget The Stuffing!
-    >>|cRXP_WARN_NOTE|r: For quest reward, choose one of the chest pieces.
+    >>|cRXP_WARN_NOTE|r: For the quest reward, choose one of the chest pieces.
+  step
+    .train 66035 >>Learn Recipe: Cranberry Chutney
+    .use 46805 -- Recipe: Cranberry Chutney
+    >>and cook at least:
+    .collect 44840,40 -- Cranberry Chutney
+  step
+    .skill cooking,220 >>Level cooking to 220 with Cranberry Chutney
   step
     .skill cooking,<280,1 -- Shows if cooking skill is 280+
     >>Cook Slow-Roasted Turkey
     .collect 44838,40 -- Slow-Roasted Turkey
     .turnin 14061 -- Can't Get Enough Turkey
-    >>|cRXP_WARN_NOTE|r: For quest reward, choose the Pilgrim's Hat.
+    >>|cRXP_WARN_NOTE|r: For the quest reward, choose the Pilgrim's Hat.
   step
     #completewith next
     >>Target another player at the |cRXP_FRIENDLY_Bountiful Table|r and spam pass them food.
@@ -344,6 +350,16 @@ RXPGuides.RegisterGuide([[
     >>Acquire the Spirit of Sharing buff at the |cRXP_FRIENDLY_Bountiful Table|r by eating each of the 5 foods to 5 stacks
     .goto Durotar,46.35,14.49
     .achievement 3557,4
+  step
+    #completewith next
+    .zone Thunder Bluff >>Teleport to Thunder Bluff << Mage
+    .zone Thunder Bluff >>Head to Thunder Bluff << !Mage
+  step
+    .goto Thunder Bluff,30.8,63.6
+    .target Laha Farplain
+    >>Go outside of Thunder Bluff
+    >>Buy ingredients from |cRXP_FRIENDLY_Laha Farplain|r
+    .collect 46797,40 -- Mulgore Sweet Potato
   step
     >>|cRXP_WARN_Achievement - Pilgrim|r
     .achievement 3656,1
