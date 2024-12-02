@@ -147,8 +147,8 @@ RXPGuides.RegisterGuide([[
     .goto Darnassus,61.91,46.29
     .target Mary Allerton
     >>Talk to the |cRXP_FRIENDLY_Mary Allerton|r
-    .accept 14054
-    .turnin 14054
+    .accept 14054 -- Easy As Pie
+    .turnin 14054 -- Easy As Pie
     >>|cRXP_WARN_NOTE|r: For the quest reward, choose the |cRXP_LOOT_Turkey Shooter|r.
   step
     .goto Darnassus,62.12,46.14
@@ -189,8 +189,8 @@ RXPGuides.RegisterGuide([[
   step
     >>Go outside the gates of Stormwind
     >>Talk to the |cRXP_FRIENDLY_Jasper Moore|r and |cRXP_FRIENDLY_Ellen Moore|r
-    .turnin 14055
-    .turnin 14053
+    .turnin 14055 -- She Says Potato
+    .turnin 14053 -- We're Out of Cranberry Chutney Again?
     >>|cRXP_WARN_NOTE|r: For the quest rewards, choose |cRXP_LOOT_Turkey Shooters|r.
     .goto Elwynn Forest,33.76,50.76
     .target Jasper Moore
@@ -220,6 +220,8 @@ RXPGuides.RegisterGuide([[
     .achievement 3559,6
     .achievement 3559,7
     .achievement 3559,8
+    .achievement 3559,9
+    .achievement 3559,10
     >>|cRXP_WARN_NOTE|r: You cannot turkeyfy mounted characters.
   step
     >>|cRXP_WARN_Achievement - Pilgrim|r
@@ -347,8 +349,8 @@ RXPGuides.RegisterGuide([[
     >>Target another player at the |cRXP_FRIENDLY_Bountiful Table|r and spam pass them food.
     .achievement 3579,1 -- FOOD FIGHT!
   step
-    >>Acquire the Spirit of Sharing buff at the |cRXP_FRIENDLY_Bountiful Table|r by eating each of the 5 foods to 5 stacks
     .goto Durotar,46.35,14.49
+    >>Acquire the Spirit of Sharing buff at the |cRXP_FRIENDLY_Bountiful Table|r by eating each of the 5 foods to 5 stacks
     .achievement 3557,4
   step
     #completewith next
@@ -360,6 +362,103 @@ RXPGuides.RegisterGuide([[
     >>Go outside of Thunder Bluff
     >>Buy ingredients from |cRXP_FRIENDLY_Laha Farplain|r
     .collect 46797,40 -- Mulgore Sweet Potato
+  step
+    #completewith next
+    >>Target another player at the |cRXP_FRIENDLY_Bountiful Table|r and spam pass them food.
+    .achievement 3579,1 -- FOOD FIGHT!
+  step
+    .goto Thunder Bluff,31.08,66.51
+    >>Acquire the Spirit of Sharing buff at the |cRXP_FRIENDLY_Bountiful Table|r by eating each of the 5 foods to 5 stacks
+    .achievement 3557,2
+  step
+    .goto Thunder Bluff,30.95,69.66
+    .target Mahara Goldwheat
+    >>Talk to the |cRXP_FRIENDLY_Mahara Goldwheat|r
+    .accept 14060 -- Easy As Pie
+    .turnin 14060 -- Easy As Pie
+    >>|cRXP_WARN_NOTE|r: For the quest reward, choose the |cRXP_LOOT_Turkey Shooter|r.
+  step
+    .train 66034 >>Learn Recipe: Candied Sweet Potato
+    .use 46806 -- Recipe: Candied Sweet Potato
+    >>and cook at least:
+    .collect 44839,40 -- Candied Sweet Potato
+  step
+    .skill cooking,280 >>Level cooking to 280 with Candied Sweet Potato
+  step
+    .isOnQuest 14061
+    .train 66037 >>Learn Recipe: Slow-Roasted Turkey
+    .use 46807 -- Recipe: Slow-Roasted Turkey
+    >>and cook at least:
+    .collect 44838,40 -- Slow-Roasted Turkey
+  step
+    .goto Durotar,46.36,13.93
+    .target Ondani Greatmill
+    >>Talk to the |cRXP_FRIENDLY_Ondani Greatmill|r outside Orgrimmar
+    .turnin 14061 -- Can't Get Enough Turkey
+    >>|cRXP_WARN_NOTE|r: For the quest reward, choose the Pilgrim's Hat.
+  step
+    #completewith next
+    .zone Silvermoon City >>Teleport to Silvermoon City << Mage
+    .zone Silvermoon City >>Head to Silvermoon City << !Mage
+  step
+    #completewith next
+    >>Target another player at the |cRXP_FRIENDLY_Bountiful Table|r and spam pass them food.
+    .achievement 3579,1 -- FOOD FIGHT!
+  step
+    .goto Eversong Woods,55.73,53.09
+    >>Acquire the Spirit of Sharing buff at the |cRXP_FRIENDLY_Bountiful Table|r by eating each of the 5 foods to 5 stacks
+    .achievement 3557,3
+  step
+    #completewith next
+    .zone Undercity >>Teleport to Undercity << Mage
+    .zone Undercity >>Head to Undercity << !Mage
+  step
+    .goto Tirisfal Glades,61.67,68.12
+    .target William Mullins
+    >>Talk to |cRXP_FRIENDLY_William Mullins|r
+    .turnin 14058 -- She Says Potato
+  step
+    .goto Tirisfal Glades,61.25,66.97
+    .target Roberta Carter
+    >>Talk to |cRXP_FRIENDLY_Roberta Carter|r
+    .turnin 14059 -- We're Out of Cranberry Chutney Again?
+  step
+    >>Equip the Pilgrim's Dress, Robe, or Attire and sit at a |cRXP_FRIENDLY_Bountiful Table|r near each Alliance capital city.
+    .use 44785
+    .use 46800
+    .use 46824
+    .achievement 3581,1
+    .achievement 3581,2
+    .achievement 3581,3
+    .achievement 3581,4
+  step
+    #completewith next
+    .zone Sethekk Halls >>Travel to Sethekk Halls in Outland, Terokkar Forest
+  step
+    >>Defeat |cRXP_ENEMY_Talon King Ikiss|r while wearing a Pilgrim's Hat and a Pilgrim's Dress, Robe, or Attire.
+    .use 46723
+    .use 44785
+    .use 46800
+    .use 46824
+    .achievement 3582,1
+  step
+    #completewith next
+    >>Repeat the Pilgrim's Bounty daily quests until you have:
+    .collect 44812,8 -- Turkey Shooter
+  step
+    >>Shoot each of the following Rogues with a |cRXP_LOOT_Turkey Shooter|r:
+    .use 44812
+    .achievement 3559,1
+    .achievement 3559,2
+    .achievement 3559,3
+    .achievement 3559,4
+    .achievement 3559,5
+    .achievement 3559,6
+    .achievement 3559,7
+    .achievement 3559,8
+    .achievement 3559,9
+    .achievement 3559,10
+    >>|cRXP_WARN_NOTE|r: You cannot turkeyfy mounted characters.
   step
     >>|cRXP_WARN_Achievement - Pilgrim|r
     .achievement 3656,1
