@@ -11,7 +11,7 @@
 
 ## Dependencies: RXPGuides
 
+Cata/Holidays/HallowsEnd.lua
 Cata/Holidays/Pilgrim.lua
 Cata/TolBarad.lua
 Cata/MoltenFront.lua
-Cata/HallowsEnd.lua
