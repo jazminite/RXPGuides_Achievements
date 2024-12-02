@@ -1,6 +1,12 @@
 # Changelog
 
 ## Versions
+## 3.8.2
+HOLIDAYS
+- Add Pilgrims Bounty (v1) full guide for Alliance
+- Add Pilgrims Bounty (v1) full guide for Horde
+- Move HallowsEnd file
+
 ## 3.8.1
 HOLIDAYS
 - Hallows End (v2) partial guide for Horde

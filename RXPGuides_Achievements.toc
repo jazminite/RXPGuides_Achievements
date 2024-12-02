@@ -7,10 +7,11 @@
 ## Title: RestedXP Achievement Guides
 ## Notes: Achievements
 ## Author: Jazminite
-## Version: 3.8.1
+## Version: 3.8.2
 
 ## Dependencies: RXPGuides
 
+Cata/Holidays/HallowsEnd.lua
+Cata/Holidays/Pilgrim.lua
 Cata/TolBarad.lua
 Cata/MoltenFront.lua
-Cata/HallowsEnd.lua

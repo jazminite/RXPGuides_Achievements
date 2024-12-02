@@ -9,6 +9,7 @@ The guides in this addon are intended for **Cataclysm Classic** only.
 ### Holidays
 Alliance + Horde
 - Hallows End
+- Pilgrim's Bounty
 ### Molten Front
 Alliance + Horde
 - Achievements Check
