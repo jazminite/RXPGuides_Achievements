@@ -1,26 +1,14 @@
 # RestedXP Achievement Guides
-The guides in this addon require [RestedXP's][1] base addon. RestedXP's base addon is FREE to download.
+The guides in this addon require [RestedXP's][1] base addon, which is **FREE** to download.
 
 ## Installation
 Download the latest release on [Curseforge][2].
 
 ## Guides
-The guides in this addon are intended for **Cataclysm Classic** only.
+The guides in this addon are intended for **Mists of Pandaria Classic** only.
 ### Holidays
 Alliance + Horde
 - Hallows End
-- Pilgrim's Bounty
-### Molten Front
-Alliance + Horde
-- Achievements Check
-- Dailies
-- Part I - Unlock the Dailies
-- Part II - Druids of the Talon
-- Part II - Shadow Wardens
-- Part III - Filling the Moonwell
-### Tol Barad
-Alliance + Horde
-- Dailies
 
 ## Issues
 To report issues with these guides, open a [Github Issue][4].
