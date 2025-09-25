@@ -1,6 +1,10 @@
 # Changelog
 
 ## Versions
+## 4.0.0
+- Updates for Mists of Pandaria (MoP)
+- Copy Cata Hallows End Guides (v1) to MoP
+
 ## 3.8.2
 HOLIDAYS
 - Add Pilgrims Bounty (v1) full guide for Alliance
