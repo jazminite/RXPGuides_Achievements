@@ -1,6 +1,12 @@
 # Changelog
 
 ## Versions
+## 4.1.0
+HOLIDAYS
+- Update Hallows End guide for Horde (v2)
+    - Fix Achievement IDs for EK and Kalimdor
+    - Add Outlands Pumpkin quests
+
 ## 4.0.0
 - Updates for Mists of Pandaria (MoP)
 - Copy Cata Hallows End Guides (v1) to MoP

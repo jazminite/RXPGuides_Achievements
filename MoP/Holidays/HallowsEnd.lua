@@ -1422,7 +1422,7 @@ RXPGuides.RegisterGuide([[
 
 RXPGuides.RegisterGuide([[
   << Horde
-  #version 1
+  #version 2
   #group Achievements
   #subgroup Holidays
   #mop
@@ -1431,7 +1431,9 @@ RXPGuides.RegisterGuide([[
   step
     >>There is only a partial guide for the Horde.
     +I recommend referencing this article on wowhead:
-    .link https://www.wowhead.com/cata/guide/holidays/hallows-end >> Hallow's End Holiday Guide - Cataclysm Classic
+    .link https://www.wowhead.com/mop-classic/guide/holidays/hallows-end >> Hallow's End Holiday Guide - MoP Classic
+
+  -- EASTERN KINGDOMS
   step
     #completewith next
     .zone Silvermoon City >>Travel to Silvermoon
@@ -1441,21 +1443,21 @@ RXPGuides.RegisterGuide([[
     .accept 12369 >>Accept Candy Bucket
     .turnin 12369 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,2
+    .achievement 967,18
   step
     .goto Silvermoon City,67.6,72.9
     >>Click the |cRXP_FRIENDLY_Pumpkin|r at Wayfarer's Rest
     .accept 12370 >>Accept Candy Bucket
     .turnin 12370 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,13
+    .achievement 967,17
   step
     .goto Eversong Woods,48.2,47.9
     >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Falconwing Square Inn
     .accept 12364 >>Accept Candy Bucket
     .turnin 12364 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,14
+    .achievement 967,9
   step
     #completewith next
     .fly Fairbreeze Village
@@ -1475,7 +1477,7 @@ RXPGuides.RegisterGuide([[
     .accept 12373 >>Accept Candy Bucket
     .turnin 12373 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,6
+    .achievement 967,10
   step
     #completewith next
     .fly Light's Hope Chapel
@@ -1485,7 +1487,7 @@ RXPGuides.RegisterGuide([[
     .accept 12402 >>Accept Candy Bucket
     .turnin 12402 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,15
+    .achievement 967,7
   step
     #completewith next
     .fly Andorhal
@@ -1495,7 +1497,7 @@ RXPGuides.RegisterGuide([[
     .accept 28987 >>Accept Candy Bucket
     .turnin 28987 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,20
+    .achievement 967,26
   step
     #completewith next
     .fly The Bulwark
@@ -1505,7 +1507,7 @@ RXPGuides.RegisterGuide([[
     .accept 28972 >>Accept Candy Bucket
     .turnin 28972 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,21
+    .achievement 967,24
   step
     #completewith next
     .fly Undercity
@@ -1515,7 +1517,7 @@ RXPGuides.RegisterGuide([[
     .accept 12368 >>Accept Candy Bucket
     .turnin 12368 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,11
+    .achievement 967,25
   step
     #completewith next
     .fly Brill
@@ -1525,7 +1527,7 @@ RXPGuides.RegisterGuide([[
     .accept 12363 >>Accept Candy Bucket
     .turnin 12363 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,12
+    .achievement 967,23
   step
     #completewith next
     .fly Forsaken Rear Guard
@@ -1535,7 +1537,7 @@ RXPGuides.RegisterGuide([[
     .accept 28966 >>Accept Candy Bucket
     .turnin 28966 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,23
+    .achievement 967,19
   step
     #completewith next
     .fly The Sepulcher
@@ -1545,7 +1547,7 @@ RXPGuides.RegisterGuide([[
     .accept 12371 >>Accept Candy Bucket
     .turnin 12371 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,4
+    .achievement 967,20
   step
     #completewith next
     .fly Tarren Mill
@@ -1555,7 +1557,7 @@ RXPGuides.RegisterGuide([[
     .accept 12376 >>Accept Candy Bucket
     .turnin 12376 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,3
+    .achievement 967,12
   step
     #completewith next
     .fly Eastpoint Tower
@@ -1565,7 +1567,7 @@ RXPGuides.RegisterGuide([[
     .accept 28962 >>Accept Candy Bucket
     .turnin 28962 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,26
+    .achievement 967,11
   step
     #completewith next
     .fly Hiri'watha Research Station
@@ -1575,7 +1577,7 @@ RXPGuides.RegisterGuide([[
     .accept 28971 >>Accept Candy Bucket
     .turnin 28971 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,19
+    .achievement 967,13
   step
     #completewith next
     .fly Revantusk Village
@@ -1585,7 +1587,7 @@ RXPGuides.RegisterGuide([[
     .accept 12387 >>Accept Candy Bucket
     .turnin 12387 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,5
+    .achievement 967,14
   step
     #completewith next
     .fly Hammerfall
@@ -1595,7 +1597,7 @@ RXPGuides.RegisterGuide([[
     .accept 12380 >>Accept Candy Bucket
     .turnin 12380 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,7
+    .achievement 967,1
   step
     #completewith next
     .fly Fuselight
@@ -1605,7 +1607,7 @@ RXPGuides.RegisterGuide([[
     .accept 28955 >>Accept Candy Bucket
     .turnin 28955 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,25
+    .achievement 967,2
   step
     #completewith next
     .fly New Kargath
@@ -1615,7 +1617,7 @@ RXPGuides.RegisterGuide([[
     .accept 28957 >>Accept Candy Bucket
     .turnin 28957 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,24
+    .achievement 967,3
   step
     #completewith next
     .fly Iron Summit
@@ -1625,7 +1627,7 @@ RXPGuides.RegisterGuide([[
     .accept 28965 >>Accept Candy Bucket
     .turnin 28965 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,17
+    .achievement 967,16
   step << Mage
     #completewith next
     .zone Swamp of Sorrows >>Teleport to Stonard
@@ -1638,7 +1640,7 @@ RXPGuides.RegisterGuide([[
     .accept 12384 >>Accept Candy Bucket
     .turnin 12384 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,1
+    .achievement 967,22
   step
     #completewith next
     .fly Bogpaddle
@@ -1648,7 +1650,7 @@ RXPGuides.RegisterGuide([[
     .accept 28967 >>Accept Candy Bucket
     .turnin 28967 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,16
+    .achievement 967,21
   step
     #completewith next
     .fly Dreadmaul Hold
@@ -1658,7 +1660,7 @@ RXPGuides.RegisterGuide([[
     .accept 28959 >>Accept Candy Bucket
     .turnin 28959 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,18
+    .achievement 967,4
   step
     #completewith next
     .fly Booty Bay
@@ -1668,7 +1670,7 @@ RXPGuides.RegisterGuide([[
     .accept 12397 >>Accept Candy Bucket
     .turnin 12397 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,10
+    .achievement 967,5
   step
     #completewith next
     .fly Hardwrench Hideaway
@@ -1678,7 +1680,7 @@ RXPGuides.RegisterGuide([[
     .accept 28969 >>Accept Candy Bucket
     .turnin 28969 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,22
+    .achievement 967,6
   step
     #completewith next
     .fly Grom'gol Base Camp
@@ -1688,7 +1690,9 @@ RXPGuides.RegisterGuide([[
     .accept 12382 >>Accept Candy Bucket
     .turnin 12382 >>Turn In Candy Bucket
     .use 37586
-    .achievement 967,9
+    .achievement 967,15
+
+  -- KALIMDOR ------------------------------------
   step
     #completewith next
     .zone Orgrimmar >>Teleport to Orgrimmar << Mage
@@ -1699,7 +1703,7 @@ RXPGuides.RegisterGuide([[
     .accept 12366 >>Accept Candy Bucket
     .turnin 12366 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,1
+    .achievement 965,20
   step
     #completewith next
     .fly Bilgewater Harbor
@@ -1709,7 +1713,7 @@ RXPGuides.RegisterGuide([[
     .accept 28992 >>Accept Candy Bucket
     .turnin 28992 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,25
+    .achievement 965,5
   step
     #completewith next
     .fly Everlook
@@ -1719,7 +1723,7 @@ RXPGuides.RegisterGuide([[
     .accept 12400 >>Accept Candy Bucket
     .turnin 12400 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,13
+    .achievement 965,30
   step
     #completewith next
     .fly Nordrassil
@@ -1759,7 +1763,7 @@ RXPGuides.RegisterGuide([[
     .accept 28994 >>Accept Candy Bucket
     .turnin 28994 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,19
+    .achievement 965,11
   step
     #completewith next
     .fly Zoram'gar Outpost
@@ -1769,7 +1773,7 @@ RXPGuides.RegisterGuide([[
     .accept 28989 >>Accept Candy Bucket
     .turnin 28989 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,21
+    .achievement 965,4
   step
     #completewith next
     .fly Hellscream's Watch
@@ -1779,7 +1783,7 @@ RXPGuides.RegisterGuide([[
     .accept 28958 >>Accept Candy Bucket
     .turnin 28958 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,28
+    .achievement 965,1
   step
     #completewith next
     .fly Silverwind Refuge
@@ -1789,7 +1793,7 @@ RXPGuides.RegisterGuide([[
     .accept 28953 >>Accept Candy Bucket
     .turnin 28953 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,30
+    .achievement 965,2
   step
     #completewith next
     .fly Splintertree Post
@@ -1799,7 +1803,7 @@ RXPGuides.RegisterGuide([[
     .accept 12377 >>Accept Candy Bucket
     .turnin 12377 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,5
+    .achievement 965,3
   step
     #completewith next
     .fly Nozzlepot's Outpost
@@ -1809,7 +1813,7 @@ RXPGuides.RegisterGuide([[
     .accept 29003 >>Accept Candy Bucket
     .turnin 29003 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,24
+    .achievement 965,18
   step
     #completewith next
     .fly Razor Hill
@@ -1826,7 +1830,7 @@ RXPGuides.RegisterGuide([[
     .accept 29002 >>Accept Candy Bucket
     .turnin 29002 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,29
+    .achievement 965,17
   step
     #completewith next
     .fly Crossroads
@@ -1836,7 +1840,7 @@ RXPGuides.RegisterGuide([[
     .accept 12374 >>Accept Candy Bucket
     .turnin 12374 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,11
+    .achievement 965,16
   step
     #completewith next
     .fly Ratchet
@@ -1846,7 +1850,7 @@ RXPGuides.RegisterGuide([[
     .accept 12396 >>Accept Candy Bucket
     .turnin 12396 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,7
+    .achievement 965,19
   step
     #completewith next
     .fly Brackenwall Village
@@ -1856,7 +1860,7 @@ RXPGuides.RegisterGuide([[
     .accept 12383 >>Accept Candy Bucket
     .turnin 12383 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,10
+    .achievement 965,9
   step
     #completewith next
     .fly Desolation Hold
@@ -1866,7 +1870,7 @@ RXPGuides.RegisterGuide([[
     .accept 29005 >>Accept Candy Bucket
     .turnin 29005 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,23
+    .achievement 965,22
   step
     #completewith next
     .fly Bloodhoof Village
@@ -1876,7 +1880,7 @@ RXPGuides.RegisterGuide([[
     .accept 12362 >>Accept Candy Bucket
     .turnin 12362 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,6
+    .achievement 965,15
   step
     #completewith next
     .zone Thunder Bluff >>Teleport to Thunder Bluff << Mage
@@ -1887,7 +1891,7 @@ RXPGuides.RegisterGuide([[
     .accept 12367 >>Accept Candy Bucket
     .turnin 12367 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,15
+    .achievement 965,28
   step
     #completewith next
     .fly Hunter's Hill
@@ -1897,7 +1901,7 @@ RXPGuides.RegisterGuide([[
     .accept 29004 >>Accept Candy Bucket
     .turnin 29004 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,18
+    .achievement 965,23
   step
     #completewith next
     .fly Krom'gar Fortress
@@ -1907,7 +1911,7 @@ RXPGuides.RegisterGuide([[
     .accept 29009 >>Accept Candy Bucket
     .turnin 29009 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,22
+    .achievement 965,24
   step
     #completewith next
     .fly Sun Rock Retreat
@@ -1917,7 +1921,7 @@ RXPGuides.RegisterGuide([[
     .accept 12378 >>Accept Candy Bucket
     .turnin 12378 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,9
+    .achievement 965,25
   step
     #completewith next
     .fly Karnum's Glade
@@ -1927,7 +1931,7 @@ RXPGuides.RegisterGuide([[
     .accept 28993 >>Accept Candy Bucket
     .turnin 28993 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,20
+    .achievement 965,6
   step
     #completewith next
     .fly Shadowprey Village
@@ -1937,7 +1941,7 @@ RXPGuides.RegisterGuide([[
     .accept 12381 >>Accept Candy Bucket
     .turnin 12381 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,2
+    .achievement 965,7
   step
     #completewith next
     .fly Camp Ataya
@@ -1947,7 +1951,7 @@ RXPGuides.RegisterGuide([[
     .accept 28996 >>Accept Candy Bucket
     .turnin 28996 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,27
+    .achievement 965,12
   step
     #completewith next
     .fly Stonemaul Hold
@@ -1957,7 +1961,7 @@ RXPGuides.RegisterGuide([[
     .accept 28998 >>Accept Candy Bucket
     .turnin 28998 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,26
+    .achievement 965,14
   step
     #completewith next
     .fly Camp Mojache
@@ -1967,7 +1971,7 @@ RXPGuides.RegisterGuide([[
     .accept 12386 >>Accept Candy Bucket
     .turnin 12386 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,4
+    .achievement 965,13
   step
     #completewith next
     .fly Cenarion Hold
@@ -1977,7 +1981,7 @@ RXPGuides.RegisterGuide([[
     .accept 12401 >>Accept Candy Bucket
     .turnin 12401 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,3
+    .achievement 965,21
   step
     #completewith next
     .fly Marshal's Stand
@@ -1987,7 +1991,7 @@ RXPGuides.RegisterGuide([[
     .accept 29018 >>Accept Candy Bucket
     .turnin 29018 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,16
+    .achievement 965,29
   step
     #completewith next
     .fly Bootlegger Outpost
@@ -1997,7 +2001,7 @@ RXPGuides.RegisterGuide([[
     .accept 29014 >>Accept Candy Bucket
     .turnin 29014 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,17
+    .achievement 965,26
   step
     #completewith next
     .fly Gadgetzan
@@ -2007,7 +2011,7 @@ RXPGuides.RegisterGuide([[
     .accept 12399 >>Accept Candy Bucket
     .turnin 12399 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,12
+    .achievement 965,27
   step
     #completewith next
     .fly Mudsprocket
@@ -2017,19 +2021,164 @@ RXPGuides.RegisterGuide([[
     .accept 12398 >>Accept Candy Bucket
     .turnin 12398 >>Turn In Candy Bucket
     .use 37586
-    .achievement 965,14
+    .achievement 965,10
+  
+  -- OUTLANDS ------------------------------------
+  step
+    #completewith next
+    .zone Shattrath City >>Teleport to Shattrath << Mage
+    .zone Shattrath City >>Travel to Shattrath << !Mage
+  step
+    .goto Shattrath City,56.2,81.7
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Aldor Rise or Scryer's Tier Inn
+    .accept 12404 >>Accept Candy Bucket
+    .turnin 12404 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,11
+  step
+    #completewith next
+    .fly Garadar
+  step
+    .goto Nagrand,56.7,34.6
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Garadar Inn
+    .accept 12392 >>Accept Candy Bucket
+    .turnin 12392 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,6
+  step
+    #completewith next
+    .fly Zabra'jin
+  step
+    .goto Zangarmarsh,30.7,50.9
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Zabra'jin Inn
+    .accept 12390 >>Accept Candy Bucket
+    .turnin 12390 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,13
+  step
+    #completewith next
+    .fly Thunderlord Stronghold
+  step
+    .goto Blade's Edge Mountains,53.4,55.5
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Thunderlord Stronghold Inn
+    .accept 12393 >>Accept Candy Bucket
+    .turnin 12393 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,3
+  step
+    #completewith next
+    .fly Evergrove
+  step
+    .goto Blade's Edge Mountains,62.9,38.3
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Evergrove Inn
+    .accept 12406 >>Accept Candy Bucket
+    .turnin 12406 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,1
+  step
+    #completewith next
+    .fly Mok'Nathal Village
+  step
+    .goto Blade's Edge Mountains,76.2,60.4
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Mok'Nathal Village Inn
+    .accept 12394 >>Accept Candy Bucket
+    .turnin 12394 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,2
+  step
+    #completewith next
+    .fly Area 52
+  step
+    .goto Netherstorm,32.1,64.5
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Area 52 Inn
+    .accept 12407 >>Accept Candy Bucket
+    .turnin 12407 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,7
+  step
+    #completewith next
+    .fly Stormspire
+  step
+    .goto Netherstorm,43.4,36.1
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Stormspire Inn
+    .accept 12408 >>Accept Candy Bucket
+    .turnin 12408 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,8
+  step
+    #completewith next
+    .fly Thrallmar
+  step
+    .goto Hellfire Peninsula,56.8,37.5
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Thrallmar Inn
+    .accept 12388 >>Accept Candy Bucket
+    .turnin 12388 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,5
+  step
+    #completewith next
+    .fly Falcon Watch
+  step
+    .goto Hellfire Peninsula,26.9,59.6
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Falcon Watch Inn
+    .accept 12389 >>Accept Candy Bucket
+    .turnin 12389 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,4
+  step
+    #completewith next
+    .fly Swamprat Post
+  step
+    .goto Zangarmarsh,78.5,62.9
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Cenarion Refuge Inn
+    .accept 12403 >>Accept Candy Bucket
+    .turnin 12403 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,14
+  step
+    #completewith next
+    .fly Stonebreaker Hold
+  step
+    .goto Terokkar Forest,48.8,45.2
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Stonebreaker Hold Inn
+    .accept 12391 >>Accept Candy Bucket
+    .turnin 12391 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,12
+  step
+    #completewith next
+    .fly Shadowmoon Village
+  step
+    .goto Shadowmoon Valley,30.3,27.8
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Shadowmoon Village Inn
+    .accept 12395 >>Accept Candy Bucket
+    .turnin 12395 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,10
+  step
+    #completewith next
+    .fly Altar of Sha'tar
+  step
+    .goto Shadowmoon Valley,61.0,28.2
+    >>Click the |cRXP_FRIENDLY_Pumpkin|r in the Altar of Sha'tar Inn
+    .accept 12409 >>Accept Candy Bucket
+    .turnin 12409 >>Turn In Candy Bucket
+    .use 37586
+    .achievement 968,9
+    >>|cRXP_WARN_NOTE|r: If you have Scryer's Rep, go to Sanctum of the Stars
   step
     >>|cRXP_WARN_Achievement - Hallowed Be Thy Name|r
-    .achievement 1657,1
-    .achievement 1657,2
-    .achievement 1657,3
-    .achievement 1657,4
-    .achievement 1657,5
-    .achievement 1657,6
-    .achievement 1657,7
-    .achievement 1657,8
-    .achievement 1657,9
-    .achievement 1657,10
+    .achievement 1656,1
+    .achievement 1656,2
+    .achievement 1656,3
+    .achievement 1656,4
+    .achievement 1656,5
+    .achievement 1656,6
+    .achievement 1656,7
+    .achievement 1656,8
+    .achievement 1656,9
+    .achievement 1656,10
+    .achievement 1656,11
   step
     +CONGRATULATIONS!! You have completed this guide.
 ]])
