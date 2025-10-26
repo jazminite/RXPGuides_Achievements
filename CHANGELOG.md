@@ -3,7 +3,7 @@
 ## Versions
 ## 4.1.0
 HOLIDAYS
-- Updates Hallows End guide for Horde (v2)
+- Update Hallows End guide for Horde (v2)
     - Fix Achievement IDs for EK and Kalimdor
     - Add Outlands Pumpkin quests
 
