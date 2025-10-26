@@ -2,7 +2,7 @@
 ## Title: RestedXP Achievement Guides
 ## Notes: Achievements
 ## Author: Jazminite
-## Version: 4.0.0
+## Version: 4.1.0
 ## Dependencies: RXPGuides
 
 MoP/Holidays/HallowsEnd.lua
