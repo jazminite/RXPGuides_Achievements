@@ -1,6 +1,10 @@
 # Changelog
 
 ## Versions
+## 4.2.0
+HOLIDAYS
+- Copy Cata Pilgrims Bounty Guides (v1) to MoP
+
 ## 4.1.0
 HOLIDAYS
 - Update Hallows End guide for Horde (v2)

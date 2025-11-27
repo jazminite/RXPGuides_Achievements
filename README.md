@@ -9,6 +9,7 @@ The guides in this addon are intended for **Mists of Pandaria Classic** only.
 ### Holidays
 Alliance + Horde
 - Hallows End
+- Pilgrims Bounty
 
 ## Issues
 To report issues with these guides, open a [Github Issue][4].
