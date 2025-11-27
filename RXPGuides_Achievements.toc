@@ -1,8 +1,9 @@
-## Interface: 110200, 40402, 50500, 11507
+## Interface: 110200, 50500, 40402, 30405, 11507
 ## Title: RestedXP Achievement Guides
 ## Notes: Achievements
 ## Author: Jazminite
-## Version: 4.1.0
+## Version: 4.2.0
 ## Dependencies: RXPGuides
 
 MoP/Holidays/HallowsEnd.lua
+MoP/Holidays/Pilgrim.lua
