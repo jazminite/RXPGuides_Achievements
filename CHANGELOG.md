@@ -1,6 +1,11 @@
 # Changelog
 
 ## Versions
+## 5.0.0
+HOLIDAYS
+- Add TBC Lunar Festival Guide for Alliance (v1)
+- Add TBC Lunar Festival Guide for Horde (v1)
+
 ## 4.2.0
 HOLIDAYS
 - Copy Cata Pilgrims Bounty Guides (v1) to MoP
