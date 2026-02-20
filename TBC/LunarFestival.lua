@@ -557,7 +557,50 @@ RXPGuides.RegisterGuide([[
   step
     .goto Orgrimmar,41.75,32.24
     >>Return to the |cRXP_FRIENDLY_Lunar Festival Harbinger|r 
-    .turnin 8867
+    .turnin 8867 >>Turn in Lunar Fireworks
+    .accept 8883 >>Accept Valadar Starsong
     .target Lunar Festival Harbinger
-    
+  step
+    .goto Orgrimmar,41.19,33.63
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Darkhorn|r 
+    .accept 8677 >>Accept Darkhorn the Elder
+    .turnin 8677 >>Turn In Darkhorn the Elder
+    .target Elder Darkhorn
+  step
+    #completewith next
+    .zone Durotar >>Travel to Durotar
+  step
+    .goto Durotar,53.2,43.6
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Runetotem|r in Razor Hill
+    .accept 8670 >>Accept Runetotem the Elder
+    .turnin 8670 >>Turn In Runetotem the Elder
+    .target Elder Runetotem
+  step
+    #completewith next
+    .zone The Barrens >>Travel to The Barrens
+  step
+    .goto The Barrens,51.4,30.6
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Moonwarden|r at The Crossroads
+    .accept 8717 >>Accept Moonwarden the Elder
+    .turnin 8717 >>Turn In Moonwarden the Elder
+    .target Elder Moonwarden
+  step
+    #completewith next
+    .fly Ratchet
+  step
+    .goto The Barrens,62.6,36.6
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Windtotem|r in Ratchet
+    .accept 8680 >>Accept Windtotem the Elder
+    .turnin 8680 >>Turn In Windtotem the Elder
+    .target Elder Windtotem
+  step
+    #completewith next
+    .fly Camp Taurajo
+  step
+    .goto The Barrens,45.0,57.8
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder High Mountain|r at Camp Taurajo
+    .accept 8686 >>Accept High Mountain the Elder
+    .turnin 8686 >>Turn In High Mountain the Elder
+    .target Elder High Mountain
+
 ]])
