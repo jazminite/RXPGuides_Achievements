@@ -602,5 +602,29 @@ RXPGuides.RegisterGuide([[
     .accept 8686 >>Accept High Mountain the Elder
     .turnin 8686 >>Turn In High Mountain the Elder
     .target Elder High Mountain
+  step
+    #completewith next
+    .fly Freewind Post
+  step
+    .goto Thousand Needles ,45.6,49.8
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Skyseer|r at Freewind Post
+    .accept 8682 >>Accept Skyseer the Elder
+    .turnin 8682 >>Turn In Skyseer the Elder
+    .target Elder Skyseer
+  step
+    .goto Thousand Needles ,79.2,77.0
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Morningdew|r at Mirage Raceway
+    .accept 8724 >>Accept Morningdew the Elder
+    .turnin 8724 >>Turn In Morningdew the Elder
+    .target Elder Morningdew
+  step
+    #completewith next
+    .zone Tanaris >>Travel to Gadgetzan
+  step
+    .goto Tanaris,51.4,27.8
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Dreamseer|r in Gadgetzan
+    .accept 8684 >>Accept Dreamseer the Elder
+    .turnin 8684 >>Turn In Dreamseer the Elder
+    .target Elder Dreamseer
 
 ]])
