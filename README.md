@@ -5,11 +5,14 @@ The guides in this addon require [RestedXP's][1] base addon, which is **FREE** t
 Download the latest release on [Curseforge][2].
 
 ## Guides
-The guides in this addon are intended for **Mists of Pandaria Classic** only.
-### Holidays
+The guides in this addon are intended for **WoW Classic** only.
+### MoP Holidays
 Alliance + Horde
 - Hallows End
 - Pilgrims Bounty
+
+### TBC Holidays
+- Lunar Festival
 
 ## Issues
 To report issues with these guides, open a [Github Issue][4].
