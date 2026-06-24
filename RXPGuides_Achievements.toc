@@ -2,11 +2,12 @@
 ## Title: RestedXP Achievement Guides
 ## Notes: Achievements
 ## Author: Jazminite
-## Version: 5.0.0
+## Version: 5.1.0
 ## Dependencies: RXPGuides
 
 # TBC Classic
 TBC/LunarFestival.lua
+TBC/Midsummer.lua
 
 # MoP Classic
 MoP/Holidays/HallowsEnd.lua

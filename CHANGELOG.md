@@ -1,6 +1,10 @@
 # Changelog
 
 ## Versions
+## 5.1.0
+HOLIDAYS
+- Add TBC Midsummer Guide for Horde (v1)
+
 ## 5.0.0
 HOLIDAYS
 - Add TBC Lunar Festival Guide for Alliance (v1)
