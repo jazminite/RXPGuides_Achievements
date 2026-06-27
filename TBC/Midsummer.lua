@@ -983,6 +983,231 @@ RXPGuides.RegisterGuide([[
     >>Click the |cRXP_LOOT_Alliance Bonfire|r outside Blood Watch
     .accept 11738 >>Accept Desecrate this Fire!
     .turnin 11738 >>Turn In Desecrate this Fire!
+
+  -- EASTERN KINGDOMS ------------------------------------
+  step
+    #completewith next
+    .zone Eversong Woods >>Travel to Eversong Woods
+  step
+    .goto Eversong Woods,46.5,50.4
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Eversong Woods Flame Keeper|r outside Falconwing Square
+    .accept 11848 >>Accept Honor the Flame
+    .turnin 11848 >>Turn In Honor the Flame
+    .target Eversong Woods Flame Keeper
+  step
+    #completewith next
+    .fly Tranquillien
+  step
+    .goto Ghostlands,47,25.9
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Ghostlands Flame Keeper|r outside Tranquillien
+    .accept 11850 >>Accept Honor the Flame
+    .turnin 11850 >>Turn In Honor the Flame
+    .target Ghostlands Flame Keeper
+  step
+    #completewith next
+    .zone Undercity >>Travel to Undercity
+  step
+    .goto Tirisfal Glades,57.1,51.9
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Tirisfal Glades Flame Keeper|r outside Brill
+    .accept 11862 >>Accept Honor the Flame
+    .turnin 11862 >>Turn In Honor the Flame
+    .target Tirisfal Glades Flame Keeper
+  step
+    #completewith next
+    .zone Western Plaguelands >>Travel to Western Plaguelands
+  step
+    .goto Western Plaguelands,43.5,82.3
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r outside Chillwind Camp
+    .accept 11756 >>Accept Desecrate this Fire!
+    .turnin 11756 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .zone Hillsbrad Foothills >>Travel to Hillsbrad Foothills
+  step
+    .goto Hillsbrad Foothills,58.3,25.2
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Hillsbrad Flame Keeper|r outside Tarren Mill
+    .accept 11853 >>Accept Honor the Flame
+    .turnin 11853 >>Turn In Honor the Flame
+    .target Hillsbrad Flame Keeper
+  step
+    .goto Hillsbrad Foothills,50.4,47.6
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r outside South Shore
+    .accept 11748 >>Accept Desecrate this Fire!
+    .turnin 11748 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .zone The Hinterlands >>Travel to The Hinterlands
+  step
+    .goto The Hinterlands,14.3,50.1
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r outside Aerie Peak
+    .accept 11755 >>Accept Desecrate this Fire!
+    .turnin 11755 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .zone Hillsbrad Foothills >>Travel to Hillsbrad Foothills
+  step
+    #completewith next
+    .fly The Sepulcher
+  step
+    .goto Silverpine Forest,49.6,38.6
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Silverpine Forest Flame Keeper|r outside The Sepulcher
+    .accept 11584 >>Accept Honor the Flame
+    .turnin 11584 >>Turn In Honor the Flame
+    .target Silverpine Forest Flame Keeper
+  step
+    #completewith next
+    .fly Revantusk Village
+  step
+    .goto The Hinterlands,76.6,74.4
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_The Hinterlands Flame Keeper|r outside Revantusk Village
+    .accept 11860 >>Accept Honor the Flame
+    .turnin 11860 >>Turn In Honor the Flame
+    .target The Hinterlands Flame Keeper
+  step
+    #completewith next
+    .fly Hammerfall
+  step
+    .goto Arathi Highlands,73.8,41.8
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Arathi Flame Keeper|r outside Hammerfall
+    .accept 11840 >>Accept Honor the Flame
+    .turnin 11840 >>Turn In Honor the Flame
+    .target Arathi Flame Keeper
+  step
+    .goto Arathi Highlands,50,44.8
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r outside Refuge Pointe
+    .accept 11732 >>Accept Desecrate this Fire!
+    .turnin 11732 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .zone Wetlands >>Travel to the Wetlands
+  step
+    .goto Wetlands,13.5,47.1
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r outside Menethil Harbor
+    .accept 11757 >>Accept Desecrate this Fire!
+    .turnin 11757 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .zone Loch Modan >>Travel to Loch Modan
+  step
+    .goto Loch Modan,32.6,41
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r outside Thelsamar
+    .accept 11749 >>Accept Desecrate this Fire!
+    .turnin 11749 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .zone Dun Morogh >>Travel to Dun Morogh
+  step
+    .goto Dun Morogh,46.7,46.9
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r outside Kharanos
+    .accept 11742 >>Accept Desecrate this Fire!
+    .turnin 11742 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .zone Ironforge >>Enter Ironforge
+  step
+    .goto Ironforge,64.1,25.4
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r inside Ironforge
+    .collect 23183,1,9331,1 >>Loot the Flame of Ironforge
+    .accept 9331 >>Accept Stealing Ironforge's Flame
+    .use 23183
+  step
+    #completewith next
+    .zone Badlands >>Travel to Badlands
+  step
+    .goto Badlands,4.8,49.4
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Badlands Flame Keeper|r outside Kargath
+    .accept 11842 >>Accept Honor the Flame
+    .turnin 11842 >>Turn In Honor the Flame
+    .target Badlands Flame Keeper
+  step
+    #completewith next
+    .fly Flame Crest
+  step
+    .goto Burning Steppes,62.2,29.2
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Burning Steppes Flame Keeper|r outside Flame Crest
+    .accept 11844 >>Accept Honor the Flame
+    .turnin 11844 >>Turn In Honor the Flame
+    .target Burning Steppes Flame Keeper
+  step
+    .goto Burning Steppes,80.3,62.9
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r outside Morgan's Vigil
+    .accept 11739 >>Accept Desecrate this Fire!
+    .turnin 11739 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .zone Redridge Mountains >>Travel to Redridge Mountains
+  step
+    .goto Redridge Mountains,25.2,59
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r outside Lakeshire
+    .accept 11751 >>Accept Desecrate this Fire!
+    .turnin 11751 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .zone Duskwood >>Travel to Duskwood
+  step
+    .goto Duskwood,73.7,54.6
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r Darkshire
+    .accept 11743 >>Accept Desecrate this Fire!
+    .turnin 11743 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .zone Blasted Lands >>Travel to Blasted Lands
+  step
+    .goto Blasted Lands,59.3,17
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r outside Nethergarde Keep
+    .accept 11737 >>Accept Desecrate this Fire!
+    .turnin 11737 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .zone Swamp of Sorrows >>Travel to Swamp of Sorrows
+  step
+    .goto Swamp of Sorrows,46.7,46.5
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Swamp of Sorrows Flame Keeper|r outside Stonard
+    .accept 11857 >>Accept Honor the Flame
+    .turnin 11857 >>Turn In Honor the Flame
+    .target Swamp of Sorrows Flame Keeper
+  step
+    #completewith next
+    .fly Booty Bay
+  step
+    .goto Stranglethorn Vale,33,75.4
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Stranglethorn Vale Flame Keeper|r outside Booty Bay
+    .accept 11837 >>Accept Honor the Flame
+    .turnin 11837 >>Turn In Honor the Flame
+    .target Stranglethorn Vale Flame Keeper
+  step
+    .goto Stranglethorn Vale,33.9,73.5
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r outside Booty Bay
+    .accept 11761 >>Accept Desecrate this Fire!
+    .turnin 11761 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .fly Grom'gol
+  step
+    #completewith next
+    .zone Westfall >>Travel to Westfall
+  step
+    .goto Westfall,55.9,53.5
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r outside Sentinel Hill
+    .accept 11581 >>Accept Desecrate this Fire!
+    .turnin 11581 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .zone Elwynn Forest >>Travel to Elwynn Forest
+  step
+    .goto Elwynn Forest,43.5,62.6
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r outside Goldshire
+    .accept 11745 >>Accept Desecrate this Fire!
+    .turnin 11745 >>Turn In Desecrate this Fire!
+  step
+    #completewith next
+    .zone Stormwind City >>Enter Stormwind
+  step
+    .goto Stormwind City,39.2,61.9
+    >>Click the |cRXP_LOOT_Alliance Bonfire|r inside Stormwind
+    .collect 23182,1,9330,1 >>Loot the Flame of Stormwind
+    .accept 9330 >>Accept Stealing Stormwind's Flame
+    .use 23182
   step
     +stop
   step
